@@ -2,7 +2,7 @@ jira.DashboardGadget Dashboard_Your_Tasks_s__Lavori_per_te_da_iniziare_0_3@uumuu
   uri = "rest/gadgets/1.0/g/com.atlassian.jira.gadgets:filter-results-gadget/gadgets/filter-results-gadget.xml"
   color = "blue"
   position = {
-    row = 3
+    row = 2
     column = 0
   }
   title = "Lavori per te da iniziare"

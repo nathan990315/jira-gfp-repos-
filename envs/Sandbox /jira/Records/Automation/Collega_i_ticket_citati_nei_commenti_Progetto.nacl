@@ -1,0 +1,98 @@
+jira.Automation Collega_i_ticket_citati_nei_commenti_Progetto@sssssu {
+  name = "Collega i ticket citati nei commenti"
+  state = "ENABLED"
+  authorAccountId = {
+    id = "634feb2a01c2ff842c164ac0"
+    displayName = "Gioele Roffi"
+  }
+  actor = {
+    type = "ACCOUNT_ID"
+    value = {
+      id = "557058:f58131cb-b67d-43c7-b30d-6b58d40bd077"
+      displayName = "Automation for Jira"
+    }
+  }
+  trigger = {
+    component = "TRIGGER"
+    schemaVersion = 1
+    type = "jira.issue.event.trigger:commented"
+    value = {
+      eventKey = "jira:issue_updated"
+      issueEvent = "issue_commented"
+      eventTypes = [
+      ]
+    }
+    children = [
+    ]
+    conditions = [
+    ]
+  }
+  components = [
+    {
+      component = "CONDITION"
+      schemaVersion = 1
+      type = "jira.comparator.condition"
+      value = {
+        first = "{{${ jira.Field.instance.Comment__comments_page@uub }.body}}"
+        second = "[A-Z]+-\\d+"
+        operator = "REGEX_CONTAINS"
+      }
+      children = [
+      ]
+      conditions = [
+      ]
+    },
+    {
+      component = "ACTION"
+      schemaVersion = 2
+      type = "jira.issue.link"
+      value = {
+        linkType = jira.IssueLinkType.instance.Relates
+        issue = {
+          type = "SMART"
+          value = "{{comment.body.match(\"([A-Z]+-\\d+)\")}}"
+        }
+        linkTypeDirection = "outward"
+      }
+      children = [
+      ]
+      conditions = [
+      ]
+    },
+  ]
+  canOtherRuleTrigger = false
+  notifyOnError = "FIRSTERROR"
+  projects = [
+    {
+      projectId = jira.Project.instance.Progetto
+    },
+  ]
+  labels = [
+  ]
+  tags = [
+    {
+      tagType = "BILLABLE"
+      tagValue = "true"
+    },
+    {
+      tagType = "CREATION_TYPE"
+      tagValue = "USER"
+    },
+    {
+      tagType = "IS_RULE_UPDATED"
+      tagValue = "true"
+    },
+    {
+      tagType = "SAMPLE_RULE"
+      tagValue = "global"
+    },
+    {
+      tagType = "TEMPLATE_ID"
+      tagValue = "software_template_7"
+    },
+  ]
+  writeAccessType = "UNRESTRICTED"
+  collaborators = [
+  ]
+  billingType = "NORMAL"
+}

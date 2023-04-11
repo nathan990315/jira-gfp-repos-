@@ -1,0 +1,148 @@
+jira.Automation Quando_tutti_i_sottotask_sono_completati___sposta_l_elemento_genitore_allo_stato_completato_Progetto@ssssss_08594sstssssu {
+  name = "Quando tutti i sottotask sono completati → sposta l'elemento genitore allo stato completato"
+  state = "ENABLED"
+  authorAccountId = {
+    id = "634feb2a01c2ff842c164ac0"
+    displayName = "Gioele Roffi"
+  }
+  actor = {
+    type = "ACCOUNT_ID"
+    value = {
+      id = "557058:f58131cb-b67d-43c7-b30d-6b58d40bd077"
+      displayName = "Automation for Jira"
+    }
+  }
+  trigger = {
+    component = "TRIGGER"
+    schemaVersion = -1
+    type = "jira.issue.event.trigger:transitioned"
+    value = {
+      eventKey = "jira:issue_updated"
+      issueEvent = "issue_generic"
+      fromStatus = [
+      ]
+      toStatus = [
+        {
+          type = "NAME"
+          value = jira.Status.instance.completato.name
+        },
+      ]
+    }
+    children = [
+    ]
+    conditions = [
+    ]
+  }
+  components = [
+    {
+      component = "BRANCH"
+      schemaVersion = 1
+      type = "jira.issue.related"
+      value = {
+        relatedType = "parent"
+        linkTypes = [
+        ]
+        onlyUpdatedIssues = false
+        similarityLimit = 0
+        compareValue = 0
+      }
+      children = [
+        {
+          component = "CONDITION"
+          schemaVersion = 3
+          type = "jira.issue.condition"
+          value = {
+            selectedField = {
+              type = "ID"
+              value = jira.Field.instance.Status__status
+            }
+            selectedFieldType = "status"
+            comparison = "NOT_EQUAL"
+            compareFieldValue = {
+              type = "NAME"
+              value = jira.Status.instance.completato.name
+              multiValue = false
+            }
+          }
+          children = [
+          ]
+          conditions = [
+          ]
+        },
+        {
+          component = "CONDITION"
+          schemaVersion = 1
+          type = "jira.issues.related.condition"
+          value = {
+            relatedType = "subtasks"
+            linkTypes = [
+            ]
+            operator = "allmatch"
+            compareJql = "${ jira.Field.instance.Status__status } = \"${ jira.Status.instance.completato.name }\""
+            compareValue = 0
+            similarityLimit = 0
+          }
+          children = [
+          ]
+          conditions = [
+          ]
+        },
+        {
+          component = "ACTION"
+          schemaVersion = 10
+          type = "jira.issue.transition"
+          value = {
+            operations = [
+            ]
+            sendNotifications = true
+            destinationStatus = {
+              type = "NAME"
+              value = jira.Status.instance.completato.name
+            }
+          }
+          children = [
+          ]
+          conditions = [
+          ]
+        },
+      ]
+      conditions = [
+      ]
+    },
+  ]
+  canOtherRuleTrigger = false
+  notifyOnError = "FIRSTERROR"
+  projects = [
+    {
+      projectId = jira.Project.instance.Progetto
+    },
+  ]
+  labels = [
+  ]
+  tags = [
+    {
+      tagType = "BILLABLE"
+      tagValue = "true"
+    },
+    {
+      tagType = "CREATION_TYPE"
+      tagValue = "USER"
+    },
+    {
+      tagType = "IS_RULE_UPDATED"
+      tagValue = "true"
+    },
+    {
+      tagType = "SAMPLE_RULE"
+      tagValue = "global"
+    },
+    {
+      tagType = "TEMPLATE_ID"
+      tagValue = "software_template_4"
+    },
+  ]
+  writeAccessType = "UNRESTRICTED"
+  collaborators = [
+  ]
+  billingType = "NORMAL"
+}

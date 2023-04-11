@@ -6,5 +6,11 @@ envs {
         jira = "jira"
       }
     },
+    {
+      name = "Sandbox "
+      accountToServiceName = {
+        jira = "jira"
+      }
+    },
   ]
 }

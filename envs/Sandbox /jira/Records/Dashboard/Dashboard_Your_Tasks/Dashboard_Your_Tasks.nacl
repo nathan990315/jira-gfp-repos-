@@ -6,7 +6,6 @@ jira.Dashboard Dashboard_Your_Tasks@s {
     displayName = "Nathan Giovannini"
   }
   gadgets = [
-    jira.DashboardGadget.instance.Dashboard_Your_Tasks_s__unnamed_0@uumuuu,
     jira.DashboardGadget.instance.Dashboard_Your_Tasks_s__Lavori_per_te_oggi__0_1@uumuussssuu,
     jira.DashboardGadget.instance.Dashboard_Your_Tasks_s__Lavori_per_te_in_corso_0_2@uumuussssuu,
     jira.DashboardGadget.instance.Dashboard_Your_Tasks_s__Lavori_per_te_da_iniziare_0_3@uumuussssuu,
