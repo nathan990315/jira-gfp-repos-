@@ -1,4 +1,4 @@
-jira.Resolution Done {
+jira.Resolution Fatturazione {
   description = "Work has been completed on this issue."
-  name = "Done"
+  name = "Fatturazione"
 }
