@@ -8,4 +8,5 @@ jira.IssueTypeScheme HE__Schema_del_tipo_di_ticket_Jira_Service_Management@fssss
     jira.IssueType.instance.Hotline_Multi_cliente@s,
     jira.IssueType.instance.Hotline,
   ]
+  defaultIssueTypeId = jira.IssueType.instance.Hotline
 }
