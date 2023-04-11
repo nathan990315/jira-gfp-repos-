@@ -1,0 +1,5 @@
+jira.Status closed_won@s {
+  name = "Closed won"
+  statusCategory = jira.StatusCategory.instance.Done
+  description = ""
+}

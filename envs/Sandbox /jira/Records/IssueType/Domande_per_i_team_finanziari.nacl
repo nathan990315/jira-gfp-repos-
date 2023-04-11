@@ -1,0 +1,6 @@
+jira.IssueType Domande_per_i_team_finanziari@s {
+  description = "Ha una domanda di carattere finanziario? Inviala qui."
+  name = "Domande per i team finanziari"
+  untranslatedName = "Domande per i team finanziari"
+  hierarchyLevel = 0
+}

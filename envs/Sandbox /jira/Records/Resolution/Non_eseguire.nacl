@@ -1,0 +1,4 @@
+jira.Resolution Non_eseguire@s {
+  description = "Questo ticket non produrrà alcuna azione."
+  name = "Non eseguire"
+}

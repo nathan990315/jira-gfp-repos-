@@ -1,0 +1,10 @@
+jira.Field Approvazioni__sd_approvals__c@uubuu {
+  name = "Approvazioni"
+  description = "Fornisce opzioni di ricerca per le informazioni sulle approvazioni di Jira Service Management. Questo campo personalizzato viene creato in modo programmatico ed è richiesto da Jira Service Management."
+  isLocked = true
+  searcherKey = "com.atlassian.servicedesk.approvals-plugin:sd-approvals-searcher"
+  type = "com.atlassian.servicedesk.approvals-plugin:sd-approvals"
+  contexts = [
+    jira.CustomFieldContext.instance.Approvazioni__sd_approvals__c_uubuu_Schema_di_configurazione_predefinito_per_Approvazioni@uuuuumusssss,
+  ]
+}

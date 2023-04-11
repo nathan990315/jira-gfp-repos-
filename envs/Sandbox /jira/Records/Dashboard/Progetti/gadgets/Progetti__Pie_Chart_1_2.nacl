@@ -1,0 +1,24 @@
+jira.DashboardGadget Progetti__Pie_Chart_1_2@uusuu {
+  uri = "rest/gadgets/1.0/g/com.atlassian.jira.gadgets:pie-chart-gadget/gadgets/piechart-gadget.xml"
+  color = "blue"
+  position = {
+    row = 2
+    column = 1
+  }
+  title = "Pie Chart"
+  properties = {
+    config = {
+      isConfigured = "true"
+      statType = "assignees"
+      isPopup = "false"
+      name = "PROGETTI: Da pianificare"
+      refresh = "false"
+      projectOrFilterId = ""
+      id = "10145"
+      type = "filter"
+    }
+  }
+  _parent = [
+    jira.Dashboard.instance.Progetti,
+  ]
+}

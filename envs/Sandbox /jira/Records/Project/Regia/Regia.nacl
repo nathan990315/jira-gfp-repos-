@@ -1,0 +1,15 @@
+jira.Project Regia {
+  key = "REG"
+  description = ""
+  name = "Regia"
+  projectTypeKey = "business"
+  entityId = "05fb1b80-c973-457a-b53a-130b3fef6380"
+  uuid = "05fb1b80-c973-457a-b53a-130b3fef6380"
+  leadAccountId = {
+    id = "61447938ff23ba007191345f"
+    displayName = "Nathan Giovannini"
+  }
+  fieldContexts = [
+    jira.CustomFieldContext.instance.Categoria__jwm_category__c_uubuu_Schema_di_configurazione_del_campo_Categoria_per_il_progetto__Regia_1@uuuuumussssssssfss,
+  ]
+}

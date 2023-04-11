@@ -1,0 +1,21 @@
+jira.DashboardGadget Dashboard_Fatturazione_Nasko_s__Assigned_to_Me_1_1@uumuussuu {
+  uri = "rest/gadgets/1.0/g/com.atlassian.jira.gadgets:assigned-to-me-gadget/gadgets/assigned-to-me-gadget.xml"
+  color = "blue"
+  position = {
+    row = 1
+    column = 1
+  }
+  title = "Assigned to Me"
+  properties = {
+    config = {
+      isConfigured = "true"
+      refresh = "15"
+      sortColumn = ""
+      columnNames = "issuetype|issuekey|summary|priority|status"
+      num = "10"
+    }
+  }
+  _parent = [
+    jira.Dashboard.instance.Dashboard_Fatturazione_Nasko@s,
+  ]
+}

@@ -1,0 +1,11 @@
+jira.CustomFieldContext HubSpot_ticket_count__Hub_ID__27031577___float__c_sssjsfskuuuu_Schema_di_configurazione_predefinito_per_HubSpot_ticket_count__Hub_ID__27031577_@uuuuuuuuuuuumussssssssjsfsk {
+  name = "Schema di configurazione predefinito per HubSpot ticket count (Hub ID: 27031577)"
+  description = "Schema di configurazione predefinito generato da JIRA"
+  isGlobalContext = true
+  defaultValue = {
+    type = "float"
+  }
+  _parent = [
+    jira.Field.instance.HubSpot_ticket_count__Hub_ID__27031577___float__c@sssjsfskuuuu,
+  ]
+}

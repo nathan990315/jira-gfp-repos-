@@ -1,0 +1,33 @@
+jira.CustomFieldContext Urgenza__select__c_Schema_di_configurazione_predefinito_per_Urgenza@uuuuusssss {
+  name = "Schema di configurazione predefinito per Urgenza"
+  description = "Schema di configurazione predefinito generato da JIRA"
+  isGlobalContext = true
+  options = {
+    Critica = {
+      value = "Critica"
+      disabled = false
+      position = 0
+    }
+    Alta = {
+      value = "Alta"
+      disabled = false
+      position = 1
+    }
+    Media = {
+      value = "Media"
+      disabled = false
+      position = 2
+    }
+    Bassa = {
+      value = "Bassa"
+      disabled = false
+      position = 3
+    }
+  }
+  defaultValue = {
+    type = "option.single"
+  }
+  _parent = [
+    jira.Field.instance.Urgenza__select__c,
+  ]
+}

@@ -1,0 +1,27 @@
+jira.WorkflowScheme Schema_del_flusso_di_lavoro_per_l_assistenza_IT_di_Jira_Service_Management_generato_per_il_progetto_DEMO@sssssstssssssssss {
+  name = "Schema del flusso di lavoro per l'assistenza IT di Jira Service Management generato per il progetto DEMO"
+  description = "Questo schema di flusso di lavoro per l'assistenza IT di Jira Service Management è stato generato per il progetto DEMO"
+  defaultWorkflow = jira.Workflow.instance.jira
+  items = [
+    {
+      workflow = jira.Workflow.instance.DEMO__flusso_di_lavoro_predefinito_di_Jira_Service_Management@fssssssss
+      issueType = jira.IssueType.instance.Task
+    },
+    {
+      workflow = jira.Workflow.instance.DEMO__flusso_di_lavoro_predefinito_di_Jira_Service_Management@fssssssss
+      issueType = jira.IssueType.instance.Sottotask
+    },
+    {
+      workflow = jira.Workflow.instance.DEMO__flusso_di_lavoro_di_evasione_delle_richieste_di_assistenza_per_Jira_Service_Management@fsssssssssssss
+      issueType = jira.IssueType.instance.Supporto_IT@s
+    },
+    {
+      workflow = jira.Workflow.instance.DEMO__flusso_di_lavoro_di_evasione_delle_richieste_di_assistenza_per_Jira_Service_Management@fsssssssssssss
+      issueType = jira.IssueType.instance.Richiesta_di_Servizio@s
+    },
+    {
+      workflow = jira.Workflow.instance.DEMO__flusso_di_lavoro_di_evasione_delle_richieste_di_assistenza_con_approvazioni_per_Jira_Service_Management@fsssssssssssssss
+      issueType = jira.IssueType.instance.Richieste_di_assistenza_con_approvazioni@s
+    },
+  ]
+}

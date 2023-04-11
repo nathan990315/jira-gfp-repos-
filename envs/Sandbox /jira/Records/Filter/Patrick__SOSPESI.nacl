@@ -1,0 +1,22 @@
+jira.Filter Patrick__SOSPESI@fs {
+  name = "Patrick: SOSPESI"
+  description = ""
+  owner = {
+    id = "62fc96fc5fc3a72bda94622f"
+    displayName = "Patrick Pasquillo"
+  }
+  jql = "${ jira.Field.instance.Status__status } in (\"${ jira.Status.instance.in_sospeso@s.name }\", \"${ jira.Status.instance.in_sospeso@s.name }\", ${ jira.Status.instance.sospeso.name }) AND ${ jira.Field.instance.Assignee__user } in (62fc96fc5fc3a72bda94622f) order by ${ jira.Field.instance.Created__datetime } DESC"
+  sharePermissions = [
+    {
+      type = "authenticated"
+    },
+  ]
+  editPermissions = [
+    {
+      type = "group"
+      group = {
+        name = jira.Group.instance.jira_software_users@b
+      }
+    },
+  ]
+}

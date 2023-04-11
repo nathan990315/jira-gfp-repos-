@@ -1,0 +1,11 @@
+jira.CustomFieldContext Checklist_Text__textarea__c_suuuu_Schema_di_configurazione_predefinito_per_Checklist_Text@uuuuumussssss {
+  name = "Schema di configurazione predefinito per Checklist Text"
+  description = "Schema di configurazione predefinito generato da JIRA"
+  isGlobalContext = true
+  defaultValue = {
+    type = "textarea"
+  }
+  _parent = [
+    jira.Field.instance.Checklist_Text__textarea__c@suuuu,
+  ]
+}

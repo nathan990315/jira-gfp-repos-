@@ -1,0 +1,18 @@
+jira.DashboardGadget Progetti__Tempo_My_Work_0_1@uussuu {
+  moduleKey = "com.atlassian.plugins.atlassian-connect-plugin:io.tempo.jira__my-work-dashboard-item"
+  color = "blue"
+  position = {
+    row = 1
+    column = 0
+  }
+  title = "Tempo My Work"
+  properties = {
+    config = {
+      showWorklogs = true
+      showPlans = true
+    }
+  }
+  _parent = [
+    jira.Dashboard.instance.Progetti,
+  ]
+}

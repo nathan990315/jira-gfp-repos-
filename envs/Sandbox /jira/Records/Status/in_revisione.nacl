@@ -1,0 +1,5 @@
+jira.Status in_revisione@s {
+  name = "In revisione"
+  statusCategory = jira.StatusCategory.instance.In_Progress@s
+  description = "Creato automaticamente da Jira Service Management durante l'importazione del flusso di lavoro"
+}

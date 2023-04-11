@@ -1,0 +1,6 @@
+jira.IssueType Invia_una_richiesta_o_un_imprevisto@s {
+  description = "Invia una richiesta o segnala un problema."
+  name = "Invia una richiesta o un imprevisto"
+  untranslatedName = "Invia una richiesta o un imprevisto"
+  hierarchyLevel = 0
+}

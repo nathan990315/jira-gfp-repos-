@@ -1,0 +1,8 @@
+jira.ScreenScheme VEN__Schema_della_schermata_per_pipeline_di_vendita@fsssssss {
+  name = "VEN: Schema della schermata per pipeline di vendita"
+  description = ""
+  screens = {
+    default = jira.Screen.instance.VEN__Schermata_Modifica_visualizza_ticket_per_pipeline_di_vendita@fssdsssss
+    create = jira.Screen.instance.VEN__Schermata_Crea_ticket_per_pipeline_di_vendita@fsssssss
+  }
+}

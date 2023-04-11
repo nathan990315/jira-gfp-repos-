@@ -1,0 +1,6 @@
+jira.IssueType Supporto {
+  description = "Per i ticket di assistenza alla clientela. Creato by JIRA Service Desk."
+  name = "Supporto"
+  untranslatedName = "Supporto"
+  hierarchyLevel = 0
+}

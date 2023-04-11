@@ -1,0 +1,10 @@
+jira.IssueTypeScreenScheme AS__Schema_della_schermata_del_tipo_di_ticket_Jira_Service_Management@fssssssssss {
+  name = "AS: Schema della schermata del tipo di ticket Jira Service Management"
+  description = "Questo schema della schermata del tipo di ticket Jira Service Management è stato generato automaticamente"
+  issueTypeMappings = [
+    {
+      issueTypeId = "default"
+      screenSchemeId = jira.ScreenScheme.instance.AS__Schema_della_schermata_Jira_Service_Management@fssssss
+    },
+  ]
+}

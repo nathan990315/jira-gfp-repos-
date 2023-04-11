@@ -1,0 +1,8 @@
+jira.Filter report_lite_@s {
+  name = "report lite "
+  owner = {
+    id = "61447938ff23ba007191345f"
+    displayName = "Nathan Giovannini"
+  }
+  jql = "${ jira.Field.instance.Project__project } = \"${ jira.Project.instance.Hotline.key }\" AND ${ jira.Field.instance.Assignee__user } IN (currentUser()) AND statusCategory in (\"To Do\", \"In Progress\") ORDER BY ${ jira.Field.instance.Created__datetime } DESC"
+}

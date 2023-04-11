@@ -1,0 +1,6 @@
+jira.IssueType Richiedi_una_revisione_delle_policy@s {
+  description = "Ti serve aiuto con una policy? Invia qui una richiesta."
+  name = "Richiedi una revisione delle policy"
+  untranslatedName = "Richiedi una revisione delle policy"
+  hierarchyLevel = 0
+}

@@ -1,0 +1,24 @@
+jira.DashboardGadget Progetti__Pie_Chart_0_0@uusuu {
+  uri = "rest/gadgets/1.0/g/com.atlassian.jira.gadgets:pie-chart-gadget/gadgets/piechart-gadget.xml"
+  color = "blue"
+  position = {
+    row = 0
+    column = 0
+  }
+  title = "Pie Chart"
+  properties = {
+    config = {
+      isConfigured = "true"
+      statType = "statuses"
+      isPopup = "false"
+      name = "PROGETTI: Supervisionati da me"
+      refresh = "false"
+      projectOrFilterId = ""
+      id = "10136"
+      type = "filter"
+    }
+  }
+  _parent = [
+    jira.Dashboard.instance.Progetti,
+  ]
+}

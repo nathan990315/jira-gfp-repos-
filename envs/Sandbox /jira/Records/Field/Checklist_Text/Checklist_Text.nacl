@@ -1,0 +1,9 @@
+jira.Field Checklist_Text__textarea__c@suuuu {
+  name = "Checklist Text"
+  description = "Do not delete. Custom field with Checklist content in text format. Automatically created and managed by Issue Checklist Pro."
+  searcherKey = "com.atlassian.jira.plugin.system.customfieldtypes:textsearcher"
+  type = "com.atlassian.jira.plugin.system.customfieldtypes:textarea"
+  contexts = [
+    jira.CustomFieldContext.instance.Checklist_Text__textarea__c_suuuu_Schema_di_configurazione_predefinito_per_Checklist_Text@uuuuumussssss,
+  ]
+}

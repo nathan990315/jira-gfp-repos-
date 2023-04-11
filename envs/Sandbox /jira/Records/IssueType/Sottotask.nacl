@@ -1,0 +1,6 @@
+jira.IssueType Sottotask {
+  description = "Una parte di lavoro piccola e ben definita che fa parte di un task più ampio."
+  name = "Sottotask"
+  untranslatedName = "Sottotask"
+  hierarchyLevel = -1
+}

@@ -1,0 +1,22 @@
+jira.Filter "3__Creare_Fattura@fss" {
+  name = "3: Creare Fattura"
+  description = ""
+  owner = {
+    id = "62fc96fc5fc3a72bda94622f"
+    displayName = "Patrick Pasquillo"
+  }
+  jql = "${ jira.Field.instance.Assignee__user } in (membersOf(jira-software-users)) AND (${ jira.Field.instance.Project__project } = ${ jira.Project.instance.Regia.key } OR ${ jira.Field.instance.Project__project } = ${ jira.Project.instance.Progetto.key }) AND ${ jira.Field.instance.Status__status } = Fatturazione AND \"ID Fattura [Short text]\" is EMPTY AND (\"Stato fatturazione [Checkboxes]\" = \"Fattura da Inviare \" OR \"Stato fatturazione [Checkboxes]\" is EMPTY OR \"Stato fatturazione [Checkboxes]\" = \"Fattura da vidimare \") ORDER BY ${ jira.Field.instance.Created__datetime } DESC, cf[${ jira.Field.instance.Company__read_only_string_issue_field__c@uubbbbuu }] ASC"
+  sharePermissions = [
+    {
+      type = "authenticated"
+    },
+  ]
+  editPermissions = [
+    {
+      type = "group"
+      group = {
+        name = jira.Group.instance.jira_software_users@b
+      }
+    },
+  ]
+}

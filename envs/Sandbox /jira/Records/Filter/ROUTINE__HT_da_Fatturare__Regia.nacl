@@ -1,0 +1,22 @@
+jira.Filter ROUTINE__HT_da_Fatturare__Regia@fsssby {
+  name = "ROUTINE: HT da Fatturare->Regia"
+  description = ""
+  owner = {
+    id = "62fc96fc5fc3a72bda94622f"
+    displayName = "Patrick Pasquillo"
+  }
+  jql = "${ jira.Field.instance.Project__project } in (${ jira.Project.instance.Hotline.key }, ${ jira.Project.instance.Hotline_Email_@s.key }) AND ${ jira.Field.instance.Labels__array } = \"Fatturare->Regia\" order by ${ jira.Field.instance.Created__datetime } DESC"
+  sharePermissions = [
+    {
+      type = "authenticated"
+    },
+  ]
+  editPermissions = [
+    {
+      type = "group"
+      group = {
+        name = jira.Group.instance.jira_software_users@b
+      }
+    },
+  ]
+}

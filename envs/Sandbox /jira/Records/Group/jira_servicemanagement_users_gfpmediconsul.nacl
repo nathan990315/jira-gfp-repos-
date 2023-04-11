@@ -1,0 +1,3 @@
+jira.Group jira_servicemanagement_users_gfpmediconsul@b {
+  name = "jira-servicemanagement-users-gfpmediconsul"
+}

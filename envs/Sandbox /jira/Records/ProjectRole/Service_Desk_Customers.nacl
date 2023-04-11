@@ -1,0 +1,4 @@
+jira.ProjectRole Service_Desk_Customers@s {
+  name = "Service Desk Customers"
+  description = "Questo ruolo di progetto è stato creato da Jira Service Management per gestire i clienti. Non eliminare questo ruolo e non modificarne il nome."
+}

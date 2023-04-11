@@ -1,0 +1,22 @@
+jira.Filter TEAM__BUGS_da_recuperare@fsss {
+  name = "TEAM: BUGS da recuperare"
+  description = ""
+  owner = {
+    id = "62fc96fc5fc3a72bda94622f"
+    displayName = "Patrick Pasquillo"
+  }
+  jql = "${ jira.Field.instance.Project__project } in (Regia) AND ${ jira.Field.instance.Labels__array } = BUGS AND \"ID Offerta [Short text]\" is EMPTY AND \"ID Offerta[Short text]\" is EMPTY AND (${ jira.Field.instance.Status__status } in (${ jira.Status.instance.completato.name }) OR ${ jira.Field.instance.Status__status } in (Fatturazione)) ORDER BY ${ jira.Field.instance.Key.name } ASC, ${ jira.Field.instance.Created__datetime } ASC"
+  sharePermissions = [
+    {
+      type = "authenticated"
+    },
+  ]
+  editPermissions = [
+    {
+      type = "group"
+      group = {
+        name = jira.Group.instance.jira_software_users@b
+      }
+    },
+  ]
+}

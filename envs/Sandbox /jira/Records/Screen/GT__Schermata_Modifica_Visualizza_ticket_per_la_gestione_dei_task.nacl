@@ -1,0 +1,33 @@
+jira.Screen GT__Schermata_Modifica_Visualizza_ticket_per_la_gestione_dei_task@fssdssssss {
+  name = "GT: Schermata Modifica/Visualizza ticket per la gestione dei task"
+  description = ""
+  tabs = {
+    Scheda_Campo@s = {
+      name = "Scheda Campo"
+      fields = [
+        jira.Field.instance.Issue_Type__issuetype@suu,
+        jira.Field.instance.Summary__string,
+        jira.Field.instance.Description__string,
+        jira.Field.instance.Due_date__date@suu,
+        jira.Field.instance.Attachment__array,
+        jira.Field.instance.Reporter__user,
+        jira.Field.instance.Assignee__user,
+        jira.Field.instance.Labels__array,
+        jira.Field.instance.Priority__priority,
+        jira.Field.instance.Start_date__datepicker__c@suuuu,
+        jira.Field.instance.Stato_abbonamento__textfield__c@suuuu,
+        jira.Field.instance.Company__read_only_string_issue_field__c@uubbbbuu,
+        jira.Field.instance.Cliente__textfield__c,
+        jira.Field.instance.Categoria__jwm_category__c@uubuu,
+      ]
+      position = 0
+    }
+    HubSpot = {
+      name = "HubSpot"
+      fields = [
+        jira.Field.instance.HubSpot_ticket_count__Hub_ID__27031577___float__c@sssjsfskuuuu,
+      ]
+      position = 1
+    }
+  }
+}

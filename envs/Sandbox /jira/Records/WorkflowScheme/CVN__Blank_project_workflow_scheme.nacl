@@ -1,0 +1,15 @@
+jira.WorkflowScheme CVN__Blank_project_workflow_scheme@fssss {
+  name = "CVN: Blank project workflow scheme"
+  description = ""
+  defaultWorkflow = jira.Workflow.instance.CVN__Blank_project_default_workflow@fssss
+  items = [
+    {
+      workflow = jira.Workflow.instance.CVN__Blank_project_default_workflow@fssss
+      issueType = jira.IssueType.instance.Task
+    },
+    {
+      workflow = jira.Workflow.instance.CVN__Blank_project_default_workflow@fssss
+      issueType = jira.IssueType.instance.Sottotask
+    },
+  ]
+}

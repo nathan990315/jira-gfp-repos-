@@ -1,0 +1,18 @@
+jira.Dashboard Dashboard_Fatturazione_Nasko@s {
+  description = "Dashboard funzionale per Nasko"
+  name = "Dashboard Fatturazione Nasko"
+  owner = {
+    id = "61447938ff23ba007191345f"
+    displayName = "Nathan Giovannini"
+  }
+  gadgets = [
+    jira.DashboardGadget.instance.Dashboard_Fatturazione_Nasko_s__Filter_Results_0_0@uumuusuu,
+    jira.DashboardGadget.instance.Dashboard_Fatturazione_Nasko_s__Filter_Results_0_1@uumuusuu,
+    jira.DashboardGadget.instance.Dashboard_Fatturazione_Nasko_s__Filter_Results_0_2@uumuusuu,
+    jira.DashboardGadget.instance.Dashboard_Fatturazione_Nasko_s__Activity_Stream_0_3@uumuusuu,
+    jira.DashboardGadget.instance.Dashboard_Fatturazione_Nasko_s__Starred_filters_1_0@uumuusuu,
+    jira.DashboardGadget.instance.Dashboard_Fatturazione_Nasko_s__Assigned_to_Me_1_1@uumuussuu,
+    jira.DashboardGadget.instance.Dashboard_Fatturazione_Nasko_s__Created_vs__Resolved_Chart_1_2@uumuusvssuu,
+  ]
+  layout = "AB"
+}

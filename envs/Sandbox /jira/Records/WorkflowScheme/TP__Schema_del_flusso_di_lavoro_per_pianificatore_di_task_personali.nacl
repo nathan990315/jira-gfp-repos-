@@ -1,0 +1,15 @@
+jira.WorkflowScheme TP__Schema_del_flusso_di_lavoro_per_pianificatore_di_task_personali@fssssssssss {
+  name = "TP: Schema del flusso di lavoro per pianificatore di task personali"
+  description = ""
+  defaultWorkflow = jira.Workflow.instance.TP__Flusso_di_lavoro_per_pianificatore_di_task_personali@fssssssss
+  items = [
+    {
+      workflow = jira.Workflow.instance.TP__Flusso_di_lavoro_per_pianificatore_di_task_personali@fssssssss
+      issueType = jira.IssueType.instance.Task
+    },
+    {
+      workflow = jira.Workflow.instance.TP__Flusso_di_lavoro_per_pianificatore_di_task_personali@fssssssss
+      issueType = jira.IssueType.instance.Sottotask
+    },
+  ]
+}

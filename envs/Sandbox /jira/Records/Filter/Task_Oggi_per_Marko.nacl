@@ -1,0 +1,9 @@
+jira.Filter Task_Oggi_per_Marko@s {
+  name = "Task Oggi per Marko"
+  description = ""
+  owner = {
+    id = "61447938ff23ba007191345f"
+    displayName = "Nathan Giovannini"
+  }
+  jql = "\"Data di esecuzione[Time stamp]\" >= startOfDay() AND \"Data di esecuzione[Time stamp]\" <= endOfDay() AND ${ jira.Field.instance.Project__project } = 10000 AND ${ jira.Field.instance.Status__status } in (\"${ jira.Status.instance.da_iniziare@s.name }\", Fatturazione, \"${ jira.Status.instance.in_corso@s.name }\") AND ${ jira.Field.instance.Assignee__user } in (60ebf586413fc70069d10abf) ORDER BY cf[10034] ASC"
+}

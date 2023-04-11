@@ -1,0 +1,23 @@
+jira.DashboardGadget Dashboard_Fatturazione_Nasko_s__Filter_Results_0_1@uumuusuu {
+  uri = "rest/gadgets/1.0/g/com.atlassian.jira.gadgets:filter-results-gadget/gadgets/filter-results-gadget.xml"
+  color = "green"
+  position = {
+    row = 1
+    column = 0
+  }
+  title = "Filter Results"
+  properties = {
+    config = {
+      filterId = "10013"
+      isConfigured = "true"
+      columnNames = "issuetype|issuekey|summary|priority|Stato Fatturazione[Dropdown]|ID Offerta SelectLine[Short text]|ID Fattura SelectLine[Short text]"
+      isPopup = "false"
+      num = "15"
+      refresh = "15"
+      projectOrFilterId = "filter-10004"
+    }
+  }
+  _parent = [
+    jira.Dashboard.instance.Dashboard_Fatturazione_Nasko@s,
+  ]
+}

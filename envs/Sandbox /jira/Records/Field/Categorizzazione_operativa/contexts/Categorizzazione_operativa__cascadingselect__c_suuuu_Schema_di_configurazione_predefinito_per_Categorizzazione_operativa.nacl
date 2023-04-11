@@ -1,0 +1,301 @@
+jira.CustomFieldContext Categorizzazione_operativa__cascadingselect__c_suuuu_Schema_di_configurazione_predefinito_per_Categorizzazione_operativa@uuuuumussssss {
+  name = "Schema di configurazione predefinito per Categorizzazione operativa"
+  description = "Schema di configurazione predefinito generato da JIRA"
+  isGlobalContext = true
+  options = {
+    Richiesta_account@s = {
+      value = "Richiesta account"
+      disabled = false
+      cascadingOptions = {
+        Firewall = {
+          value = "Firewall"
+          disabled = false
+          position = 0
+        }
+        Active_Directory@s = {
+          value = "Active Directory"
+          disabled = false
+          position = 1
+        }
+        Stampante = {
+          value = "Stampante"
+          disabled = false
+          position = 2
+        }
+        Sistema_operativo@s = {
+          value = "Sistema operativo"
+          disabled = false
+          position = 3
+        }
+        Scansione_dei_virus@s = {
+          value = "Scansione dei virus"
+          disabled = false
+          position = 4
+        }
+        VPN = {
+          value = "VPN"
+          disabled = false
+          position = 5
+        }
+      }
+      position = 0
+    }
+    Rompi___Aggiusta@sds = {
+      value = "Rompi / Aggiusta"
+      disabled = false
+      cascadingOptions = {
+        Monitorizza = {
+          value = "Monitorizza"
+          disabled = false
+          position = 0
+        }
+        Tastiera = {
+          value = "Tastiera"
+          disabled = false
+          position = 1
+        }
+        PC = {
+          value = "PC"
+          disabled = false
+          position = 2
+        }
+        Laptop = {
+          value = "Laptop"
+          disabled = false
+          position = 3
+        }
+        Disco_rigido@s = {
+          value = "Disco rigido"
+          disabled = false
+          position = 4
+        }
+        Alloggiamento_di_espansione@s = {
+          value = "Alloggiamento di espansione"
+          disabled = false
+          position = 5
+        }
+      }
+      position = 1
+    }
+    Configurazione = {
+      value = "Configurazione"
+      disabled = false
+      cascadingOptions = {
+        Firewall = {
+          value = "Firewall"
+          disabled = false
+          position = 0
+        }
+        Active_Directory@s = {
+          value = "Active Directory"
+          disabled = false
+          position = 1
+        }
+        Stampante = {
+          value = "Stampante"
+          disabled = false
+          position = 2
+        }
+        Sistema_operativo@s = {
+          value = "Sistema operativo"
+          disabled = false
+          position = 3
+        }
+        Scansione_dei_virus@s = {
+          value = "Scansione dei virus"
+          disabled = false
+          position = 4
+        }
+        VPN = {
+          value = "VPN"
+          disabled = false
+          position = 5
+        }
+        Account_utente@s = {
+          value = "Account utente"
+          disabled = false
+          position = 6
+        }
+      }
+      position = 2
+    }
+    Connettivit_@_00224 = {
+      value = "Connettività"
+      disabled = false
+      position = 3
+    }
+    Richiesta_hardware@s = {
+      value = "Richiesta hardware"
+      disabled = false
+      cascadingOptions = {
+        Aggiungi = {
+          value = "Aggiungi"
+          disabled = false
+          position = 0
+        }
+        Configura = {
+          value = "Configura"
+          disabled = false
+          position = 1
+        }
+        Sposta = {
+          value = "Sposta"
+          disabled = false
+          position = 2
+        }
+        Nuovo = {
+          value = "Nuovo"
+          disabled = false
+          position = 3
+        }
+        Ripristina = {
+          value = "Ripristina"
+          disabled = false
+          position = 4
+        }
+      }
+      position = 4
+    }
+    Richiesta_istanza@s = {
+      value = "Richiesta istanza"
+      disabled = false
+      cascadingOptions = {
+        Copia = {
+          value = "Copia"
+          disabled = false
+          position = 0
+        }
+        Crea = {
+          value = "Crea"
+          disabled = false
+          position = 1
+        }
+        Sposta = {
+          value = "Sposta"
+          disabled = false
+          position = 2
+        }
+        Rimuovi = {
+          value = "Rimuovi"
+          disabled = false
+          position = 3
+        }
+        Ripristina = {
+          value = "Ripristina"
+          disabled = false
+          position = 4
+        }
+      }
+      position = 5
+    }
+    Richiesta_di_rete@s = {
+      value = "Richiesta di rete"
+      disabled = false
+      cascadingOptions = {
+        Crea = {
+          value = "Crea"
+          disabled = false
+          position = 0
+        }
+        Modifica = {
+          value = "Modifica"
+          disabled = false
+          position = 1
+        }
+        Termina = {
+          value = "Termina"
+          disabled = false
+          position = 2
+        }
+      }
+      position = 6
+    }
+    Elabora_richiesta@s = {
+      value = "Elabora richiesta"
+      disabled = false
+      cascadingOptions = {
+        Controlla = {
+          value = "Controlla"
+          disabled = false
+          position = 0
+        }
+        Aggiorna = {
+          value = "Aggiorna"
+          disabled = false
+          position = 1
+        }
+      }
+      position = 7
+    }
+    Cambio_di_server@s = {
+      value = "Cambio di server"
+      disabled = false
+      cascadingOptions = {
+        Rimuovi_autorizzazioni@s = {
+          value = "Rimuovi autorizzazioni"
+          disabled = false
+          position = 0
+        }
+        Estendi = {
+          value = "Estendi"
+          disabled = false
+          position = 1
+        }
+        Rete = {
+          value = "Rete"
+          disabled = false
+          position = 2
+        }
+        Post_implementazione@b = {
+          value = "Post-implementazione"
+          disabled = false
+          position = 3
+        }
+        Provisioning = {
+          value = "Provisioning"
+          disabled = false
+          position = 4
+        }
+        Archivio = {
+          value = "Archivio"
+          disabled = false
+          position = 5
+        }
+        Aggiorna_configurazione@s = {
+          value = "Aggiorna configurazione"
+          disabled = false
+          position = 6
+        }
+      }
+      position = 8
+    }
+    Richiesta_macchina_virtuale@s = {
+      value = "Richiesta macchina virtuale"
+      disabled = false
+      cascadingOptions = {
+        Estendi = {
+          value = "Estendi"
+          disabled = false
+          position = 0
+        }
+        Provisioning = {
+          value = "Provisioning"
+          disabled = false
+          position = 1
+        }
+        Rimuovi = {
+          value = "Rimuovi"
+          disabled = false
+          position = 2
+        }
+      }
+      position = 9
+    }
+  }
+  defaultValue = {
+    type = "option.cascading"
+  }
+  _parent = [
+    jira.Field.instance.Categorizzazione_operativa__cascadingselect__c@suuuu,
+  ]
+}

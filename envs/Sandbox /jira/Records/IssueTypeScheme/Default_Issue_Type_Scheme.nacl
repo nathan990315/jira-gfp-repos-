@@ -1,0 +1,27 @@
+jira.IssueTypeScheme Default_Issue_Type_Scheme@s {
+  name = "Default Issue Type Scheme"
+  description = "Default issue type scheme is the list of global issue types. All newly created issue types will automatically be added to this scheme."
+  isDefault = true
+  issueTypeIds = [
+    jira.IssueType.instance.Task,
+    jira.IssueType.instance.Sottotask,
+    jira.IssueType.instance.Bug,
+    jira.IssueType.instance.Supporto,
+    jira.IssueType.instance.Epic,
+    jira.IssueType.instance.Story,
+    jira.IssueType.instance.Nuova_funzione@s,
+    jira.IssueType.instance.Supporto_IT@s,
+    jira.IssueType.instance.Richiesta_di_Servizio@s,
+    jira.IssueType.instance.Richieste_di_assistenza_con_approvazioni@s,
+    jira.IssueType.instance.Invia_una_richiesta_o_un_imprevisto@s,
+    jira.IssueType.instance.Poni_una_domanda@s,
+    jira.IssueType.instance.Richiesta_inviata_tramite_e_mail@sssb,
+    jira.IssueType.instance.Domande_per_i_team_finanziari@s,
+    jira.IssueType.instance.Richiedi_una_revisione_delle_policy@s,
+    jira.IssueType.instance.Richiedi_uno_stanziamento_del_budget@s,
+    jira.IssueType.instance.Richiesta_di_assistenza_di__sistema_@sssshi,
+    jira.IssueType.instance.Telefonata_@s,
+    jira.IssueType.instance.Hotline,
+    jira.IssueType.instance.Hotline_Multi_cliente@s,
+  ]
+}

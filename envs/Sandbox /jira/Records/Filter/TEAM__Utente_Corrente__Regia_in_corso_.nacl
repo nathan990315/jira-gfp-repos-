@@ -1,0 +1,17 @@
+jira.Filter TEAM__Utente_Corrente__Regia_in_corso_@fsssjssk {
+  name = "TEAM: Utente Corrente (Regia in corso)"
+  description = ""
+  owner = {
+    id = "634feb2a01c2ff842c164ac0"
+    displayName = "Gioele Roffi"
+  }
+  jql = "${ jira.Field.instance.Assignee__user } in (currentUser()) AND ${ jira.Field.instance.Project__project } = ${ jira.Project.instance.Regia.key } AND ${ jira.Field.instance.Status__status } in (\"${ jira.Status.instance.da_iniziare@s.name }\", \"${ jira.Status.instance.in_corso@s.name }\", \"${ jira.Status.instance.in_sospeso@s.name }\") ORDER BY ${ jira.Field.instance.Issue_Type__issuetype@suu } DESC, ${ jira.Field.instance.Created__datetime } DESC"
+  sharePermissions = [
+    {
+      type = "group"
+      group = {
+        name = jira.Group.instance.jira_software_users@b
+      }
+    },
+  ]
+}

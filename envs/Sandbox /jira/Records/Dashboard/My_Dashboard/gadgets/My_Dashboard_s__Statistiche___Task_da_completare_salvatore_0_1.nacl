@@ -1,0 +1,26 @@
+jira.DashboardGadget My_Dashboard_s__Statistiche___Task_da_completare_salvatore_0_1@umuusfssssuu {
+  uri = "rest/gadgets/1.0/g/com.atlassian.jira.gadgets:two-dimensional-stats-gadget/gadgets/two-dimensional-stats-gadget.xml"
+  color = "blue"
+  position = {
+    row = 1
+    column = 0
+  }
+  title = "Statistiche : Task da completare salvatore"
+  properties = {
+    config = {
+      filterId = "filter-10019"
+      isConfigured = "true"
+      sortDirection = "asc"
+      isPopup = "false"
+      ystattype = "project"
+      more = "true"
+      refresh = "15"
+      sortBy = "total"
+      numberToShow = "5"
+      xstattype = "assignees"
+    }
+  }
+  _parent = [
+    jira.Dashboard.instance.My_Dashboard@s,
+  ]
+}

@@ -1,0 +1,5 @@
+jira.Status annullato {
+  name = "Annullato"
+  statusCategory = jira.StatusCategory.instance.Done
+  description = "Creato automaticamente da Jira Service Management durante l'importazione del flusso di lavoro"
+}

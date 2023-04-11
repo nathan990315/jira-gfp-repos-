@@ -1,0 +1,33 @@
+jira.CustomFieldContext Ragione_in_sospeso__select__c_ssuuuu_Schema_di_configurazione_predefinito_per_Ragione_in_sospeso@uuuuuumusssssss {
+  name = "Schema di configurazione predefinito per Ragione in sospeso"
+  description = "Schema di configurazione predefinito generato da JIRA"
+  isGlobalContext = true
+  options = {
+    Maggiori_informazioni_richieste@s = {
+      value = "Maggiori informazioni richieste"
+      disabled = false
+      position = 0
+    }
+    In_attesa_di_approvazione@s = {
+      value = "In attesa di approvazione"
+      disabled = false
+      position = 1
+    }
+    In_attesa_del_fornitore@s = {
+      value = "In attesa del fornitore"
+      disabled = false
+      position = 2
+    }
+    Richiesta_in_sospeso_dopo_modifica@s = {
+      value = "Richiesta in sospeso dopo modifica"
+      disabled = false
+      position = 3
+    }
+  }
+  defaultValue = {
+    type = "option.single"
+  }
+  _parent = [
+    jira.Field.instance.Ragione_in_sospeso__select__c@ssuuuu,
+  ]
+}

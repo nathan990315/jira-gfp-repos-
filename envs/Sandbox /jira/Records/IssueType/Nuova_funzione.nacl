@@ -1,0 +1,6 @@
+jira.IssueType Nuova_funzione@s {
+  description = "Una nuova funzione del prodotto, ancora in fase di sviluppo."
+  name = "Nuova funzione"
+  untranslatedName = "Nuova funzione"
+  hierarchyLevel = 0
+}

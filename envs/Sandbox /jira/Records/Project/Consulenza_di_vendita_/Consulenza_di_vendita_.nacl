@@ -1,0 +1,13 @@
+jira.Project Consulenza_di_vendita_@s {
+  key = "CDV"
+  description = ""
+  name = "Consulenza di vendita "
+  projectTypeKey = "software"
+  entityId = "918b9f22-6c59-40ac-9232-f25aabdf809c"
+  uuid = "918b9f22-6c59-40ac-9232-f25aabdf809c"
+  issueSecurityScheme = jira.SecurityScheme.instance.CDV__Simplified_Issue_Security_Scheme@fssss
+  leadAccountId = {
+    id = "61447938ff23ba007191345f"
+    displayName = "Nathan Giovannini"
+  }
+}

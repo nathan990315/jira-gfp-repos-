@@ -1,0 +1,10 @@
+jira.IssueTypeScreenScheme VEN__Schema_della_schermata_per_pipeline_di_vendita@fsssssss {
+  name = "VEN: Schema della schermata per pipeline di vendita"
+  description = ""
+  issueTypeMappings = [
+    {
+      issueTypeId = "default"
+      screenSchemeId = jira.ScreenScheme.instance.VEN__Schema_della_schermata_per_pipeline_di_vendita@fsssssss
+    },
+  ]
+}

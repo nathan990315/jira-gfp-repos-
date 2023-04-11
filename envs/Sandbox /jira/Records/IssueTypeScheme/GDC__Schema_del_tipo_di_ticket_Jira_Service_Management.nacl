@@ -1,0 +1,9 @@
+jira.IssueTypeScheme GDC__Schema_del_tipo_di_ticket_Jira_Service_Management@fssssssss {
+  name = "GDC: Schema del tipo di ticket Jira Service Management"
+  description = "Questo schema del tipo di ticket Jira Service Management è stato generato automaticamente"
+  issueTypeIds = [
+    jira.IssueType.instance.Nuova_funzione@s,
+    jira.IssueType.instance.Supporto,
+    jira.IssueType.instance.Bug,
+  ]
+}

@@ -1,0 +1,11 @@
+jira.CustomFieldContext Epic_Color__gh_epic_color__c_suubbuu_Schema_di_configurazione_predefinito_per_Epic_Color@uuuuuuumussssss {
+  name = "Schema di configurazione predefinito per Epic Color"
+  description = "Schema di configurazione predefinito generato da JIRA"
+  isGlobalContext = true
+  issueTypeIds = [
+    jira.IssueType.instance.Epic,
+  ]
+  _parent = [
+    jira.Field.instance.Epic_Color__gh_epic_color__c@suubbuu,
+  ]
+}

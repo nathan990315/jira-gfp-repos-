@@ -1,0 +1,8 @@
+jira.ScreenScheme TP__Schema_della_schermata_per_pianificatore_di_task_personali@fssssssss {
+  name = "TP: Schema della schermata per pianificatore di task personali"
+  description = ""
+  screens = {
+    default = jira.Screen.instance.TP__Schermata_Modifica_Visualizza_ticket_per_pianificatore_di_task_personali@fssdssssss
+    create = jira.Screen.instance.TP__Schermata_Crea_ticket_per_pianificatore_di_task_personali@fssssssss
+  }
+}

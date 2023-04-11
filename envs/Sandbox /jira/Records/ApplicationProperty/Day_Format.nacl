@@ -1,0 +1,8 @@
+jira.ApplicationProperty Day_Format@s {
+  id = "jira.lf.date.day"
+  value = "dd.MM.yyyy"
+  name = "Day Format"
+  type = "string"
+  defaultValue = "EEEE h:mm a"
+  example = "23.05.2007"
+}

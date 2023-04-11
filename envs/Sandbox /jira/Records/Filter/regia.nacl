@@ -1,0 +1,14 @@
+jira.Filter regia {
+  name = "regia"
+  description = ""
+  owner = {
+    id = "61447938ff23ba007191345f"
+    displayName = "Nathan Giovannini"
+  }
+  jql = "${ jira.Field.instance.Project__project } in (${ jira.Project.instance.Regia.key }, ${ jira.Project.instance.Progetto.key }) AND ${ jira.Field.instance.Status__status } = Fatturazione and \"Stato fatturazione [Checkboxes]\"=\"Fattura inviata \""
+  sharePermissions = [
+    {
+      type = "authenticated"
+    },
+  ]
+}

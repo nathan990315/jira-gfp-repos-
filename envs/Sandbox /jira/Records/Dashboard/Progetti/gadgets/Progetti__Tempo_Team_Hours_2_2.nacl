@@ -1,0 +1,17 @@
+jira.DashboardGadget Progetti__Tempo_Team_Hours_2_2@uussuu {
+  moduleKey = "com.atlassian.plugins.atlassian-connect-plugin:is.origo.jira.tempo-plugin__team-hours-dashboard-item"
+  color = "blue"
+  position = {
+    row = 2
+    column = 2
+  }
+  title = "Tempo Team Hours"
+  properties = {
+    config = {
+      teamId = "2"
+    }
+  }
+  _parent = [
+    jira.Dashboard.instance.Progetti,
+  ]
+}

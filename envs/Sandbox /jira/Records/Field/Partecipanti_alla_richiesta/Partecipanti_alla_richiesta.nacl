@@ -1,0 +1,10 @@
+jira.Field Partecipanti_alla_richiesta__sd_request_participants__c@ssuubbuu {
+  name = "Partecipanti alla richiesta"
+  description = "Memorizza gli utenti che partecipano alle richieste del portale clienti del progetto di assistenza. Questo campo personalizzato viene creato in modo programmatico ed è richiesto dal progetto di assistenza."
+  isLocked = true
+  searcherKey = "com.atlassian.servicedesk:sd-request-participants-searcher"
+  type = "com.atlassian.servicedesk:sd-request-participants"
+  contexts = [
+    jira.CustomFieldContext.instance.Partecipanti_alla_richiesta__sd_request_participants__c_ssuubbuu_Schema_di_configurazione_predefinito_per_Partecipanti_alla_richiesta@uuuuuuuumusssssss,
+  ]
+}

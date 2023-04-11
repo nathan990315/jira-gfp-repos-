@@ -1,0 +1,27 @@
+jira.DashboardGadget Statistiche__Assegnazione_dei_Task_aperti_1_0@uusssuu {
+  uri = "rest/gadgets/1.0/g/com.atlassian.jira.gadgets:stats-gadget/gadgets/stats-gadget.xml"
+  color = "blue"
+  position = {
+    row = 0
+    column = 1
+  }
+  title = "Assegnazione dei Task aperti"
+  properties = {
+    config = {
+      isConfigured = "true"
+      sortDirection = "desc"
+      statType = "assignees"
+      maxResults = "50"
+      name = "Software Medicali"
+      refresh = "15"
+      sortBy = "total"
+      projectOrFilterId = "project-10000"
+      includeResolvedIssues = "false"
+      id = "10000"
+      type = "project"
+    }
+  }
+  _parent = [
+    jira.Dashboard.instance.Statistiche,
+  ]
+}

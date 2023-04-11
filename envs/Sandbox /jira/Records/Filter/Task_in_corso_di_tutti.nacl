@@ -1,0 +1,8 @@
+jira.Filter Task_in_corso_di_tutti@s {
+  name = "Task in corso di tutti"
+  owner = {
+    id = "61447938ff23ba007191345f"
+    displayName = "Nathan Giovannini"
+  }
+  jql = "${ jira.Field.instance.Project__project } = 10000 AND ${ jira.Field.instance.Status__status } = \"${ jira.Status.instance.in_corso@s.name }\" ORDER BY ${ jira.Field.instance.Created__datetime } DESC"
+}

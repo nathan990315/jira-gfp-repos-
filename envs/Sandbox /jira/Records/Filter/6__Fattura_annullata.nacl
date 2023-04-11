@@ -1,0 +1,92 @@
+jira.Filter "6__Fattura_annullata@fss" {
+  name = "6: Fattura annullata"
+  description = ""
+  owner = {
+    id = "62fc96fc5fc3a72bda94622f"
+    displayName = "Patrick Pasquillo"
+  }
+  jql = "${ jira.Field.instance.Project__project } in (Regia, Progetto) AND \"Stato fatturazione [Checkboxes]\" = \"Fattura annullata\" ORDER BY ${ jira.Field.instance.Key.name } DESC"
+  sharePermissions = [
+    {
+      type = "authenticated"
+    },
+  ]
+  editPermissions = [
+    {
+      type = "group"
+      group = {
+        name = jira.Group.instance.jira_software_users@b
+      }
+    },
+  ]
+  columns = [
+    {
+      label = "Issue Type"
+      value = "issuetype"
+    },
+    {
+      label = "Key"
+      value = "issuekey"
+    },
+    {
+      label = "Σ Time Spent"
+      value = "aggregatetimespent"
+    },
+    {
+      label = "Status"
+      value = "status"
+    },
+    {
+      label = "Priority"
+      value = "priority"
+    },
+    {
+      label = "Company"
+      value = "customfield_10045"
+    },
+    {
+      label = "Summary"
+      value = "summary"
+    },
+    {
+      label = "Assignee"
+      value = "assignee"
+    },
+    {
+      label = "Reporter"
+      value = "reporter"
+    },
+    {
+      label = "Created"
+      value = "created"
+    },
+    {
+      label = "Updated"
+      value = "updated"
+    },
+    {
+      label = "ID Fattura "
+      value = "customfield_10133"
+    },
+    {
+      label = "ID Offerta "
+      value = "customfield_10114"
+    },
+    {
+      label = "ID Offerta"
+      value = "customfield_10132"
+    },
+    {
+      label = "Stato fatturazione "
+      value = "customfield_10137"
+    },
+    {
+      label = "Licenze "
+      value = "customfield_10124"
+    },
+    {
+      label = "Ore lavoro"
+      value = "customfield_10125"
+    },
+  ]
+}

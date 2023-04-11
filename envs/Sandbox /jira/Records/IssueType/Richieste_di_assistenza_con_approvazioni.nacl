@@ -1,0 +1,6 @@
+jira.IssueType Richieste_di_assistenza_con_approvazioni@s {
+  description = "Una richiesta che può richiedere l’approvazione."
+  name = "Richieste di assistenza con approvazioni"
+  untranslatedName = "Richieste di assistenza con approvazioni"
+  hierarchyLevel = 0
+}

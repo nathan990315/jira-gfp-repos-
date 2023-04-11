@@ -1,0 +1,25 @@
+jira.DashboardGadget Statistiche__Recently_Created_Chart_1_1@uussuu {
+  uri = "rest/gadgets/1.0/g/com.atlassian.jira.gadgets:recently-created-chart-gadget/gadgets/recently-created-gadget.xml"
+  color = "cyan"
+  position = {
+    row = 1
+    column = 1
+  }
+  title = "Recently Created Chart"
+  properties = {
+    config = {
+      isConfigured = "true"
+      isPopup = "false"
+      name = "Software Medicali"
+      refresh = "15"
+      periodName = "weekly"
+      projectOrFilterId = "project-10000"
+      daysprevious = "120"
+      id = "10000"
+      type = "project"
+    }
+  }
+  _parent = [
+    jira.Dashboard.instance.Statistiche,
+  ]
+}

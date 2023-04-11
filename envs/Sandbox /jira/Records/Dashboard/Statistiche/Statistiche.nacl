@@ -1,0 +1,20 @@
+jira.Dashboard Statistiche {
+  description = "Dashboard collettiva nella quale vi sono statistiche per avere una panoramica sul lavoro"
+  name = "Statistiche"
+  owner = {
+    id = "61447938ff23ba007191345f"
+    displayName = "Nathan Giovannini"
+  }
+  gadgets = [
+    jira.DashboardGadget.instance.Statistiche__Average_Age_Chart_0_0@uussuu,
+    jira.DashboardGadget.instance.Statistiche__Issue_Statistics_0_1@uusuu,
+    jira.DashboardGadget.instance.Statistiche__Filter_Results_0_2@uusuu,
+    jira.DashboardGadget.instance.Statistiche__Assegnazione_dei_Task_aperti_1_0@uusssuu,
+    jira.DashboardGadget.instance.Statistiche__Recently_Created_Chart_1_1@uussuu,
+    jira.DashboardGadget.instance.Statistiche__Filter_Results_1_2@uusuu,
+    jira.DashboardGadget.instance.Statistiche__Task_aperti_per_assegnatario__2_0@uussssuu,
+    jira.DashboardGadget.instance.Statistiche__Grafico_Task_Creati_Vs_Risolti_2_1@uussssuu,
+    jira.DashboardGadget.instance.Statistiche__Filter_Results_2_2@uusuu,
+  ]
+  layout = "AAA"
+}

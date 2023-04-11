@@ -1,0 +1,6 @@
+jira.IssueType Richiedi_uno_stanziamento_del_budget@s {
+  description = "Invia la tua richiesta relativa a budget e spese."
+  name = "Richiedi uno stanziamento del budget"
+  untranslatedName = "Richiedi uno stanziamento del budget"
+  hierarchyLevel = 0
+}

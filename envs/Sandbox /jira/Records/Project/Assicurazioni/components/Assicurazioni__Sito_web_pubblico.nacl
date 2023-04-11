@@ -1,0 +1,12 @@
+jira.ProjectComponent Assicurazioni__Sito_web_pubblico@uuss {
+  description = "Ticket correlati al sito web pubblico. Creato da Jira Service Management."
+  assigneeType = "PROJECT_DEFAULT"
+  name = "Sito web pubblico"
+  leadAccountId = {
+    id = "61447938ff23ba007191345f"
+    displayName = "Nathan Giovannini"
+  }
+  _parent = [
+    jira.Project.instance.Assicurazioni,
+  ]
+}

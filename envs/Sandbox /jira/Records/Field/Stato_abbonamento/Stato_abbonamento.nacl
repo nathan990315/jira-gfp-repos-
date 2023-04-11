@@ -1,0 +1,9 @@
+jira.Field Stato_abbonamento__textfield__c@suuuu {
+  name = "Stato abbonamento"
+  description = ""
+  searcherKey = "com.atlassian.jira.plugin.system.customfieldtypes:textsearcher"
+  type = "com.atlassian.jira.plugin.system.customfieldtypes:textfield"
+  contexts = [
+    jira.CustomFieldContext.instance.Stato_abbonamento__textfield__c_suuuu_Schema_di_configurazione_predefinito_per_Stato_abbonamento@uuuuumussssss,
+  ]
+}

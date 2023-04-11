@@ -1,0 +1,15 @@
+jira.Project Progetto {
+  key = "PRO"
+  description = ""
+  name = "Progetto"
+  projectTypeKey = "business"
+  entityId = "1640ea23-972b-45b2-b867-379ed858c8c4"
+  uuid = "1640ea23-972b-45b2-b867-379ed858c8c4"
+  leadAccountId = {
+    id = "61447938ff23ba007191345f"
+    displayName = "Nathan Giovannini"
+  }
+  fieldContexts = [
+    jira.CustomFieldContext.instance.Categoria__jwm_category__c_uubuu_Schema_di_configurazione_del_campo_Categoria_per_il_progetto__Progetto_1@uuuuumussssssssfss,
+  ]
+}

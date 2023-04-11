@@ -1,0 +1,96 @@
+jira.Filter TEAM__inserire_Licenze_e_Ore_lavoro@fsssss {
+  name = "TEAM: inserire Licenze e Ore lavoro"
+  description = ""
+  owner = {
+    id = "62fc96fc5fc3a72bda94622f"
+    displayName = "Patrick Pasquillo"
+  }
+  jql = "${ jira.Field.instance.Project__project } = ${ jira.Project.instance.Consulenza_di_vendita_@s.key } AND ${ jira.Field.instance.Issue_Type__issuetype@suu } in (\"Consulenza di vendita\", ${ jira.IssueType.instance.Task.name }, ${ jira.IssueType.instance.Sottotask.name }) AND (\"ID Offerta [Short text]\" is not EMPTY) AND (\"Licenze [Short text]\" is EMPTY OR \"Ore lavoro[Short text]\" is EMPTY) order by ${ jira.Field.instance.Created__datetime } DESC"
+  sharePermissions = [
+    {
+      type = "authenticated"
+    },
+  ]
+  editPermissions = [
+    {
+      type = "group"
+      group = {
+        name = jira.Group.instance.jira_software_users@b
+      }
+    },
+  ]
+  columns = [
+    {
+      label = "Issue Type"
+      value = "issuetype"
+    },
+    {
+      label = "Key"
+      value = "issuekey"
+    },
+    {
+      label = "Σ Time Spent"
+      value = "aggregatetimespent"
+    },
+    {
+      label = "Status"
+      value = "status"
+    },
+    {
+      label = "Priority"
+      value = "priority"
+    },
+    {
+      label = "Company"
+      value = "customfield_10045"
+    },
+    {
+      label = "Summary"
+      value = "summary"
+    },
+    {
+      label = "Assignee"
+      value = "assignee"
+    },
+    {
+      label = "Reporter"
+      value = "reporter"
+    },
+    {
+      label = "Created"
+      value = "created"
+    },
+    {
+      label = "Updated"
+      value = "updated"
+    },
+    {
+      label = "ID Fattura "
+      value = "customfield_10133"
+    },
+    {
+      label = "ID Offerta "
+      value = "customfield_10114"
+    },
+    {
+      label = "ID Offerta"
+      value = "customfield_10132"
+    },
+    {
+      label = "Stato fatturazione "
+      value = "customfield_10137"
+    },
+    {
+      label = "Licenze "
+      value = "customfield_10124"
+    },
+    {
+      label = "Ore lavoro"
+      value = "customfield_10125"
+    },
+    {
+      label = "ID offerta Firmata "
+      value = "customfield_10115"
+    },
+  ]
+}

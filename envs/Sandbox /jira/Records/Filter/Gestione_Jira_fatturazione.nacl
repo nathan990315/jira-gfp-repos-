@@ -1,0 +1,9 @@
+jira.Filter Gestione_Jira_fatturazione@s {
+  name = "Gestione Jira fatturazione"
+  description = ""
+  owner = {
+    id = "61447938ff23ba007191345f"
+    displayName = "Nathan Giovannini"
+  }
+  jql = "${ jira.Field.instance.Project__project } = SM AND ${ jira.Field.instance.Issue_Type__issuetype@suu } in standardIssueTypes() AND ${ jira.Field.instance.Status__status } = Fatturazione ORDER BY ${ jira.Field.instance.Created__datetime } DESC"
+}

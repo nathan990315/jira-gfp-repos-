@@ -1,0 +1,29 @@
+jira.DashboardGadget Statistiche__Grafico_Task_Creati_Vs_Risolti_2_1@uussssuu {
+  uri = "rest/gadgets/1.0/g/com.atlassian.jira.gadgets:created-vs-resolved-issues-chart-gadget/gadgets/createdvsresolved-gadget.xml"
+  color = "cyan"
+  position = {
+    row = 1
+    column = 2
+  }
+  title = "Grafico Task Creati Vs Risolti"
+  properties = {
+    config = {
+      isConfigured = "true"
+      isPopup = "false"
+      refresh = "15"
+      periodName = "weekly"
+      showUnresolvedTrend = "true"
+      projectOrFilterId = ""
+      type = "project"
+      versionLabel = "major"
+      isCumulative = "false"
+      name = "Software Medicali"
+      daysprevious = "90"
+      id = "10000"
+      operation = "cumulative"
+    }
+  }
+  _parent = [
+    jira.Dashboard.instance.Statistiche,
+  ]
+}

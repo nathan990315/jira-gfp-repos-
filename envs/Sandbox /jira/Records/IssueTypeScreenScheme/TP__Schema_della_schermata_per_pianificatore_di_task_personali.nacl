@@ -1,0 +1,10 @@
+jira.IssueTypeScreenScheme TP__Schema_della_schermata_per_pianificatore_di_task_personali@fssssssss {
+  name = "TP: Schema della schermata per pianificatore di task personali"
+  description = ""
+  issueTypeMappings = [
+    {
+      issueTypeId = "default"
+      screenSchemeId = jira.ScreenScheme.instance.TP__Schema_della_schermata_per_pianificatore_di_task_personali@fssssssss
+    },
+  ]
+}

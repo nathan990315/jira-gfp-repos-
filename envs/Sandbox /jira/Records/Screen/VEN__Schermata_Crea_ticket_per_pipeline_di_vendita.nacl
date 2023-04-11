@@ -1,0 +1,32 @@
+jira.Screen VEN__Schermata_Crea_ticket_per_pipeline_di_vendita@fsssssss {
+  name = "VEN: Schermata Crea ticket per pipeline di vendita"
+  description = ""
+  tabs = {
+    Scheda_Campo@s = {
+      name = "Scheda Campo"
+      fields = [
+        jira.Field.instance.Summary__string,
+        jira.Field.instance.Issue_Type__issuetype@suu,
+        jira.Field.instance.Due_date__date@suu,
+        jira.Field.instance.Description__string,
+        jira.Field.instance.Reporter__user,
+        jira.Field.instance.Assignee__user,
+        jira.Field.instance.Priority__priority,
+        jira.Field.instance.Dimensione_azienda__select__c@suuuu,
+        jira.Field.instance.Sito_web__url__c@suuuu,
+        jira.Field.instance.E_mail__textfield__c@buuuu,
+        jira.Field.instance.Stato_abbonamento__textfield__c@suuuu,
+        jira.Field.instance.Company__read_only_string_issue_field__c@uubbbbuu,
+        jira.Field.instance.Cliente__textfield__c,
+      ]
+      position = 0
+    }
+    HubSpot = {
+      name = "HubSpot"
+      fields = [
+        jira.Field.instance.HubSpot_ticket_count__Hub_ID__27031577___float__c@sssjsfskuuuu,
+      ]
+      position = 1
+    }
+  }
+}

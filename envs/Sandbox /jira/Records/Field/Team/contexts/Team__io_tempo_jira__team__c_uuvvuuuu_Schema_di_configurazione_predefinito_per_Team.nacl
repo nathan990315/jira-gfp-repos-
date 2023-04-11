@@ -1,0 +1,8 @@
+jira.CustomFieldContext Team__io_tempo_jira__team__c_uuvvuuuu_Schema_di_configurazione_predefinito_per_Team@uuuuuuuumusssss {
+  name = "Schema di configurazione predefinito per Team"
+  description = "Schema di configurazione predefinito generato da JIRA"
+  isGlobalContext = true
+  _parent = [
+    jira.Field.instance.Team__io_tempo_jira__team__c@uuvvuuuu,
+  ]
+}

@@ -1,0 +1,13 @@
+jira.Dashboard dati_di_base_@s {
+  description = ""
+  name = "dati di base "
+  owner = {
+    id = "61447938ff23ba007191345f"
+    displayName = "Nathan Giovannini"
+  }
+  gadgets = [
+    jira.DashboardGadget.instance.dati_di_base__s__unnamed_1@uuumuuu,
+    jira.DashboardGadget.instance.dati_di_base__s__unnamed_0@uuumuuu,
+  ]
+  layout = "AA"
+}

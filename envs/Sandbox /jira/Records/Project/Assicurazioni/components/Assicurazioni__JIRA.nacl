@@ -1,0 +1,12 @@
+jira.ProjectComponent Assicurazioni__JIRA {
+  description = "Ticket correlati a Jira. Creato da Jira Service Management."
+  assigneeType = "PROJECT_DEFAULT"
+  name = "JIRA"
+  leadAccountId = {
+    id = "61447938ff23ba007191345f"
+    displayName = "Nathan Giovannini"
+  }
+  _parent = [
+    jira.Project.instance.Assicurazioni,
+  ]
+}

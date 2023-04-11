@@ -1,0 +1,5 @@
+jira.Status da_iniziare@s {
+  name = "Da iniziare"
+  statusCategory = jira.StatusCategory.instance.To_Do@s
+  description = ""
+}
