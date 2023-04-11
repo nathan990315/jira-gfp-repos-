@@ -2,6 +2,33 @@ jira.Workflow HE__flusso_di_lavoro_ESM_semplice_per_Jira_Service_Management@fsss
   description = "Questo flusso di lavoro ESM semplice per i servizi di Jira Service Management è stato generato per il progetto HE"
   transitions = [
     {
+      name = "Completato "
+      description = ""
+      from = [
+        jira.Status.instance.riaperto,
+      ]
+      to = jira.Status.instance.completato
+      type = "directed"
+      rules = {
+        postFunctions = [
+          {
+            type = "FireIssueEventFunction"
+            configuration = {
+              event = {
+                id = jira.IssueEvent.instance.Generic_Event@s
+              }
+            }
+          },
+        ]
+      }
+      properties = [
+        {
+          key = "jira.issue.editable"
+          value = "true"
+        },
+      ]
+    },
+    {
       name = "Crea"
       description = ""
       to = jira.Status.instance.da_completare@s
@@ -96,7 +123,7 @@ jira.Workflow HE__flusso_di_lavoro_ESM_semplice_per_Jira_Service_Management@fsss
       from = [
         jira.Status.instance.completato,
       ]
-      to = jira.Status.instance.in_corso@s
+      to = jira.Status.instance.riaperto
       type = "directed"
       rules = {
         postFunctions = [
@@ -186,10 +213,13 @@ jira.Workflow HE__flusso_di_lavoro_ESM_semplice_per_Jira_Service_Management@fsss
       ]
     },
     {
-      name = "Sospeso"
+      name = "Sospeso "
       description = ""
+      from = [
+        jira.Status.instance.in_corso@s,
+      ]
       to = jira.Status.instance.sospeso
-      type = "global"
+      type = "directed"
       rules = {
         postFunctions = [
           {
@@ -213,7 +243,7 @@ jira.Workflow HE__flusso_di_lavoro_ESM_semplice_per_Jira_Service_Management@fsss
       name = "Sospeso "
       description = ""
       from = [
-        jira.Status.instance.in_corso@s,
+        jira.Status.instance.riaperto,
       ]
       to = jira.Status.instance.sospeso
       type = "directed"
@@ -288,6 +318,16 @@ jira.Workflow HE__flusso_di_lavoro_ESM_semplice_per_Jira_Service_Management@fsss
     {
       id = jira.Status.instance.in_corso@s
       name = "In corso"
+      properties = [
+        {
+          key = "jira.issue.editable"
+          value = "true"
+        },
+      ]
+    },
+    {
+      id = jira.Status.instance.riaperto
+      name = "Riaperto"
       properties = [
         {
           key = "jira.issue.editable"
