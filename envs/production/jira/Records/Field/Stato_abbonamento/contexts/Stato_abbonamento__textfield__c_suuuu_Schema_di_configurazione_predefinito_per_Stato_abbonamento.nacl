@@ -1,0 +1,11 @@
+jira.CustomFieldContext Stato_abbonamento__textfield__c_suuuu_Schema_di_configurazione_predefinito_per_Stato_abbonamento@uuuuumussssss {
+  name = "Schema di configurazione predefinito per Stato abbonamento"
+  description = "Schema di configurazione predefinito generato da JIRA"
+  isGlobalContext = true
+  defaultValue = {
+    type = "textfield"
+  }
+  _parent = [
+    jira.Field.instance.Stato_abbonamento__textfield__c@suuuu,
+  ]
+}

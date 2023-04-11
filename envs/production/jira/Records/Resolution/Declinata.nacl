@@ -1,0 +1,4 @@
+jira.Resolution Declinata {
+  description = "Questo ticket non è stato approvato."
+  name = "Declinata"
+}

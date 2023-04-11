@@ -1,0 +1,4 @@
+jira.Resolution Impossibile_riprodurre@s {
+  description = "Tutti i tentativi di riprodurre questo ticket sono falliti, oppure non ci sono informazioni sufficienti per riprodurre il ticket. Non è possibile ricavare dalla lettura del codice indizi sufficienti a spiegare questo comportamento. Se compaiono altre informazioni in un secondo momento, ti preghiamo di riaprire il ticket."
+  name = "Impossibile riprodurre"
+}

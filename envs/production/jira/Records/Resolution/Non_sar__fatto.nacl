@@ -1,0 +1,4 @@
+jira.Resolution Non_sar__fatto@s_00224s {
+  description = "Questo ticket non produrrà alcuna azione."
+  name = "Non sarà fatto"
+}

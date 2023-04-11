@@ -1,0 +1,26 @@
+jira.DashboardGadget Dashboard_Nathan_s__Task_aperti_Nathan__0_0@umuusssuu {
+  uri = "rest/gadgets/1.0/g/com.atlassian.jira.gadgets:two-dimensional-stats-gadget/gadgets/two-dimensional-stats-gadget.xml"
+  color = "blue"
+  position = {
+    row = 0
+    column = 0
+  }
+  title = "Task aperti Nathan "
+  properties = {
+    config = {
+      filterId = "filter-10073"
+      isConfigured = "true"
+      sortDirection = "asc"
+      isPopup = "false"
+      ystattype = "project"
+      more = "false"
+      refresh = "15"
+      sortBy = "natural"
+      xstattype = "assignees"
+      numberToShow = "5"
+    }
+  }
+  _parent = [
+    jira.Dashboard.instance.Dashboard_Nathan@s,
+  ]
+}

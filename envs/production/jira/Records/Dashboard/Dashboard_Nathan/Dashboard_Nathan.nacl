@@ -1,0 +1,14 @@
+jira.Dashboard Dashboard_Nathan@s {
+  description = ""
+  name = "Dashboard Nathan"
+  owner = {
+    id = "61447938ff23ba007191345f"
+    displayName = "Nathan Giovannini"
+  }
+  gadgets = [
+    jira.DashboardGadget.instance.Dashboard_Nathan_s__Task_aperti_Nathan__0_0@umuusssuu,
+    jira.DashboardGadget.instance.Dashboard_Nathan_s__Pie_Chart_0_1@umuusuu,
+    jira.DashboardGadget.instance.Dashboard_Nathan_s__unnamed_0@umuuu,
+  ]
+  layout = "AA"
+}

@@ -1,0 +1,60 @@
+jira.Filter Patrick__NO_SOSPESI@fss {
+  name = "Patrick: NO SOSPESI"
+  description = ""
+  owner = {
+    id = "62fc96fc5fc3a72bda94622f"
+    displayName = "Patrick Pasquillo"
+  }
+  jql = "${ jira.Field.instance.Project__project } in (${ jira.Project.instance.Hotline.key }, ${ jira.Project.instance.Hotline_Email_@s.key }, ${ jira.Project.instance.Progetto.key }, ${ jira.Project.instance.Regia.key }) AND ${ jira.Field.instance.Status__status } in (${ jira.Status.instance.apri.name }, \"${ jira.Status.instance.da_completare@s.name }\", \"${ jira.Status.instance.da_iniziare@s.name }\", \"${ jira.Status.instance.in_corso@s.name }\", \"${ jira.Status.instance.in_sospeso@s.name }\", \"${ jira.Status.instance.lavoro_in_corso@s.name }\", ${ jira.Status.instance.riaperto.name }, ${ jira.Status.instance.sospeso.name }) AND ${ jira.Field.instance.Assignee__user } in (62fc96fc5fc3a72bda94622f) order by ${ jira.Field.instance.Created__datetime } DESC"
+  sharePermissions = [
+    {
+      type = "authenticated"
+    },
+  ]
+  editPermissions = [
+    {
+      type = "group"
+      group = {
+        name = jira.Group.instance.jira_software_users@b
+      }
+    },
+  ]
+  columns = [
+    {
+      label = "Issue Type"
+      value = "issuetype"
+    },
+    {
+      label = "Key"
+      value = "issuekey"
+    },
+    {
+      label = "Company"
+      value = "customfield_10045"
+    },
+    {
+      label = "Summary"
+      value = "summary"
+    },
+    {
+      label = "Assignee"
+      value = "assignee"
+    },
+    {
+      label = "Reporter"
+      value = "reporter"
+    },
+    {
+      label = "Status"
+      value = "status"
+    },
+    {
+      label = "Resolution"
+      value = "resolution"
+    },
+    {
+      label = "Created"
+      value = "created"
+    },
+  ]
+}

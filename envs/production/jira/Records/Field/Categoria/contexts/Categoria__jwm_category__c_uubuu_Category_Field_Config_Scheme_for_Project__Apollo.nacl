@@ -1,0 +1,8 @@
+jira.CustomFieldContext Categoria__jwm_category__c_uubuu_Category_Field_Config_Scheme_for_Project__Apollo@uuuuumusssssfs {
+  name = "Category Field Config Scheme for Project: Apollo"
+  description = "Category Field Options"
+  isGlobalContext = false
+  _parent = [
+    jira.Field.instance.Categoria__jwm_category__c@uubuu,
+  ]
+}

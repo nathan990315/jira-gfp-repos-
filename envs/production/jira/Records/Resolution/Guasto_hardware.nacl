@@ -1,0 +1,4 @@
+jira.Resolution Guasto_hardware@s {
+  description = ""
+  name = "Guasto hardware"
+}

@@ -1,0 +1,5 @@
+jira.Status apri {
+  name = "Apri"
+  statusCategory = jira.StatusCategory.instance.To_Do@s
+  description = "Creato automaticamente da Jira Service Management durante l'importazione del flusso di lavoro"
+}

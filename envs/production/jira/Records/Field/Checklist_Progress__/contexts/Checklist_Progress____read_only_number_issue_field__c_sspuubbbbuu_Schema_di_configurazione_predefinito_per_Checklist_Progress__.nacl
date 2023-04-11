@@ -1,0 +1,8 @@
+jira.CustomFieldContext Checklist_Progress____read_only_number_issue_field__c_sspuubbbbuu_Schema_di_configurazione_predefinito_per_Checklist_Progress__@uuuuuuuuuuumusssssssp {
+  name = "Schema di configurazione predefinito per Checklist Progress %"
+  description = "Schema di configurazione predefinito generato da JIRA"
+  isGlobalContext = true
+  _parent = [
+    jira.Field.instance.Checklist_Progress____read_only_number_issue_field__c@sspuubbbbuu,
+  ]
+}

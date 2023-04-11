@@ -1,0 +1,6 @@
+jira.IssueType Richiesta_di_assistenza_di__sistema_@sssshi {
+  description = "Una richiesta che segue i flussi di lavoro ITSM."
+  name = "Richiesta di assistenza di [sistema]"
+  untranslatedName = "Richiesta di assistenza di [sistema]"
+  hierarchyLevel = 0
+}

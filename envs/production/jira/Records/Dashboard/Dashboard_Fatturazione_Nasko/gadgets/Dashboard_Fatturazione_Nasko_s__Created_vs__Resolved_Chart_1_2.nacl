@@ -1,0 +1,29 @@
+jira.DashboardGadget Dashboard_Fatturazione_Nasko_s__Created_vs__Resolved_Chart_1_2@uumuusvssuu {
+  uri = "rest/gadgets/1.0/g/com.atlassian.jira.gadgets:created-vs-resolved-issues-chart-gadget/gadgets/createdvsresolved-gadget.xml"
+  color = "blue"
+  position = {
+    row = 2
+    column = 1
+  }
+  title = "Created vs. Resolved Chart"
+  properties = {
+    config = {
+      isConfigured = "true"
+      isPopup = "false"
+      refresh = "15"
+      periodName = "daily"
+      showUnresolvedTrend = "true"
+      projectOrFilterId = ""
+      type = "project"
+      versionLabel = "major"
+      isCumulative = "false"
+      name = "Software Medicali"
+      daysprevious = "60"
+      id = "10000"
+      operation = "count"
+    }
+  }
+  _parent = [
+    jira.Dashboard.instance.Dashboard_Fatturazione_Nasko@s,
+  ]
+}

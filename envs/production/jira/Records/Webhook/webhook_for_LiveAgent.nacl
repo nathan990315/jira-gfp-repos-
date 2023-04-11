@@ -1,0 +1,9 @@
+jira.Webhook webhook_for_LiveAgent@s {
+  name = "webhook for LiveAgent"
+  url = "https://gfpmediconsul.ladesk.com/plugins/Jira/webhook.php"
+  excludeBody = false
+  events = [
+    "jira:issue_created",
+  ]
+  enabled = true
+}

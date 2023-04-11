@@ -1,0 +1,23 @@
+jira.DashboardGadget Dashboard_Your_Tasks_s__I_tuoi_task_piu_vecchi_non_risolti_1_2@uumuussssssuu {
+  uri = "rest/gadgets/1.0/g/com.atlassian.jira.gadgets:filter-results-gadget/gadgets/filter-results-gadget.xml"
+  color = "blue"
+  position = {
+    row = 2
+    column = 1
+  }
+  title = "I tuoi task piu vecchi non risolti"
+  properties = {
+    config = {
+      filterId = "10023"
+      isConfigured = "true"
+      columnNames = "created|issuetype|issuekey|summary|priority|status"
+      isPopup = "false"
+      num = "10"
+      refresh = "15"
+      projectOrFilterId = "filter-10023"
+    }
+  }
+  _parent = [
+    jira.Dashboard.instance.Dashboard_Your_Tasks@s,
+  ]
+}

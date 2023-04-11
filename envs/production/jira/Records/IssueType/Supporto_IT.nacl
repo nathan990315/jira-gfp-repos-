@@ -1,0 +1,6 @@
+jira.IssueType Supporto_IT@s {
+  description = "Un problema tecnico o una domanda informatica."
+  name = "Supporto IT"
+  untranslatedName = "Supporto IT"
+  hierarchyLevel = 0
+}

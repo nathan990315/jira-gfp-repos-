@@ -1,0 +1,27 @@
+jira.DashboardGadget Statistiche__Issue_Statistics_0_1@uusuu {
+  uri = "rest/gadgets/1.0/g/com.atlassian.jira.gadgets:stats-gadget/gadgets/stats-gadget.xml"
+  color = "blue"
+  position = {
+    row = 1
+    column = 0
+  }
+  title = "Issue Statistics"
+  properties = {
+    config = {
+      isConfigured = "true"
+      sortDirection = "desc"
+      statType = "statuses"
+      maxResults = "50"
+      name = "Software Medicali"
+      refresh = "15"
+      sortBy = "total"
+      projectOrFilterId = "project-10000"
+      includeResolvedIssues = "false"
+      id = "10000"
+      type = "project"
+    }
+  }
+  _parent = [
+    jira.Dashboard.instance.Statistiche,
+  ]
+}

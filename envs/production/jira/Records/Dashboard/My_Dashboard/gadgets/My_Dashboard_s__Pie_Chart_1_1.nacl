@@ -1,0 +1,24 @@
+jira.DashboardGadget My_Dashboard_s__Pie_Chart_1_1@umuusuu {
+  uri = "rest/gadgets/1.0/g/com.atlassian.jira.gadgets:pie-chart-gadget/gadgets/piechart-gadget.xml"
+  color = "cyan"
+  position = {
+    row = 1
+    column = 1
+  }
+  title = "Pie Chart"
+  properties = {
+    config = {
+      isConfigured = "true"
+      statType = jira.Field.instance.Project__project
+      isPopup = "false"
+      name = "i miei ticket aperti (torta)"
+      refresh = "15"
+      projectOrFilterId = ""
+      id = "10071"
+      type = "filter"
+    }
+  }
+  _parent = [
+    jira.Dashboard.instance.My_Dashboard@s,
+  ]
+}

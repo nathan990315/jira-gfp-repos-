@@ -1,0 +1,8 @@
+jira.ApplicationProperty Complete_Date_Time_Format@sds {
+  id = "jira.lf.date.complete"
+  value = "dd.MM.yyyy HH:mm"
+  name = "Complete Date/Time Format"
+  type = "string"
+  defaultValue = "dd/MMM/yy h:mm a"
+  example = "23.05.2007 03:55"
+}

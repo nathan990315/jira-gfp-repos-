@@ -1,0 +1,15 @@
+jira.Project Hotline {
+  key = "HT"
+  description = ""
+  name = "Hotline"
+  projectTypeKey = "business"
+  entityId = "0eba8f3d-7d56-4938-83d2-77a18cd982c1"
+  uuid = "0eba8f3d-7d56-4938-83d2-77a18cd982c1"
+  leadAccountId = {
+    id = "61447938ff23ba007191345f"
+    displayName = "Nathan Giovannini"
+  }
+  fieldContexts = [
+    jira.CustomFieldContext.instance.Categoria__jwm_category__c_uubuu_Schema_di_configurazione_del_campo_Categoria_per_il_progetto__Hotline_1@uuuuumussssssssfss,
+  ]
+}

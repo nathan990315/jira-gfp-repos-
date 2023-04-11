@@ -1,0 +1,22 @@
+jira.Filter "0__Aggiunta_Cumulativo_Regia@fsss" {
+  name = "0: Aggiunta Cumulativo Regia"
+  description = ""
+  owner = {
+    id = "62fc96fc5fc3a72bda94622f"
+    displayName = "Patrick Pasquillo"
+  }
+  jql = "${ jira.Field.instance.Project__project } in (Hotline, Regia) AND ${ jira.Field.instance.Issue_Type__issuetype@suu } in (\"Installazioni e Configurazioni (Progetti e supporto\",${ jira.IssueType.instance.Hotline.name },\"Formazione (Progetti e supporto)\") AND ${ jira.Field.instance.Labels__array } = CumulativoRegia AND ${ jira.Field.instance.Status__status } in (${ jira.Status.instance.completato.name }, Offerta) AND \"ID Fattura [Short text]\" is EMPTY AND \"ID Offerta[Short text]\" is EMPTY ORDER BY cf[${ jira.Field.instance.Company__read_only_string_issue_field__c@uubbbbuu }] ASC, ${ jira.Field.instance.Created__datetime } DESC, ${ jira.Field.instance.Issue_Type__issuetype@suu } DESC"
+  sharePermissions = [
+    {
+      type = "authenticated"
+    },
+  ]
+  editPermissions = [
+    {
+      type = "group"
+      group = {
+        name = jira.Group.instance.jira_software_users@b
+      }
+    },
+  ]
+}

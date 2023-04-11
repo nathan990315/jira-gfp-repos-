@@ -1,0 +1,23 @@
+jira.DashboardGadget My_Dashboard_s__Bubble_Chart_0_2@umuusuu {
+  moduleKey = "com.atlassian.jira.gadgets:bubble-chart-dashboard-item"
+  color = "red"
+  position = {
+    row = 2
+    column = 0
+  }
+  title = "Bubble Chart"
+  properties = {
+    bubbleType = "participants"
+    id = 10064
+    isConfigured = true
+    name = "assegnati a me"
+    recentCommentsPeriod = 84
+    refresh = 15
+    type = "filter"
+    useLogarithmicScale = false
+    useRelativeColoring = true
+  }
+  _parent = [
+    jira.Dashboard.instance.My_Dashboard@s,
+  ]
+}

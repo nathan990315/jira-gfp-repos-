@@ -1,0 +1,5 @@
+jira.WorkflowScheme TDL__Schema_del_flusso_di_lavoro_per_la_gestione_dei_task@fssssssssss {
+  name = "TDL: Schema del flusso di lavoro per la gestione dei task"
+  description = ""
+  defaultWorkflow = jira.Workflow.instance.TDL__Flusso_di_lavoro_per_la_gestione_dei_task@fssssssss
+}

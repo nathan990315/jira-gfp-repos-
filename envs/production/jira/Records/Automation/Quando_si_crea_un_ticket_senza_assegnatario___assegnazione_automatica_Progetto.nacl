@@ -1,0 +1,111 @@
+jira.Automation Quando_si_crea_un_ticket_senza_assegnatario___assegnazione_automatica_Progetto@sssssss_08594ssu {
+  name = "Quando si crea un ticket senza assegnatario → assegnazione automatica"
+  state = "ENABLED"
+  authorAccountId = {
+    id = "634feb2a01c2ff842c164ac0"
+    displayName = "Gioele Roffi"
+  }
+  actor = {
+    type = "ACCOUNT_ID"
+    value = {
+      id = "557058:f58131cb-b67d-43c7-b30d-6b58d40bd077"
+      displayName = "Automation for Jira"
+    }
+  }
+  trigger = {
+    component = "TRIGGER"
+    schemaVersion = 1
+    type = "jira.issue.event.trigger:created"
+    value = {
+      eventKey = "jira:issue_created"
+      issueEvent = "issue_created"
+    }
+    children = [
+    ]
+    conditions = [
+    ]
+  }
+  components = [
+    {
+      component = "CONDITION"
+      schemaVersion = 3
+      type = "jira.issue.condition"
+      value = {
+        selectedField = {
+          type = "ID"
+          value = jira.Field.instance.Assignee__user
+        }
+        selectedFieldType = "assignee"
+        comparison = "EMPTY"
+        compareFieldValue = {
+          type = "FIELD"
+          value = ""
+          multiValue = false
+          source = "current"
+        }
+      }
+      children = [
+      ]
+      conditions = [
+      ]
+    },
+    {
+      component = "ACTION"
+      schemaVersion = 3
+      type = "jira.issue.assign"
+      value = {
+        assignType = "SPECIFY_USER"
+        assignee = {
+          type = "ID"
+          value = {
+            id = "634feb2a01c2ff842c164ac0"
+            displayName = "Gioele Roffi"
+          }
+        }
+        excludedUsers = [
+        ]
+        userList = [
+        ]
+      }
+      children = [
+      ]
+      conditions = [
+      ]
+    },
+  ]
+  canOtherRuleTrigger = false
+  notifyOnError = "FIRSTERROR"
+  projects = [
+    {
+      projectId = jira.Project.instance.Progetto
+    },
+  ]
+  labels = [
+  ]
+  tags = [
+    {
+      tagType = "BILLABLE"
+      tagValue = "true"
+    },
+    {
+      tagType = "CREATION_TYPE"
+      tagValue = "USER"
+    },
+    {
+      tagType = "IS_RULE_UPDATED"
+      tagValue = "true"
+    },
+    {
+      tagType = "SAMPLE_RULE"
+      tagValue = "business"
+    },
+    {
+      tagType = "TEMPLATE_ID"
+      tagValue = "business_template_1"
+    },
+  ]
+  writeAccessType = "UNRESTRICTED"
+  collaborators = [
+  ]
+  billingType = "NORMAL"
+}

@@ -1,0 +1,7 @@
+jira.ApplicationProperty jira_admin_announcement_banner_message@v {
+  id = "jira.admin.announcement.banner.message"
+  value = "We are modifying the worklog database. Some tickets or projects may not be accessible."
+  name = "jira.admin.announcement.banner.message"
+  type = "string"
+  defaultValue = ""
+}

@@ -1,0 +1,7 @@
+jira.ScreenScheme HT__Schema_schermata_bug_Kanban@fssss {
+  name = "HT: Schema schermata bug Kanban"
+  description = ""
+  screens = {
+    default = jira.Screen.instance.HT__Schermata_bug_Kanban@fsss
+  }
+}

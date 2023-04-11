@@ -1,0 +1,8 @@
+jira.IssueTypeScheme TP__Schema_del_tipo_di_ticket_per_pianificatore_di_task_personali@fssssssssss {
+  name = "TP: Schema del tipo di ticket per pianificatore di task personali"
+  defaultIssueTypeId = jira.IssueType.instance.Task
+  issueTypeIds = [
+    jira.IssueType.instance.Task,
+    jira.IssueType.instance.Sottotask,
+  ]
+}

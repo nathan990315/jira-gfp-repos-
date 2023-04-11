@@ -1,0 +1,8 @@
+jira.CustomFieldContext Locked_forms__forms_locked_field_cftype__c_suubbbuu_Schema_di_configurazione_predefinito_per_Locked_forms@uuuuuuuumussssss {
+  name = "Schema di configurazione predefinito per Locked forms"
+  description = "Schema di configurazione predefinito generato da JIRA"
+  isGlobalContext = true
+  _parent = [
+    jira.Field.instance.Locked_forms__forms_locked_field_cftype__c@suubbbuu,
+  ]
+}

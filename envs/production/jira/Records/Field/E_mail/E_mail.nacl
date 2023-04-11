@@ -1,0 +1,9 @@
+jira.Field E_mail__textfield__c@buuuu {
+  name = "E-mail"
+  description = ""
+  searcherKey = "com.atlassian.jira.plugin.system.customfieldtypes:textsearcher"
+  type = "com.atlassian.jira.plugin.system.customfieldtypes:textfield"
+  contexts = [
+    jira.CustomFieldContext.instance.E_mail__textfield__c_buuuu_Schema_di_configurazione_predefinito_per_E_mail@uuuuumusssssb,
+  ]
+}

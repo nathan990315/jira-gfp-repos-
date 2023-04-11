@@ -1,0 +1,22 @@
+jira.IssueTypeScreenScheme HE__Schema_della_schermata_del_tipo_di_ticket_Jira_Service_Management@fssssssssss {
+  name = "HE: Schema della schermata del tipo di ticket Jira Service Management"
+  description = "Questo schema della schermata del tipo di ticket Jira Service Management è stato generato automaticamente"
+  issueTypeMappings = [
+    {
+      issueTypeId = jira.IssueType.instance.Invia_una_richiesta_o_un_imprevisto@s
+      screenSchemeId = jira.ScreenScheme.instance.HE__Jira_Service_Management__schema_della_schermata_Richiesta_generale@fsssfsssss
+    },
+    {
+      issueTypeId = jira.IssueType.instance.Poni_una_domanda@s
+      screenSchemeId = jira.ScreenScheme.instance.HE__Jira_Service_Management__schema_della_schermata_Domande_generali@fsssfsssss
+    },
+    {
+      issueTypeId = jira.IssueType.instance.Richiesta_di_assistenza_di__sistema_@sssshi
+      screenSchemeId = jira.ScreenScheme.instance.HE__Jira_Service_Management__schema_Schermata_evasione_richiesta@fsssfssss
+    },
+    {
+      issueTypeId = "default"
+      screenSchemeId = jira.ScreenScheme.instance.HE__Schema_della_schermata_Jira_Service_Management@fssssss
+    },
+  ]
+}

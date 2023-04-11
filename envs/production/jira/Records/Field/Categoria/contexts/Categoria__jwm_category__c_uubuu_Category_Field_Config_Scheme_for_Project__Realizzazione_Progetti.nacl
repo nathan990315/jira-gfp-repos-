@@ -1,0 +1,8 @@
+jira.CustomFieldContext Categoria__jwm_category__c_uubuu_Category_Field_Config_Scheme_for_Project__Realizzazione_Progetti@uuuuumusssssfss {
+  name = "Category Field Config Scheme for Project: Realizzazione Progetti"
+  description = "Opzioni del campo Categoria"
+  isGlobalContext = false
+  _parent = [
+    jira.Field.instance.Categoria__jwm_category__c@uubuu,
+  ]
+}

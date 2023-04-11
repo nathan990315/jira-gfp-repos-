@@ -1,0 +1,8 @@
+jira.CustomFieldContext Approvazioni__sd_approvals__c_uubuu_Schema_di_configurazione_predefinito_per_Approvazioni@uuuuumusssss {
+  name = "Schema di configurazione predefinito per Approvazioni"
+  description = "Schema di configurazione predefinito generato da JIRA"
+  isGlobalContext = true
+  _parent = [
+    jira.Field.instance.Approvazioni__sd_approvals__c@uubuu,
+  ]
+}

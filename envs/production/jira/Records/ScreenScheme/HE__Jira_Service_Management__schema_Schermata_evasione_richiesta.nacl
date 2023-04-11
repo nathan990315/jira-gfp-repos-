@@ -1,0 +1,9 @@
+jira.ScreenScheme HE__Jira_Service_Management__schema_Schermata_evasione_richiesta@fsssfssss {
+  name = "HE: Jira Service Management: schema Schermata evasione richiesta"
+  screens = {
+    default = jira.Screen.instance.HE__Jira_Service_Management__schermata_Crea_ticket_evasione_richiesta@fsssfsssss
+    edit = jira.Screen.instance.HE__Jira_Service_Management__schermata_Visualizza_Modifica_evasione_richiesta@fsssfssdss
+    create = jira.Screen.instance.HE__Jira_Service_Management__schermata_Crea_ticket_evasione_richiesta@fsssfsssss
+    view = jira.Screen.instance.HE__Jira_Service_Management__schermata_Visualizza_Modifica_evasione_richiesta@fsssfssdss
+  }
+}

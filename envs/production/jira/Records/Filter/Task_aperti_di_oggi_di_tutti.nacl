@@ -1,0 +1,42 @@
+jira.Filter Task_aperti_di_oggi_di_tutti@s {
+  name = "Task aperti di oggi di tutti"
+  owner = {
+    id = "61447938ff23ba007191345f"
+    displayName = "Nathan Giovannini"
+  }
+  jql = "\"Data di esecuzione[Time stamp]\" >= startOfDay() AND \"Data di esecuzione[Time stamp]\" <= endOfDay() AND ${ jira.Field.instance.Project__project } = 10000 AND ${ jira.Field.instance.Status__status } in (\"${ jira.Status.instance.da_completare@s.name }\", \"${ jira.Status.instance.in_corso@s.name }\", Fatturazione) ORDER BY cf[10034] ASC"
+  columns = [
+    {
+      label = "Issue Type"
+      value = "issuetype"
+    },
+    {
+      label = "Key"
+      value = "issuekey"
+    },
+    {
+      label = "Created"
+      value = "created"
+    },
+    {
+      label = "Reporter"
+      value = "reporter"
+    },
+    {
+      label = "Summary"
+      value = "summary"
+    },
+    {
+      label = "Priority"
+      value = "priority"
+    },
+    {
+      label = "Status"
+      value = "status"
+    },
+    {
+      label = "Assignee"
+      value = "assignee"
+    },
+  ]
+}

@@ -1,0 +1,17 @@
+jira.DashboardGadget Tempo_ore_totali__s__Tempo_My_Work_0_0@uuumuussuu {
+  moduleKey = "com.atlassian.plugins.atlassian-connect-plugin:io.tempo.jira__my-work-dashboard-item"
+  color = "blue"
+  position = {
+    row = 0
+    column = 0
+  }
+  title = "Tempo My Work"
+  properties = {
+    config = {
+      showWorklogs = true
+    }
+  }
+  _parent = [
+    jira.Dashboard.instance.Tempo_ore_totali_@s,
+  ]
+}

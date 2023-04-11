@@ -1,0 +1,23 @@
+jira.DashboardGadget My_Dashboard_s__Da_iniziare_0_0@umuusuu {
+  uri = "rest/gadgets/1.0/g/com.atlassian.jira.gadgets:filter-results-gadget/gadgets/filter-results-gadget.xml"
+  color = "blue"
+  position = {
+    row = 0
+    column = 0
+  }
+  title = "Da iniziare"
+  properties = {
+    config = {
+      filterId = "10185"
+      isConfigured = "true"
+      columnNames = "issuekey|issuetype|summary|priority|customfield_10045|status"
+      isPopup = "false"
+      num = "10"
+      refresh = "15"
+      sortBy = "priority:ASC"
+    }
+  }
+  _parent = [
+    jira.Dashboard.instance.My_Dashboard@s,
+  ]
+}

@@ -1,0 +1,17 @@
+jira.Filter Aperti {
+  name = "Aperti"
+  description = ""
+  owner = {
+    id = "60eea45b4257a90070b78edd"
+    displayName = "Salvatore Licari"
+  }
+  jql = "${ jira.Field.instance.Assignee__user } in (currentUser()) AND ${ jira.Field.instance.Status__status } in (\"${ jira.Status.instance.in_corso@s.name }\", \"${ jira.Status.instance.in_progress@s.name }\", \"${ jira.Status.instance.in_sospeso@s.name }\", \"${ jira.Status.instance.lavoro_in_corso@s.name }\", Offerta, ${ jira.Status.instance.sospeso.name }) ORDER BY ${ jira.Field.instance.Created__datetime } DESC, ${ jira.Field.instance.Priority__priority } DESC"
+  sharePermissions = [
+    {
+      type = "group"
+      group = {
+        name = jira.Group.instance.jira_software_users@b
+      }
+    },
+  ]
+}

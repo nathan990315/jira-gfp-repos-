@@ -1,0 +1,8 @@
+jira.Filter Query_tempo_mensile_@s {
+  name = "Query tempo mensile "
+  owner = {
+    id = "61447938ff23ba007191345f"
+    displayName = "Nathan Giovannini"
+  }
+  jql = "worklogDate >= '2022-10-01' and worklogDate <= '2022-10-30'"
+}

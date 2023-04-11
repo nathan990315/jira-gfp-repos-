@@ -1,0 +1,24 @@
+jira.DashboardGadget Dashboard_Nathan_s__Pie_Chart_0_1@umuusuu {
+  uri = "rest/gadgets/1.0/g/com.atlassian.jira.gadgets:pie-chart-gadget/gadgets/piechart-gadget.xml"
+  color = "blue"
+  position = {
+    row = 1
+    column = 0
+  }
+  title = "Pie Chart"
+  properties = {
+    config = {
+      isConfigured = "true"
+      statType = jira.Field.instance.Project__project
+      isPopup = "false"
+      name = "Task da completare Nathan "
+      refresh = "15"
+      projectOrFilterId = ""
+      id = "10073"
+      type = "filter"
+    }
+  }
+  _parent = [
+    jira.Dashboard.instance.Dashboard_Nathan@s,
+  ]
+}

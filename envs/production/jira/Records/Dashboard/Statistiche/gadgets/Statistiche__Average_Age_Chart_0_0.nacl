@@ -1,0 +1,25 @@
+jira.DashboardGadget Statistiche__Average_Age_Chart_0_0@uussuu {
+  uri = "rest/gadgets/1.0/g/com.atlassian.jira.gadgets:average-age-chart-gadget/gadgets/average-age-gadget.xml"
+  color = "cyan"
+  position = {
+    row = 0
+    column = 0
+  }
+  title = "Average Age Chart"
+  properties = {
+    config = {
+      isConfigured = "true"
+      isPopup = "false"
+      name = "Software Medicali"
+      refresh = "15"
+      periodName = "weekly"
+      projectOrFilterId = "project-10000"
+      daysprevious = "60"
+      id = "10000"
+      type = "project"
+    }
+  }
+  _parent = [
+    jira.Dashboard.instance.Statistiche,
+  ]
+}

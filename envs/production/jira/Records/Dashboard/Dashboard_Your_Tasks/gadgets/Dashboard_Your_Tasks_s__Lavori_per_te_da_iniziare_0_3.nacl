@@ -1,0 +1,22 @@
+jira.DashboardGadget Dashboard_Your_Tasks_s__Lavori_per_te_da_iniziare_0_3@uumuussssuu {
+  uri = "rest/gadgets/1.0/g/com.atlassian.jira.gadgets:filter-results-gadget/gadgets/filter-results-gadget.xml"
+  color = "blue"
+  position = {
+    row = 2
+    column = 0
+  }
+  title = "Lavori per te da iniziare"
+  properties = {
+    config = {
+      filterId = "10031"
+      isConfigured = "true"
+      columnNames = "issuetype|issuekey|customfield_10045|summary|priority"
+      isPopup = "false"
+      num = "10"
+      refresh = "15"
+    }
+  }
+  _parent = [
+    jira.Dashboard.instance.Dashboard_Your_Tasks@s,
+  ]
+}

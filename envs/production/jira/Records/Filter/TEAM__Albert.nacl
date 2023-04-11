@@ -1,0 +1,22 @@
+jira.Filter TEAM__Albert@fs {
+  name = "TEAM: Albert"
+  description = ""
+  owner = {
+    id = "62fc96fc5fc3a72bda94622f"
+    displayName = "Patrick Pasquillo"
+  }
+  jql = "${ jira.Field.instance.Project__project } in (${ jira.Project.instance.Hotline.key }, ${ jira.Project.instance.Progetto.key }, ${ jira.Project.instance.Consulenza_di_vendita_@s.key }, ${ jira.Project.instance.Hotline_Email_@s.key }, ${ jira.Project.instance.Regia.key }) AND ${ jira.Field.instance.Issue_Type__issuetype@suu } in (\"Consulenza di vendita\", Formazione, \"Formazione (Progetti e supporto)\", ${ jira.IssueType.instance.Hotline.name }, \"Hotline Multicliente\", \"Installazioni e Configurazioni (Progetti e supporto\", ${ jira.IssueType.instance.Task.name }, ${ jira.IssueType.instance.Sottotask.name }) AND ${ jira.Field.instance.Status__status } in (\"${ jira.Status.instance.in_progress@s.name }\", \"${ jira.Status.instance.to_do@s.name }\", ${ jira.Status.instance.apri.name }, \"${ jira.Status.instance.da_iniziare@s.name }\", Fatturazione, \"${ jira.Status.instance.in_corso@s.name }\", \"${ jira.Status.instance.in_sospeso@s.name }\", \"${ jira.Status.instance.lavoro_in_corso@s.name }\", Offerta, Pianificato, ${ jira.Status.instance.riaperto.name }, ${ jira.Status.instance.sospeso.name }) AND ${ jira.Field.instance.Assignee__user } in (60ebf585413fc70069d10ab8) ORDER BY ${ jira.Field.instance.Updated__datetime } DESC, ${ jira.Field.instance.Status__status } DESC, ${ jira.Field.instance.Created__datetime } DESC"
+  sharePermissions = [
+    {
+      type = "authenticated"
+    },
+  ]
+  editPermissions = [
+    {
+      type = "group"
+      group = {
+        name = jira.Group.instance.jira_software_users@b
+      }
+    },
+  ]
+}

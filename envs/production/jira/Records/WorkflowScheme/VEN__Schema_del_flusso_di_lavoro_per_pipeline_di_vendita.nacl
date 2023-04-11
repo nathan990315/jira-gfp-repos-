@@ -1,0 +1,5 @@
+jira.WorkflowScheme VEN__Schema_del_flusso_di_lavoro_per_pipeline_di_vendita@fsssssssss {
+  name = "VEN: Schema del flusso di lavoro per pipeline di vendita"
+  description = ""
+  defaultWorkflow = jira.Workflow.instance.VEN__Flusso_di_lavoro_per_pipeline_di_vendita@fsssssss
+}

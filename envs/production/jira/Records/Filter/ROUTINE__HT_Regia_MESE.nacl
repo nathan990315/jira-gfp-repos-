@@ -1,0 +1,22 @@
+jira.Filter ROUTINE__HT_Regia_MESE@fsbs {
+  name = "ROUTINE: HT-Regia MESE"
+  description = ""
+  owner = {
+    id = "62fc96fc5fc3a72bda94622f"
+    displayName = "Patrick Pasquillo"
+  }
+  jql = "${ jira.Field.instance.Created__datetime } >= 2022-10-01 AND ${ jira.Field.instance.Created__datetime } <= 2022-10-31 AND ${ jira.Field.instance.Project__project } = ${ jira.Project.instance.Hotline.key } AND ${ jira.Field.instance.Status__status } = ${ jira.Status.instance.completato.name } order by ${ jira.Field.instance.Created__datetime } DESC"
+  sharePermissions = [
+    {
+      type = "authenticated"
+    },
+  ]
+  editPermissions = [
+    {
+      type = "group"
+      group = {
+        name = jira.Group.instance.jira_software_users@b
+      }
+    },
+  ]
+}

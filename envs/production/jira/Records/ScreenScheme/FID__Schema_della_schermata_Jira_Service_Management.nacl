@@ -1,0 +1,7 @@
+jira.ScreenScheme FID__Schema_della_schermata_Jira_Service_Management@fssssss {
+  name = "FID: Schema della schermata Jira Service Management"
+  description = "Questo schema della schermata Jira Service Management è stato generato automaticamente"
+  screens = {
+    default = jira.Screen.instance.FID__Schermata_Jira_Service_Management@fssss
+  }
+}

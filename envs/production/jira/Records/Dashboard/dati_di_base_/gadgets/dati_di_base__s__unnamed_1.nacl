@@ -1,0 +1,12 @@
+jira.DashboardGadget dati_di_base__s__unnamed_1@uuumuuu {
+  moduleKey = "com.atlassian.plugins.atlassian-connect-plugin:performance-objectives-for-jira__narasyst-scatter-bubble"
+  color = "blue"
+  position = {
+    row = 0
+    column = 0
+  }
+  title = ""
+  _parent = [
+    jira.Dashboard.instance.dati_di_base_@s,
+  ]
+}

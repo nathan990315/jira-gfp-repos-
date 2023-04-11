@@ -1,0 +1,8 @@
+jira.CustomFieldContext Addetti__responders_entity_field_cftype__c_uubbbuu_Schema_di_configurazione_predefinito_per_Addetti@uuuuuuumusssss {
+  name = "Schema di configurazione predefinito per Addetti"
+  description = "Schema di configurazione predefinito generato da JIRA"
+  isGlobalContext = true
+  _parent = [
+    jira.Field.instance.Addetti__responders_entity_field_cftype__c@uubbbuu,
+  ]
+}

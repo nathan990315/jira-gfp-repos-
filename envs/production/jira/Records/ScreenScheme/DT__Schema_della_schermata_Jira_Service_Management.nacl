@@ -1,0 +1,7 @@
+jira.ScreenScheme DT__Schema_della_schermata_Jira_Service_Management@fssssss {
+  name = "DT: Schema della schermata Jira Service Management"
+  description = "Questo schema della schermata Jira Service Management è stato generato automaticamente"
+  screens = {
+    default = jira.Screen.instance.DT__Schermata_Jira_Service_Management@fssss
+  }
+}

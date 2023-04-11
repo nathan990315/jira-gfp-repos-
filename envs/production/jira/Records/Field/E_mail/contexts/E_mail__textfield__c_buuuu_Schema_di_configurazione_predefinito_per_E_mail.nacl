@@ -1,0 +1,11 @@
+jira.CustomFieldContext E_mail__textfield__c_buuuu_Schema_di_configurazione_predefinito_per_E_mail@uuuuumusssssb {
+  name = "Schema di configurazione predefinito per E-mail"
+  description = "Schema di configurazione predefinito generato da JIRA"
+  isGlobalContext = true
+  defaultValue = {
+    type = "textfield"
+  }
+  _parent = [
+    jira.Field.instance.E_mail__textfield__c@buuuu,
+  ]
+}

@@ -1,0 +1,7 @@
+jira.ScreenScheme HE__Jira_Service_Management__schema_della_schermata_Richiesta_generale@fsssfsssss {
+  name = "HE: Jira Service Management: schema della schermata Richiesta generale"
+  description = "Questo schema della schermata Jira Service Management è stato generato automaticamente"
+  screens = {
+    default = jira.Screen.instance.HE__Jira_Service_Management__schermata_dei_ticket_Richiesta_generale@fsssfsssss
+  }
+}

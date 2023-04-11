@@ -1,0 +1,13 @@
+jira.Project Attivit__Interne@_00224s {
+  key = "AT"
+  description = ""
+  name = "Attività Interne"
+  projectTypeKey = "software"
+  entityId = "c02b2e4f-bc0b-4999-9b4f-0adbed14f298"
+  uuid = "c02b2e4f-bc0b-4999-9b4f-0adbed14f298"
+  issueSecurityScheme = jira.SecurityScheme.instance.INTL__Simplified_Issue_Security_Scheme@fssss
+  leadAccountId = {
+    id = "61447938ff23ba007191345f"
+    displayName = "Nathan Giovannini"
+  }
+}

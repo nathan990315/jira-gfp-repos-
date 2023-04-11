@@ -1,0 +1,27 @@
+jira.Dashboard My_Dashboard@s {
+  description = ""
+  name = "My Dashboard"
+  owner = {
+    id = "60eea45b4257a90070b78edd"
+    displayName = "Salvatore Licari"
+  }
+  sharePermissions = [
+    {
+      type = "group"
+      group = {
+        name = jira.Group.instance.jira_software_users@b
+      }
+    },
+  ]
+  gadgets = [
+    jira.DashboardGadget.instance.My_Dashboard_s__Da_iniziare_0_0@umuusuu,
+    jira.DashboardGadget.instance.My_Dashboard_s__Statistiche___Task_da_completare_salvatore_0_1@umuusfssssuu,
+    jira.DashboardGadget.instance.My_Dashboard_s__Bubble_Chart_0_2@umuusuu,
+    jira.DashboardGadget.instance.My_Dashboard_s__Filter_Results_1_0@umuusuu,
+    jira.DashboardGadget.instance.My_Dashboard_s__Pie_Chart_1_1@umuusuu,
+    jira.DashboardGadget.instance.My_Dashboard_s__CDV__In_Corso_2_0@umuufssuu,
+    jira.DashboardGadget.instance.My_Dashboard_s__Activity_Stream_2_1@umuusuu,
+    jira.DashboardGadget.instance.My_Dashboard_s__Filter_Results_2_2@umuusuu,
+  ]
+  layout = "AAA"
+}

@@ -1,0 +1,11 @@
+jira.CustomFieldContext Checklist_Text__view_only___textarea__c_ssjbkuuuu_Schema_di_configurazione_predefinito_per_Checklist_Text__view_only_@uuuuuuuuumusssssssjbk {
+  name = "Schema di configurazione predefinito per Checklist Text (view-only)"
+  description = "Schema di configurazione predefinito generato da JIRA"
+  isGlobalContext = true
+  defaultValue = {
+    type = "textarea"
+  }
+  _parent = [
+    jira.Field.instance.Checklist_Text__view_only___textarea__c@ssjbkuuuu,
+  ]
+}

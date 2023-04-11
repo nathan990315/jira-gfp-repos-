@@ -1,0 +1,14 @@
+jira.Filter Da_Inviare_@s {
+  name = "Da Inviare "
+  description = ""
+  owner = {
+    id = "61447938ff23ba007191345f"
+    displayName = "Nathan Giovannini"
+  }
+  jql = "${ jira.Field.instance.Project__project } in (Regia, Progetto) AND ${ jira.Field.instance.Status__status } = Fatturazione AND \"Stato fatturazione [Checkboxes]\" = \"Fattura da Inviare \""
+  sharePermissions = [
+    {
+      type = "authenticated"
+    },
+  ]
+}

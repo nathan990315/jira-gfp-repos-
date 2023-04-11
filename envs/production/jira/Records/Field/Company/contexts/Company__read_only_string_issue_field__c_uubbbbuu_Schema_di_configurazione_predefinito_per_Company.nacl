@@ -1,0 +1,8 @@
+jira.CustomFieldContext Company__read_only_string_issue_field__c_uubbbbuu_Schema_di_configurazione_predefinito_per_Company@uuuuuuuumusssss {
+  name = "Schema di configurazione predefinito per Company"
+  description = "Schema di configurazione predefinito generato da JIRA"
+  isGlobalContext = true
+  _parent = [
+    jira.Field.instance.Company__read_only_string_issue_field__c@uubbbbuu,
+  ]
+}

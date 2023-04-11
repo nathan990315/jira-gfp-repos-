@@ -1,0 +1,8 @@
+jira.ScreenScheme GT__Schema_della_schermata_per_la_gestione_dei_task@fssssssss {
+  name = "GT: Schema della schermata per la gestione dei task"
+  description = ""
+  screens = {
+    default = jira.Screen.instance.GT__Schermata_Modifica_Visualizza_ticket_per_la_gestione_dei_task@fssdssssss
+    create = jira.Screen.instance.GT__Schermata_Crea_ticket_per_la_gestione_dei_task@fssssssss
+  }
+}

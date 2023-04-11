@@ -1,0 +1,12 @@
+jira.Dashboard Tempo_ore_totali_@s {
+  description = ""
+  name = "Tempo ore totali "
+  owner = {
+    id = "61447938ff23ba007191345f"
+    displayName = "Nathan Giovannini"
+  }
+  gadgets = [
+    jira.DashboardGadget.instance.Tempo_ore_totali__s__Tempo_My_Work_0_0@uuumuussuu,
+  ]
+  layout = "AA"
+}

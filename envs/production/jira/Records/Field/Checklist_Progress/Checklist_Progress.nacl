@@ -1,0 +1,10 @@
+jira.Field Checklist_Progress__read_only_string_issue_field__c@suubbbbuu {
+  name = "Checklist Progress"
+  description = "Custom field with Checklist progress, e.g. 'Checklist: 12/14' (read-only)"
+  isLocked = true
+  searcherKey = "com.atlassian.jira.plugin.system.customfieldtypes:readonlyissuefieldsearcher"
+  type = "read-only-string-issue-field"
+  contexts = [
+    jira.CustomFieldContext.instance.Checklist_Progress__read_only_string_issue_field__c_suubbbbuu_Schema_di_configurazione_predefinito_per_Checklist_Progress@uuuuuuuuumussssss,
+  ]
+}

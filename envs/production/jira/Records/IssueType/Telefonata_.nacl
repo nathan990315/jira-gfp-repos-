@@ -1,0 +1,6 @@
+jira.IssueType Telefonata_@s {
+  description = ""
+  name = "Telefonata "
+  untranslatedName = "Telefonata "
+  hierarchyLevel = 0
+}

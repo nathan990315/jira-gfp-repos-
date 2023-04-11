@@ -1,0 +1,19 @@
+jira.DashboardGadget Progetti__Starred_filters_2_3@uusuu {
+  uri = "rest/gadgets/1.0/g/com.atlassian.jira.gadgets:favourite-filters-gadget/gadgets/favourite-filters-gadget.xml"
+  color = "blue"
+  position = {
+    row = 3
+    column = 2
+  }
+  title = "Starred filters"
+  properties = {
+    config = {
+      isConfigured = "true"
+      refresh = "false"
+      showCounts = "true"
+    }
+  }
+  _parent = [
+    jira.Dashboard.instance.Progetti,
+  ]
+}

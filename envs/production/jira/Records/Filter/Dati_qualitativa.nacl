@@ -1,0 +1,8 @@
+jira.Filter Dati_qualitativa@s {
+  name = "Dati qualitativa"
+  owner = {
+    id = "61447938ff23ba007191345f"
+    displayName = "Nathan Giovannini"
+  }
+  jql = "${ jira.Field.instance.Created__datetime } >= 2022-11-14 AND ${ jira.Field.instance.Created__datetime } <= 2022-11-21 AND ${ jira.Field.instance.Project__project } in (${ jira.Project.instance.Hotline.key }, ${ jira.Project.instance.Hotline_Email_@s.key }, ${ jira.Project.instance.Consulenza_di_vendita_@s.key }, ${ jira.Project.instance.Progetto.key }, ${ jira.Project.instance.Regia.key })  and ${ jira.Field.instance.Company__read_only_string_issue_field__c@uubbbbuu.name }=empty ORDER BY ${ jira.Field.instance.Created__datetime } DESC"
+}

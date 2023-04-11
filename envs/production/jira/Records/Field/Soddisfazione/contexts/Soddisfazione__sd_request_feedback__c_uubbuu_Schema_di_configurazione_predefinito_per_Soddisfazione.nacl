@@ -1,0 +1,8 @@
+jira.CustomFieldContext Soddisfazione__sd_request_feedback__c_uubbuu_Schema_di_configurazione_predefinito_per_Soddisfazione@uuuuuumusssss {
+  name = "Schema di configurazione predefinito per Soddisfazione"
+  description = "Schema di configurazione predefinito generato da JIRA"
+  isGlobalContext = true
+  _parent = [
+    jira.Field.instance.Soddisfazione__sd_request_feedback__c@uubbuu,
+  ]
+}

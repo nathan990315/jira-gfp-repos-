@@ -1,0 +1,31 @@
+jira.WorkflowScheme Schema_del_flusso_di_lavoro_per_l_assistenza_IT_di_Jira_Service_Management_generato_per_il_progetto_FID@sssssstssssssssss {
+  name = "Schema del flusso di lavoro per l'assistenza IT di Jira Service Management generato per il progetto FID"
+  description = "Questo schema di flusso di lavoro per l'assistenza IT di Jira Service Management è stato generato per il progetto FID"
+  defaultWorkflow = jira.Workflow.instance.jira
+  items = [
+    {
+      workflow = jira.Workflow.instance.FID__flusso_di_lavoro_predefinito_di_Jira_Service_Management@fssssssss
+      issueType = jira.IssueType.instance.Task
+    },
+    {
+      workflow = jira.Workflow.instance.FID__flusso_di_lavoro_predefinito_di_Jira_Service_Management@fssssssss
+      issueType = jira.IssueType.instance.Sottotask
+    },
+    {
+      workflow = jira.Workflow.instance.FID__flusso_di_lavoro_ESM_semplice_per_Jira_Service_Management@fsssssssss
+      issueType = jira.IssueType.instance.Richiesta_inviata_tramite_e_mail@sssb
+    },
+    {
+      workflow = jira.Workflow.instance.FID__flusso_di_lavoro_ESM_predefinito_per_Jira_Service_Management@fsssssssss
+      issueType = jira.IssueType.instance.Domande_per_i_team_finanziari@s
+    },
+    {
+      workflow = jira.Workflow.instance.FID__flusso_di_lavoro_ESM_predefinito_per_Jira_Service_Management@fsssssssss
+      issueType = jira.IssueType.instance.Richiedi_una_revisione_delle_policy@s
+    },
+    {
+      workflow = jira.Workflow.instance.FID__Budget_Allocation_workflow_for_Jira_Service_Management@fsssssss
+      issueType = jira.IssueType.instance.Richiedi_uno_stanziamento_del_budget@s
+    },
+  ]
+}

@@ -1,0 +1,28 @@
+jira.DashboardGadget Default_dashboard_s__Activity_Stream_0_1@umuusuu {
+  uri = "rest/gadgets/1.0/g/com.atlassian.streams.streams-jira-plugin:activitystream-gadget/gadgets/activitystream-gadget.xml"
+  color = "blue"
+  position = {
+    row = 1
+    column = 0
+  }
+  title = "Activity Stream"
+  properties = {
+    config = {
+      isConfigured = "true"
+      keys = "__all_projects__"
+      refresh = "false"
+      isReallyConfigured = "true"
+      rules = "%7B%22providers%22%3A%5B%5D%7D"
+      title = "News%20Recenti"
+      itemKeys = ""
+      titleRequired = "true"
+      numofentries = "3"
+      maxProviderLabelCharacters = "50"
+      renderingContext = ""
+      username = ""
+    }
+  }
+  _parent = [
+    jira.Dashboard.instance.Default_dashboard@s,
+  ]
+}

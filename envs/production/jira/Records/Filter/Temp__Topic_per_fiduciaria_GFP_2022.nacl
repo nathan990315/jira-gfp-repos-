@@ -1,0 +1,14 @@
+jira.Filter Temp__Topic_per_fiduciaria_GFP_2022@fsssss {
+  name = "Temp: Topic per fiduciaria GFP 2022"
+  description = ""
+  owner = {
+    id = "634feb2a01c2ff842c164ac0"
+    displayName = "Gioele Roffi"
+  }
+  jql = "${ jira.Field.instance.Created__datetime } >= 2022-01-01 AND ${ jira.Field.instance.Created__datetime } <= 2022-12-31 AND \"Topic[Dropdown]\" in (\"Per Fiduciaria GFP\", \"Per Fiduciaria GFP \") ORDER BY ${ jira.Field.instance.Issue_Type__issuetype@suu } DESC, due DESC, ${ jira.Field.instance.Created__datetime } DESC"
+  sharePermissions = [
+    {
+      type = "authenticated"
+    },
+  ]
+}

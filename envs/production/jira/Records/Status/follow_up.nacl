@@ -1,0 +1,5 @@
+jira.Status follow_up@b {
+  name = "Follow-up"
+  statusCategory = jira.StatusCategory.instance.In_Progress@s
+  description = ""
+}

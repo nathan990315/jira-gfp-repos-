@@ -1,0 +1,22 @@
+jira.Filter PROGETTI__In_fatturazione_da_controllare@fssss {
+  name = "PROGETTI: In fatturazione da controllare"
+  description = ""
+  owner = {
+    id = "62fc96fc5fc3a72bda94622f"
+    displayName = "Patrick Pasquillo"
+  }
+  jql = "${ jira.Field.instance.Project__project } = ${ jira.Project.instance.Progetto.key } AND ${ jira.Field.instance.Status__status } = Fatturazione AND \"ID Fattura [Short text]\" is EMPTY order by ${ jira.Field.instance.Created__datetime } DESC"
+  sharePermissions = [
+    {
+      type = "authenticated"
+    },
+  ]
+  editPermissions = [
+    {
+      type = "group"
+      group = {
+        name = jira.Group.instance.jira_software_users@b
+      }
+    },
+  ]
+}

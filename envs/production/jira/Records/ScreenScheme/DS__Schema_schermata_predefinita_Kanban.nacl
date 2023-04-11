@@ -1,0 +1,7 @@
+jira.ScreenScheme DS__Schema_schermata_predefinita_Kanban@fssss {
+  name = "DS: Schema schermata predefinita Kanban"
+  description = ""
+  screens = {
+    default = jira.Screen.instance.DS__Schermata_predefinita_ticket_Kanban@fssss
+  }
+}

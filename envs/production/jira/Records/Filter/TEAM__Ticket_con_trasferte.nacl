@@ -1,0 +1,22 @@
+jira.Filter TEAM__Ticket_con_trasferte@fsss {
+  name = "TEAM: Ticket con trasferte"
+  description = ""
+  owner = {
+    id = "60eea45b4257a90070b78edd"
+    displayName = "Salvatore Licari"
+  }
+  jql = "${ jira.Field.instance.Labels__array } = Trasferta order by ${ jira.Field.instance.Created__datetime } DESC"
+  sharePermissions = [
+    {
+      type = "authenticated"
+    },
+  ]
+  editPermissions = [
+    {
+      type = "group"
+      group = {
+        name = jira.Group.instance.jira_software_users@b
+      }
+    },
+  ]
+}

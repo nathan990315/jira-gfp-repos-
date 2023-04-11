@@ -1,0 +1,80 @@
+jira.Project Hotline_Email_@s {
+  key = "HE"
+  description = ""
+  name = "Hotline Email "
+  projectTypeKey = "service_desk"
+  components = [
+    jira.ProjectComponent.instance.Hotline_Email__s__Intranet@uumuu,
+    jira.ProjectComponent.instance.Hotline_Email__s__JIRA@uumuu,
+    jira.ProjectComponent.instance.Hotline_Email__s__Sito_web_pubblico@uumuuss,
+  ]
+  workflowScheme = jira.WorkflowScheme.instance.Schema_del_flusso_di_lavoro_per_l_assistenza_IT_di_Jira_Service_Management_generato_per_il_progetto_HE@sssssstssssssssss
+  permissionScheme = jira.PermissionScheme.instance.Schema_di_autorizzazione_di_Jira_Service_Management_per_il_progetto_HE@s
+  notificationScheme = jira.NotificationScheme.instance.Default_Notification_Scheme@s
+  issueTypeScreenScheme = jira.IssueTypeScreenScheme.instance.HE__Schema_della_schermata_del_tipo_di_ticket_Jira_Service_Management@fssssssssss
+  issueTypeScheme = jira.IssueTypeScheme.instance.HE__Schema_del_tipo_di_ticket_Jira_Service_Management@fssssssss
+  fieldConfigurationScheme = jira.FieldConfigurationScheme.instance.Schema_della_configurazione_di_campo_di_Jira_Service_Management_per_il_progetto_HE@s
+  leadAccountId = {
+    id = "61447938ff23ba007191345f"
+    displayName = "Nathan Giovannini"
+  }
+  _generated_dependencies = [
+    {
+      reference = jira.FieldConfigurationItem.instance.Configurazione_del_campo_Jira_Service_Management_per_il_progetto_HE_s_Approvers__multiuserpicker__c@uuuuuuuuumuuuuu
+    },
+    {
+      reference = jira.FieldConfigurationItem.instance.Configurazione_del_campo_Jira_Service_Management_per_il_progetto_HE_s_Assignee__user@uuuuuuuuumuuu
+    },
+    {
+      reference = jira.FieldConfigurationItem.instance.Configurazione_del_campo_Jira_Service_Management_per_il_progetto_HE_s_Attachment__array@uuuuuuuuumuuu
+    },
+    {
+      reference = jira.FieldConfigurationItem.instance.Configurazione_del_campo_Jira_Service_Management_per_il_progetto_HE_s_Categorizzazione_del_prodotto__cascadingselect__c_ssuuuu@uuuuuuuuumuuuuuuum
+    },
+    {
+      reference = jira.FieldConfigurationItem.instance.Configurazione_del_campo_Jira_Service_Management_per_il_progetto_HE_s_Categorizzazione_operativa__cascadingselect__c_suuuu@uuuuuuuuumuuuuuum
+    },
+    {
+      reference = jira.FieldConfigurationItem.instance.Configurazione_del_campo_Jira_Service_Management_per_il_progetto_HE_s_Components__array@uuuuuuuuumuuu
+    },
+    {
+      reference = jira.FieldConfigurationItem.instance.Configurazione_del_campo_Jira_Service_Management_per_il_progetto_HE_s_Description__string@uuuuuuuuumuuu
+    },
+    {
+      reference = jira.FieldConfigurationItem.instance.Configurazione_del_campo_Jira_Service_Management_per_il_progetto_HE_s_Due_date__date_suu@uuuuuuuuumuuuum
+    },
+    {
+      reference = jira.FieldConfigurationItem.instance.Configurazione_del_campo_Jira_Service_Management_per_il_progetto_HE_s_E_mail__textfield__c_buuuu@uuuuuuuuumuuuuuum
+    },
+    {
+      reference = jira.FieldConfigurationItem.instance.Configurazione_del_campo_Jira_Service_Management_per_il_progetto_HE_s_HubSpot_ticket_count__Hub_ID__27031577___float__c_sssjsfskuuuu@uuuuuuuuumuuuuuuuuuuuuum
+    },
+    {
+      reference = jira.FieldConfigurationItem.instance.Configurazione_del_campo_Jira_Service_Management_per_il_progetto_HE_s_Impact__select__c@uuuuuuuuumuuuuu
+    },
+    {
+      reference = jira.FieldConfigurationItem.instance.Configurazione_del_campo_Jira_Service_Management_per_il_progetto_HE_s_Issue_Type__issuetype_suu@uuuuuuuuumuuuum
+    },
+    {
+      reference = jira.FieldConfigurationItem.instance.Configurazione_del_campo_Jira_Service_Management_per_il_progetto_HE_s_Labels__array@uuuuuuuuumuuu
+    },
+    {
+      reference = jira.FieldConfigurationItem.instance.Configurazione_del_campo_Jira_Service_Management_per_il_progetto_HE_s_Linked_Issues__array_suu@uuuuuuuuumuuuum
+    },
+    {
+      reference = jira.FieldConfigurationItem.instance.Configurazione_del_campo_Jira_Service_Management_per_il_progetto_HE_s_Priority__priority@uuuuuuuuumuuu
+    },
+    {
+      reference = jira.FieldConfigurationItem.instance.Configurazione_del_campo_Jira_Service_Management_per_il_progetto_HE_s_Ragione_in_sospeso__select__c_ssuuuu@uuuuuuuuumuuuuuuum
+    },
+    {
+      reference = jira.FieldConfigurationItem.instance.Configurazione_del_campo_Jira_Service_Management_per_il_progetto_HE_s_Reporter__user@uuuuuuuuumuuu
+    },
+    {
+      reference = jira.FieldConfigurationItem.instance.Configurazione_del_campo_Jira_Service_Management_per_il_progetto_HE_s_Summary__string@uuuuuuuuumuuu
+    },
+    {
+      reference = jira.FieldConfigurationItem.instance.Configurazione_del_campo_Jira_Service_Management_per_il_progetto_HE_s_Urgenza__select__c@uuuuuuuuumuuuuu
+    },
+  ]
+}

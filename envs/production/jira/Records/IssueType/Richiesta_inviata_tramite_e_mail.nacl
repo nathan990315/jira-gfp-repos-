@@ -1,0 +1,6 @@
+jira.IssueType Richiesta_inviata_tramite_e_mail@sssb {
+  description = "Request received from your e-mail support channel."
+  name = "Richiesta inviata tramite e-mail"
+  untranslatedName = "Richiesta inviata tramite e-mail"
+  hierarchyLevel = 0
+}

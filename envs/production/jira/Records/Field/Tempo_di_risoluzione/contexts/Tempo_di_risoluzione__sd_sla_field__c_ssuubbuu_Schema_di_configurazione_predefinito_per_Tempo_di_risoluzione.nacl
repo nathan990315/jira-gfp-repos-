@@ -1,0 +1,8 @@
+jira.CustomFieldContext Tempo_di_risoluzione__sd_sla_field__c_ssuubbuu_Schema_di_configurazione_predefinito_per_Tempo_di_risoluzione@uuuuuuuumusssssss {
+  name = "Schema di configurazione predefinito per Tempo di risoluzione"
+  description = "Schema di configurazione predefinito generato da JIRA"
+  isGlobalContext = true
+  _parent = [
+    jira.Field.instance.Tempo_di_risoluzione__sd_sla_field__c@ssuubbuu,
+  ]
+}

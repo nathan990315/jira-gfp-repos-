@@ -1,0 +1,43 @@
+jira.Filter Task_in_corso_per_te@s {
+  name = "Task in corso per te"
+  description = ""
+  owner = {
+    id = "61447938ff23ba007191345f"
+    displayName = "Nathan Giovannini"
+  }
+  jql = "${ jira.Field.instance.Project__project } = 10000 AND ${ jira.Field.instance.Status__status } = \"${ jira.Status.instance.in_corso@s.name }\" AND ${ jira.Field.instance.Assignee__user } in (currentUser()) ORDER BY cf[10034] ASC"
+  columns = [
+    {
+      label = "Issue Type"
+      value = "issuetype"
+    },
+    {
+      label = "Key"
+      value = "issuekey"
+    },
+    {
+      label = "Created"
+      value = "created"
+    },
+    {
+      label = "Reporter"
+      value = "reporter"
+    },
+    {
+      label = "Summary"
+      value = "summary"
+    },
+    {
+      label = "Priority"
+      value = "priority"
+    },
+    {
+      label = "Status"
+      value = "status"
+    },
+    {
+      label = "Assignee"
+      value = "assignee"
+    },
+  ]
+}

@@ -1,0 +1,4 @@
+jira.TimeTrackingProvider Tempo_Timesheets@s {
+  key = "is.origo.jira.tempo-plugin__timetracking-provider"
+  name = "Tempo Timesheets"
+}

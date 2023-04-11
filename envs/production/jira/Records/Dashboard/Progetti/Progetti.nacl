@@ -1,0 +1,33 @@
+jira.Dashboard Progetti {
+  description = '''
+CDV da trasformare in progetti
+Progetti pianificati
+Progetti in corso
+'''
+  name = "Progetti"
+  owner = {
+    id = "634feb2a01c2ff842c164ac0"
+    displayName = "Gioele Roffi"
+  }
+  sharePermissions = [
+    {
+      type = "authenticated"
+    },
+  ]
+  gadgets = [
+    jira.DashboardGadget.instance.Progetti__Pie_Chart_0_0@uusuu,
+    jira.DashboardGadget.instance.Progetti__Tempo_My_Work_0_1@uussuu,
+    jira.DashboardGadget.instance.Progetti__Assigned_to_Me_0_2@uussuu,
+    jira.DashboardGadget.instance.Progetti__Watched_Issues_0_3@uusuu,
+    jira.DashboardGadget.instance.Progetti__Pie_Chart_1_0@uusuu,
+    jira.DashboardGadget.instance.Progetti__Pie_Chart_1_1@uusuu,
+    jira.DashboardGadget.instance.Progetti__Pie_Chart_1_2@uusuu,
+    jira.DashboardGadget.instance.Progetti__Tempo_People_in_Version_1_3@uusssuu,
+    jira.DashboardGadget.instance.Progetti__Tempo_People_in_Version_1_4@uusssuu,
+    jira.DashboardGadget.instance.Progetti__Pie_Chart_2_0@uusuu,
+    jira.DashboardGadget.instance.Progetti__Pie_Chart_2_1@uusuu,
+    jira.DashboardGadget.instance.Progetti__Tempo_Team_Hours_2_2@uussuu,
+    jira.DashboardGadget.instance.Progetti__Starred_filters_2_3@uusuu,
+  ]
+  layout = "AAA"
+}

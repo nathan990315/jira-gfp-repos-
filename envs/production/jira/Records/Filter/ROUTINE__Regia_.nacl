@@ -1,0 +1,22 @@
+jira.Filter ROUTINE__Regia_@fsa {
+  name = "ROUTINE: Regia?"
+  description = ""
+  owner = {
+    id = "62fc96fc5fc3a72bda94622f"
+    displayName = "Patrick Pasquillo"
+  }
+  jql = "${ jira.Field.instance.Labels__array } = \"Regia?\" ORDER BY ${ jira.Field.instance.Key.name } DESC, ${ jira.Field.instance.Created__datetime } DESC"
+  sharePermissions = [
+    {
+      type = "authenticated"
+    },
+  ]
+  editPermissions = [
+    {
+      type = "group"
+      group = {
+        name = jira.Group.instance.jira_software_users@b
+      }
+    },
+  ]
+}
