@@ -1,7 +1,7 @@
 jira.Project Hotline_Email_@s {
   key = "HE"
   description = ""
-  name = "Hotline Email "
+  name = "Hotline "
   projectTypeKey = "service_desk"
   components = [
     jira.ProjectComponent.instance.Hotline_Email__s__Intranet@uumuu,

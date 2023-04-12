@@ -3,8 +3,8 @@ jira.Automation assegnazione_automatica__Hotline_Email_@ssuss {
   state = "DISABLED"
   description = ""
   authorAccountId = {
-    id = "61447938ff23ba007191345f"
-    displayName = "Nathan Giovannini"
+    id = "634feb2a01c2ff842c164ac0"
+    displayName = "Gioele Roffi"
   }
   actor = {
     type = "ACCOUNT_ID"
