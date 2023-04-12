@@ -4,7 +4,7 @@ jira.Filter Progetti_per_te_oggi_parte_2@s {
     id = "61447938ff23ba007191345f"
     displayName = "Nathan Giovannini"
   }
-  jql = "${ jira.Field.instance.Assignee__user } in (currentUser()) AND \"Data di esecuzione [Date]\" >= \"0\" AND \"Data di esecuzione [Date]\" <= 8h AND ${ jira.Field.instance.Project__project } in (${ jira.Project.instance.Hotline_Email_@s.key }, RG, HOT, PR, ${ jira.Project.instance.Consulenza_di_vendita_@s.key }) AND ${ jira.Field.instance.Issue_Type__issuetype@suu } in (\"Consulenza di vendita\", ${ jira.IssueType.instance.Hotline.name }, Progetto, Regia, \"${ jira.IssueType.instance.Richiesta_inviata_tramite_e_mail@sssb.name }\") AND ${ jira.Field.instance.Status__status } in (\"${ jira.Status.instance.da_completare@s.name }\", \"${ jira.Status.instance.da_iniziare@s.name }\", \"${ jira.Status.instance.in_corso@s.name }\", Pianificato, ${ jira.Status.instance.sospeso.name })"
+  jql = "${ jira.Field.instance.Assignee__user } in (currentUser()) AND \"Data di esecuzione [Date]\" >= \"0\" AND \"Data di esecuzione [Date]\" <= 8h AND ${ jira.Field.instance.Project__project } in (${ jira.Project.instance.Hotline_Email_@s.key }, RG, HOT, PR, CDV) AND ${ jira.Field.instance.Issue_Type__issuetype@suu } in (\"Consulenza di vendita\", ${ jira.IssueType.instance.Hotline.name }, Progetto, Regia, \"${ jira.IssueType.instance.Richiesta_inviata_tramite_e_mail@sssb.name }\") AND ${ jira.Field.instance.Status__status } in (\"${ jira.Status.instance.da_completare@s.name }\", \"${ jira.Status.instance.da_iniziare@s.name }\", \"${ jira.Status.instance.in_corso@s.name }\", Pianificato, ${ jira.Status.instance.sospeso.name })"
   columns = [
     {
       label = "Key"

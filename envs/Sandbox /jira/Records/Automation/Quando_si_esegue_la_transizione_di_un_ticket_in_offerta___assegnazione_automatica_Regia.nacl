@@ -63,7 +63,7 @@ jira.Automation Quando_si_esegue_la_transizione_di_un_ticket_in_offerta___assegn
   notifyOnError = "FIRSTERROR"
   projects = [
     {
-      projectId = jira.Project.instance.Regia
+      projectId = "10030"
     },
   ]
   labels = [

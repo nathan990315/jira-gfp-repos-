@@ -5,7 +5,7 @@ jira.Filter Da_vidimare_@s {
     id = "61447938ff23ba007191345f"
     displayName = "Nathan Giovannini"
   }
-  jql = "${ jira.Field.instance.Project__project } in (${ jira.Project.instance.Regia.key }, ${ jira.Project.instance.Progetto.key }) AND ${ jira.Field.instance.Status__status } = Fatturazione AND \"Stato fatturazione [Checkboxes]\" = \"Fattura da vidimare \" ORDER BY ${ jira.Field.instance.Updated__datetime } ASC, ${ jira.Field.instance.Status__status } DESC, ${ jira.Field.instance.Created__datetime } DESC"
+  jql = "${ jira.Field.instance.Project__project } in (REG, ${ jira.Project.instance.Progetto.key }) AND ${ jira.Field.instance.Status__status } = Fatturazione AND \"Stato fatturazione [Checkboxes]\" = \"Fattura da vidimare \" ORDER BY ${ jira.Field.instance.Updated__datetime } ASC, ${ jira.Field.instance.Status__status } DESC, ${ jira.Field.instance.Created__datetime } DESC"
   sharePermissions = [
     {
       type = "authenticated"

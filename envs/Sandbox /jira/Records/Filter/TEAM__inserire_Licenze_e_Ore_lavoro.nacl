@@ -5,7 +5,7 @@ jira.Filter TEAM__inserire_Licenze_e_Ore_lavoro@fsssss {
     id = "62fc96fc5fc3a72bda94622f"
     displayName = "Patrick Pasquillo"
   }
-  jql = "${ jira.Field.instance.Project__project } = ${ jira.Project.instance.Consulenza_di_vendita_@s.key } AND ${ jira.Field.instance.Issue_Type__issuetype@suu } in (\"Consulenza di vendita\", ${ jira.IssueType.instance.Task.name }, ${ jira.IssueType.instance.Sottotask.name }) AND (\"ID Offerta [Short text]\" is not EMPTY) AND (\"Licenze [Short text]\" is EMPTY OR \"Ore lavoro[Short text]\" is EMPTY) order by ${ jira.Field.instance.Created__datetime } DESC"
+  jql = "${ jira.Field.instance.Project__project } = CDV AND ${ jira.Field.instance.Issue_Type__issuetype@suu } in (\"Consulenza di vendita\", ${ jira.IssueType.instance.Task.name }, ${ jira.IssueType.instance.Sottotask.name }) AND (\"ID Offerta [Short text]\" is not EMPTY) AND (\"Licenze [Short text]\" is EMPTY OR \"Ore lavoro[Short text]\" is EMPTY) order by ${ jira.Field.instance.Created__datetime } DESC"
   sharePermissions = [
     {
       type = "authenticated"

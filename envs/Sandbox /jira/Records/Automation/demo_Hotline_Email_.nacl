@@ -48,7 +48,7 @@ jira.Automation demo_Hotline_Email_@uss {
             type = "SET"
             value = {
               type = "ID"
-              value = jira.Project.instance.Consulenza_di_vendita_@s
+              value = "10006"
             }
           },
           {

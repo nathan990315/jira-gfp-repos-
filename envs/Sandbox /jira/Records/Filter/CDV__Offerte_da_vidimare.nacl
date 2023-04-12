@@ -5,7 +5,7 @@ jira.Filter CDV__Offerte_da_vidimare@fsss {
     id = "62fc96fc5fc3a72bda94622f"
     displayName = "Patrick Pasquillo"
   }
-  jql = "${ jira.Field.instance.Project__project } = ${ jira.Project.instance.Consulenza_di_vendita_@s.key } AND ${ jira.Field.instance.Status__status } in (\"${ jira.Status.instance.da_iniziare@s.name }\", \"${ jira.Status.instance.da_iniziare@s.name }\", \"${ jira.Status.instance.in_corso@s.name }\", \"${ jira.Status.instance.in_corso@s.name }\", \"${ jira.Status.instance.sospeso.name }\") AND \"ID Offerta [Short text]\" is not EMPTY AND (\"Etichette consulenza di vendita[Labels]\" != \"DaInviare\" OR \"Etichette consulenza di vendita[Labels]\" is EMPTY) AND \"Stato offerta [Dropdown]\" is EMPTY order by ${ jira.Field.instance.Created__datetime } DESC"
+  jql = "${ jira.Field.instance.Project__project } = CDV AND ${ jira.Field.instance.Status__status } in (\"${ jira.Status.instance.da_iniziare@s.name }\", \"${ jira.Status.instance.da_iniziare@s.name }\", \"${ jira.Status.instance.in_corso@s.name }\", \"${ jira.Status.instance.in_corso@s.name }\", \"${ jira.Status.instance.sospeso.name }\") AND \"ID Offerta [Short text]\" is not EMPTY AND (\"Etichette consulenza di vendita[Labels]\" != \"DaInviare\" OR \"Etichette consulenza di vendita[Labels]\" is EMPTY) AND \"Stato offerta [Dropdown]\" is EMPTY order by ${ jira.Field.instance.Created__datetime } DESC"
   sharePermissions = [
     {
       type = "authenticated"

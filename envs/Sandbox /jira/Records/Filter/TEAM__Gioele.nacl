@@ -5,7 +5,7 @@ jira.Filter TEAM__Gioele@fs {
     id = "62fc96fc5fc3a72bda94622f"
     displayName = "Patrick Pasquillo"
   }
-  jql = "${ jira.Field.instance.Project__project } in (HT, ${ jira.Project.instance.Progetto.key }, ${ jira.Project.instance.Consulenza_di_vendita_@s.key }, ${ jira.Project.instance.Hotline_Email_@s.key }, ${ jira.Project.instance.Regia.key }) AND ${ jira.Field.instance.Status__status } in (\"${ jira.Status.instance.in_sospeso@s.name }\", ${ jira.Status.instance.apri.name }, \"${ jira.Status.instance.lavoro_in_corso@s.name }\", ${ jira.Status.instance.riaperto.name }, Offerta, Pianificato, \"${ jira.Status.instance.da_iniziare@s.name }\", \"${ jira.Status.instance.in_corso@s.name }\", ${ jira.Status.instance.sospeso.name }) AND ${ jira.Field.instance.Assignee__user } in (634feb2a01c2ff842c164ac0) order by ${ jira.Field.instance.Created__datetime } DESC"
+  jql = "${ jira.Field.instance.Project__project } in (HT, ${ jira.Project.instance.Progetto.key }, CDV, ${ jira.Project.instance.Hotline_Email_@s.key }, REG) AND ${ jira.Field.instance.Status__status } in (\"${ jira.Status.instance.in_sospeso@s.name }\", ${ jira.Status.instance.apri.name }, \"${ jira.Status.instance.lavoro_in_corso@s.name }\", ${ jira.Status.instance.riaperto.name }, Offerta, Pianificato, \"${ jira.Status.instance.da_iniziare@s.name }\", \"${ jira.Status.instance.in_corso@s.name }\", ${ jira.Status.instance.sospeso.name }) AND ${ jira.Field.instance.Assignee__user } in (634feb2a01c2ff842c164ac0) order by ${ jira.Field.instance.Created__datetime } DESC"
   sharePermissions = [
     {
       type = "authenticated"

@@ -20,7 +20,7 @@ jira.WorkflowScheme Schema_del_flusso_di_lavoro_per_l_assistenza_IT_di_Jira_Serv
       issueType = jira.IssueType.instance.Richiesta_di_Servizio@s
     },
     {
-      workflow = jira.Workflow.instance.DEMO__flusso_di_lavoro_di_evasione_delle_richieste_di_assistenza_con_approvazioni_per_Jira_Service_Management@fsssssssssssssss
+      workflow = "DEMO: flusso di lavoro di evasione delle richieste di assistenza con approvazioni per Jira Service Management"
       issueType = jira.IssueType.instance.Richieste_di_assistenza_con_approvazioni@s
     },
   ]

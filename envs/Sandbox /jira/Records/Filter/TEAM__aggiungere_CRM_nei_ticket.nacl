@@ -5,7 +5,7 @@ jira.Filter TEAM__aggiungere_CRM_nei_ticket@fssss {
     id = "62fc96fc5fc3a72bda94622f"
     displayName = "Patrick Pasquillo"
   }
-  jql = "${ jira.Field.instance.Project__project } in (${ jira.Project.instance.Consulenza_di_vendita_@s.key }, ${ jira.Project.instance.Hotline_Email_@s.key }, HT, ${ jira.Project.instance.Progetto.key }, ${ jira.Project.instance.Regia.key }) AND ${ jira.Field.instance.Issue_Type__issuetype@suu } != \"Hotline Multicliente\" AND ${ jira.Field.instance.Issue_Type__issuetype@suu } != ${ jira.IssueType.instance.Epic.name } AND cf[${ jira.Field.instance.Company__read_only_string_issue_field__c@uubbbbuu }] is EMPTY ORDER BY ${ jira.Field.instance.Created__datetime } DESC"
+  jql = "${ jira.Field.instance.Project__project } in (CDV, ${ jira.Project.instance.Hotline_Email_@s.key }, HT, ${ jira.Project.instance.Progetto.key }, REG) AND ${ jira.Field.instance.Issue_Type__issuetype@suu } != \"Hotline Multicliente\" AND ${ jira.Field.instance.Issue_Type__issuetype@suu } != ${ jira.IssueType.instance.Epic.name } AND cf[${ jira.Field.instance.Company__read_only_string_issue_field__c@uubbbbuu }] is EMPTY ORDER BY ${ jira.Field.instance.Created__datetime } DESC"
   sharePermissions = [
     {
       type = "authenticated"

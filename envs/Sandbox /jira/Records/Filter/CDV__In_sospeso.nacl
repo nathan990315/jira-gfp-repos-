@@ -5,7 +5,7 @@ jira.Filter CDV__In_sospeso@fss {
     id = "62fc96fc5fc3a72bda94622f"
     displayName = "Patrick Pasquillo"
   }
-  jql = "${ jira.Field.instance.Project__project } = ${ jira.Project.instance.Consulenza_di_vendita_@s.key } AND ${ jira.Field.instance.Issue_Type__issuetype@suu } = \"Consulenza di vendita\" AND ${ jira.Field.instance.Status__status } = ${ jira.Status.instance.sospeso.name } ORDER BY ${ jira.Field.instance.Priority__priority } DESC, ${ jira.Field.instance.Created__datetime } DESC"
+  jql = "${ jira.Field.instance.Project__project } = CDV AND ${ jira.Field.instance.Issue_Type__issuetype@suu } = \"Consulenza di vendita\" AND ${ jira.Field.instance.Status__status } = ${ jira.Status.instance.sospeso.name } ORDER BY ${ jira.Field.instance.Priority__priority } DESC, ${ jira.Field.instance.Created__datetime } DESC"
   sharePermissions = [
     {
       type = "authenticated"

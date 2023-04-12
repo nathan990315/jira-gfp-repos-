@@ -5,7 +5,7 @@ jira.Filter Regia__in_corso@fss {
     id = "634feb2a01c2ff842c164ac0"
     displayName = "Gioele Roffi"
   }
-  jql = "${ jira.Field.instance.Project__project } = ${ jira.Project.instance.Regia.key } AND ${ jira.Field.instance.Status__status } in (\"${ jira.Status.instance.da_iniziare@s.name }\", \"${ jira.Status.instance.in_corso@s.name }\", \"${ jira.Status.instance.in_sospeso@s.name }\", Offerta) AND ${ jira.Field.instance.Created__datetime } >= -30d order by ${ jira.Field.instance.Created__datetime } DESC"
+  jql = "${ jira.Field.instance.Project__project } = REG AND ${ jira.Field.instance.Status__status } in (\"${ jira.Status.instance.da_iniziare@s.name }\", \"${ jira.Status.instance.in_corso@s.name }\", \"${ jira.Status.instance.in_sospeso@s.name }\", Offerta) AND ${ jira.Field.instance.Created__datetime } >= -30d order by ${ jira.Field.instance.Created__datetime } DESC"
   sharePermissions = [
     {
       type = "authenticated"
