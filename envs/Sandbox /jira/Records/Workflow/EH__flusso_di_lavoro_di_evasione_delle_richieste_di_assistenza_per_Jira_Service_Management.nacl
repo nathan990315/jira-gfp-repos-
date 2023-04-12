@@ -171,7 +171,7 @@ jira.Workflow EH__flusso_di_lavoro_di_evasione_delle_richieste_di_assistenza_per
       to = jira.Status.instance.in_sospeso@s
       type = "directed"
       screen = {
-        id = "10127"
+        id = jira.Screen.instance.JIRA_Service_Desk_Pending_Reason_screen___13@ssssssbs
       }
       rules = {
         postFunctions = [

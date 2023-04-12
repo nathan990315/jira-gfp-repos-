@@ -2,23 +2,13 @@ jira.Screen Workflow_Screen___4@ssbs {
   name = "Workflow Screen - 4"
   description = "This screen is used in the workflow and enables you to assign issues"
   tabs = {
-    Field_Tab@s = {
-      name = "Field Tab"
-      fields = [
-        jira.Field.instance.Assignee__user,
-        jira.Field.instance.Stato_abbonamento__textfield__c@suuuu,
-        jira.Field.instance.Company__read_only_string_issue_field__c@uubbbbuu,
-        jira.Field.instance.Cliente__textfield__c,
-        jira.Field.instance.Sale__read_only_string_issue_field__c@uubbbbuu,
-      ]
-      position = 0
-    }
+    
     HubSpot = {
       name = "HubSpot"
       fields = [
         jira.Field.instance.HubSpot_ticket_count__Hub_ID__27031577___float__c@sssjsfskuuuu,
       ]
-      position = 1
+      position = 0
     }
   }
 }
