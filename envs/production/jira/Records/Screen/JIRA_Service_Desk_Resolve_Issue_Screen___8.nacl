@@ -11,5 +11,12 @@ jira.Screen JIRA_Service_Desk_Resolve_Issue_Screen___8@ssssssbs {
       position = 0
     }
     
+    HubSpot = {
+      name = "HubSpot"
+      fields = [
+        jira.Field.instance.HubSpot_ticket_count__Hub_ID__27031577___float__c@sssjsfskuuuu,
+      ]
+      position = 1
+    }
   }
 }

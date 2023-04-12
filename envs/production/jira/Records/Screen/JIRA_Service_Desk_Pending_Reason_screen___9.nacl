@@ -8,6 +8,13 @@ jira.Screen JIRA_Service_Desk_Pending_Reason_screen___9@ssssssbs {
       fields = [
         jira.Field.instance.HubSpot_ticket_count__Hub_ID__27031577___float__c@sssjsfskuuuu,
       ]
+      position = 1
+    }
+    Field_Tab@s = {
+      name = "Field Tab"
+      fields = [
+        jira.Field.instance.Linked_Issues__array@suu,
+      ]
       position = 0
     }
   }
