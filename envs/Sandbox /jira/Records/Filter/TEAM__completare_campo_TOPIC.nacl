@@ -5,7 +5,7 @@ jira.Filter TEAM__completare_campo_TOPIC@fsss {
     id = "62fc96fc5fc3a72bda94622f"
     displayName = "Patrick Pasquillo"
   }
-  jql = "${ jira.Field.instance.Project__project } in (${ jira.Project.instance.Hotline.key }, Regia, Progetto) AND ${ jira.Field.instance.Issue_Type__issuetype@suu } != \"Hotline Multicliente\" AND ${ jira.Field.instance.Issue_Type__issuetype@suu } != ${ jira.IssueType.instance.Epic.name } AND \"Topic[Dropdown]\" is EMPTY ORDER BY ${ jira.Field.instance.Issue_Type__issuetype@suu } ASC, ${ jira.Field.instance.Created__datetime } DESC"
+  jql = "${ jira.Field.instance.Project__project } in (HT, Regia, Progetto) AND ${ jira.Field.instance.Issue_Type__issuetype@suu } != \"Hotline Multicliente\" AND ${ jira.Field.instance.Issue_Type__issuetype@suu } != ${ jira.IssueType.instance.Epic.name } AND \"Topic[Dropdown]\" is EMPTY ORDER BY ${ jira.Field.instance.Issue_Type__issuetype@suu } ASC, ${ jira.Field.instance.Created__datetime } DESC"
   sharePermissions = [
     {
       type = "authenticated"

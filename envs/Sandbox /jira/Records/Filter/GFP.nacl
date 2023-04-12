@@ -5,7 +5,7 @@ jira.Filter GFP {
     id = "61447938ff23ba007191345f"
     displayName = "Nathan Giovannini"
   }
-  jql = "${ jira.Field.instance.Project__project } = ${ jira.Project.instance.Hotline.key } AND ${ jira.Field.instance.Issue_Type__issuetype@suu } in (${ jira.IssueType.instance.Hotline.name }, \"Hotline Multicliente\") AND cf[${ jira.Field.instance.Company__read_only_string_issue_field__c@uubbbbuu }] = \"GFP mediconsul Ticino SA\""
+  jql = "${ jira.Field.instance.Project__project } = HT AND ${ jira.Field.instance.Issue_Type__issuetype@suu } in (${ jira.IssueType.instance.Hotline.name }, \"Hotline Multicliente\") AND cf[${ jira.Field.instance.Company__read_only_string_issue_field__c@uubbbbuu }] = \"GFP mediconsul Ticino SA\""
   sharePermissions = [
     {
       type = "authenticated"

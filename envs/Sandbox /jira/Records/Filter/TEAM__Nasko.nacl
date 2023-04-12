@@ -5,7 +5,7 @@ jira.Filter TEAM__Nasko@fs {
     id = "62fc96fc5fc3a72bda94622f"
     displayName = "Patrick Pasquillo"
   }
-  jql = "${ jira.Field.instance.Project__project } in (${ jira.Project.instance.Consulenza_di_vendita_@s.key }, ${ jira.Project.instance.Hotline.key }, ${ jira.Project.instance.Hotline_Email_@s.key }, ${ jira.Project.instance.Progetto.key }) AND ${ jira.Field.instance.Assignee__user } in (60ebf58e081fcd00709ec7f8) order by ${ jira.Field.instance.Created__datetime } DESC"
+  jql = "${ jira.Field.instance.Project__project } in (${ jira.Project.instance.Consulenza_di_vendita_@s.key }, HT, ${ jira.Project.instance.Hotline_Email_@s.key }, ${ jira.Project.instance.Progetto.key }) AND ${ jira.Field.instance.Assignee__user } in (60ebf58e081fcd00709ec7f8) order by ${ jira.Field.instance.Created__datetime } DESC"
   sharePermissions = [
     {
       type = "authenticated"

@@ -5,7 +5,7 @@ jira.Filter ROUTINE__HT_da_Fatturare__Regia@fsssby {
     id = "62fc96fc5fc3a72bda94622f"
     displayName = "Patrick Pasquillo"
   }
-  jql = "${ jira.Field.instance.Project__project } in (${ jira.Project.instance.Hotline.key }, ${ jira.Project.instance.Hotline_Email_@s.key }) AND ${ jira.Field.instance.Labels__array } = \"Fatturare->Regia\" order by ${ jira.Field.instance.Created__datetime } DESC"
+  jql = "${ jira.Field.instance.Project__project } in (HT, ${ jira.Project.instance.Hotline_Email_@s.key }) AND ${ jira.Field.instance.Labels__array } = \"Fatturare->Regia\" order by ${ jira.Field.instance.Created__datetime } DESC"
   sharePermissions = [
     {
       type = "authenticated"

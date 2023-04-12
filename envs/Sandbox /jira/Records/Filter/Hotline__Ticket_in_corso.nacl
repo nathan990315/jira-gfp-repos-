@@ -5,7 +5,7 @@ jira.Filter Hotline__Ticket_in_corso@fsss {
     id = "634feb2a01c2ff842c164ac0"
     displayName = "Gioele Roffi"
   }
-  jql = "${ jira.Field.instance.Project__project } = ${ jira.Project.instance.Hotline.key } AND ${ jira.Field.instance.Issue_Type__issuetype@suu } in (${ jira.IssueType.instance.Hotline.name }, ${ jira.IssueType.instance.Sottotask.name }) AND ${ jira.Field.instance.Status__status } in (\"${ jira.Status.instance.da_iniziare@s.name }\", \"${ jira.Status.instance.in_corso@s.name }\", ${ jira.Status.instance.sospeso.name }) AND ${ jira.Field.instance.Assignee__user } in (currentUser(), 60ebf585413fc70069d10ab8, EMPTY, 61447938ff23ba007191345f, 633ea04797148a8301ff2018, 62fc96fc5fc3a72bda94622f, 60eea45b4257a90070b78edd, 60ebf586413fc70069d10abf) ORDER BY ${ jira.Field.instance.Created__datetime } DESC, ${ jira.Field.instance.Assignee__user } ASC"
+  jql = "${ jira.Field.instance.Project__project } = HT AND ${ jira.Field.instance.Issue_Type__issuetype@suu } in (${ jira.IssueType.instance.Hotline.name }, ${ jira.IssueType.instance.Sottotask.name }) AND ${ jira.Field.instance.Status__status } in (\"${ jira.Status.instance.da_iniziare@s.name }\", \"${ jira.Status.instance.in_corso@s.name }\", ${ jira.Status.instance.sospeso.name }) AND ${ jira.Field.instance.Assignee__user } in (currentUser(), 60ebf585413fc70069d10ab8, EMPTY, 61447938ff23ba007191345f, 633ea04797148a8301ff2018, 62fc96fc5fc3a72bda94622f, 60eea45b4257a90070b78edd, 60ebf586413fc70069d10abf) ORDER BY ${ jira.Field.instance.Created__datetime } DESC, ${ jira.Field.instance.Assignee__user } ASC"
   sharePermissions = [
     {
       type = "group"

@@ -23,6 +23,11 @@ jira.CustomFieldContext Ragione_in_sospeso__select__c_ssuuuu_Schema_di_configura
       disabled = false
       position = 3
     }
+    In_attesa_del_cliente_@s = {
+      value = "In attesa del cliente "
+      disabled = false
+      position = 4
+    }
   }
   defaultValue = {
     type = "option.single"
