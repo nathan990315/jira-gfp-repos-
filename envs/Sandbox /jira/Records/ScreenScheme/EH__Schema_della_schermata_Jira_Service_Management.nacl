@@ -2,6 +2,6 @@ jira.ScreenScheme EH__Schema_della_schermata_Jira_Service_Management@fssssss {
   name = "EH: Schema della schermata Jira Service Management"
   description = "Questo schema della schermata Jira Service Management è stato generato automaticamente"
   screens = {
-    default = jira.Screen.instance.EH__Schermata_Jira_Service_Management@fssss
+    default = 10124
   }
 }
