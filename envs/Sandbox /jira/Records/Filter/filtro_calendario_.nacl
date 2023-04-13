@@ -4,5 +4,5 @@ jira.Filter filtro_calendario_@s {
     id = "61447938ff23ba007191345f"
     displayName = "Nathan Giovannini"
   }
-  jql = "\"Data di esecuzione [Date]\" >= 0d AND \"Data di esecuzione [Date]\" <= 0d AND ${ jira.Field.instance.Project__project } in (PR, RG, HOT, CDV) AND ${ jira.Field.instance.Issue_Type__issuetype@suu } in standardIssueTypes() order by ${ jira.Field.instance.Created__datetime } DESC"
+  jql = "\"Data di esecuzione [Date]\" >= 0d AND \"Data di esecuzione [Date]\" <= 0d AND ${ jira.Field.instance.Project__project } in (PR, RG, HOT, ${ jira.Project.instance.Consulenza_di_vendita_@s.key }) AND ${ jira.Field.instance.Issue_Type__issuetype@suu } in standardIssueTypes() order by ${ jira.Field.instance.Created__datetime } DESC"
 }

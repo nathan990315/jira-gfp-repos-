@@ -5,7 +5,7 @@ jira.Filter TEMP__inserire_stato_fatturazione@fsss {
     id = "62fc96fc5fc3a72bda94622f"
     displayName = "Patrick Pasquillo"
   }
-  jql = "${ jira.Field.instance.Project__project } in (${ jira.Project.instance.Progetto.key }, REG) AND \"ID Fattura [Short text]\" is not EMPTY AND \"Stato fatturazione [Checkboxes]\" is EMPTY order by ${ jira.Field.instance.Created__datetime } DESC"
+  jql = "${ jira.Field.instance.Project__project } in (${ jira.Project.instance.Progetto.key }, ${ jira.Project.instance.Regia.key }) AND \"ID Fattura [Short text]\" is not EMPTY AND \"Stato fatturazione [Checkboxes]\" is EMPTY order by ${ jira.Field.instance.Created__datetime } DESC"
   sharePermissions = [
     {
       type = "authenticated"

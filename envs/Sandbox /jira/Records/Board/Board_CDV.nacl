@@ -10,7 +10,7 @@ jira.Board Board_CDV@s {
     ]
   }
   location = {
-    projectId = 10006
+    projectId = jira.Project.instance.Consulenza_di_vendita_@s
   }
   filterId = "10029"
   columnConfig = {

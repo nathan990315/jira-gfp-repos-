@@ -5,7 +5,7 @@ jira.Filter ROUTINE__Da_Regia__HOTLINE@fssby {
     id = "62fc96fc5fc3a72bda94622f"
     displayName = "Patrick Pasquillo"
   }
-  jql = "${ jira.Field.instance.Project__project } = REG AND ${ jira.Field.instance.Labels__array } in (NoRegia) AND ${ jira.Field.instance.Status__status } != ${ jira.Status.instance.completato.name } order by ${ jira.Field.instance.Created__datetime } DESC"
+  jql = "${ jira.Field.instance.Project__project } = ${ jira.Project.instance.Regia.key } AND ${ jira.Field.instance.Labels__array } in (NoRegia) AND ${ jira.Field.instance.Status__status } != ${ jira.Status.instance.completato.name } order by ${ jira.Field.instance.Created__datetime } DESC"
   sharePermissions = [
     {
       type = "authenticated"

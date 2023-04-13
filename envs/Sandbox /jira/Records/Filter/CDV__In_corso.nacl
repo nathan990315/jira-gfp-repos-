@@ -5,7 +5,7 @@ jira.Filter CDV__In_corso@fss {
     id = "62fc96fc5fc3a72bda94622f"
     displayName = "Patrick Pasquillo"
   }
-  jql = "${ jira.Field.instance.Project__project } = CDV AND ${ jira.Field.instance.Status__status } in (\"${ jira.Status.instance.da_iniziare@s.name }\", \"${ jira.Status.instance.in_corso@s.name }\") AND \"ID Offerta [Short text]\" is EMPTY order by ${ jira.Field.instance.Created__datetime } DESC"
+  jql = "${ jira.Field.instance.Project__project } = ${ jira.Project.instance.Consulenza_di_vendita_@s.key } AND ${ jira.Field.instance.Status__status } in (\"${ jira.Status.instance.da_iniziare@s.name }\", \"${ jira.Status.instance.in_corso@s.name }\") AND \"ID Offerta [Short text]\" is EMPTY order by ${ jira.Field.instance.Created__datetime } DESC"
   sharePermissions = [
     {
       type = "authenticated"

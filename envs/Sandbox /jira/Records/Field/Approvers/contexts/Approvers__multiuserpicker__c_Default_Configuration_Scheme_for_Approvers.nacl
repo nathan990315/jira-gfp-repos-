@@ -6,4 +6,7 @@ jira.CustomFieldContext Approvers__multiuserpicker__c_Default_Configuration_Sche
   _parent = [
     jira.Field.instance.Approvers__multiuserpicker__c,
   ]
+  defaultValue = {
+    type = "multi.user.select"
+  }
 }
