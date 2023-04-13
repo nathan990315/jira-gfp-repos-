@@ -2,5 +2,5 @@ jira.Priority Low {
   statusColor = "#707070"
   description = "Minor problem or easily worked around."
   iconUrl = "/images/icons/priorities/low.svg"
-  name = "Low"
+  name = "Bassa"
 }
