@@ -22,6 +22,7 @@ jira.Screen GT__Schermata_Crea_ticket_per_la_gestione_dei_task@fssssssss {
       ]
       position = 0
     }
+    
     HubSpot = {
       name = "HubSpot"
       fields = [

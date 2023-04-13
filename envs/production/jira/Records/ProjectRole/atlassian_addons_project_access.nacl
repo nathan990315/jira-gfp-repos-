@@ -13,6 +13,16 @@ jira.ProjectRole atlassian_addons_project_access@b {
       }
     },
     {
+      displayName = "Alliedium"
+      type = "atlassian-user-role-actor"
+      actorUser = {
+        accountId = {
+          id = "5b0fff4e3993e9196502ea19"
+          displayName = "Alliedium"
+        }
+      }
+    },
+    {
       displayName = "Announcer for jira"
       type = "atlassian-user-role-actor"
       actorUser = {
