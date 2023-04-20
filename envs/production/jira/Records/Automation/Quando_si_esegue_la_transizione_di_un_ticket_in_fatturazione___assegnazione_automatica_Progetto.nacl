@@ -1,6 +1,6 @@
 jira.Automation Quando_si_esegue_la_transizione_di_un_ticket_in_fatturazione___assegnazione_automatica_Progetto@ssssssssss_08594ssu {
   name = "Quando si esegue la transizione di un ticket in fatturazione → assegnazione automatica"
-  state = "ENABLED"
+  state = "DISABLED"
   authorAccountId = {
     id = "634feb2a01c2ff842c164ac0"
     displayName = "Gioele Roffi"
