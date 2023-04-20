@@ -1,5 +1,5 @@
-jira.Permissions_permissions {
-  additionalProperties = {
+jira.Permissions {
+  permissions = {
     ADD_COMMENTS = {
       key = "ADD_COMMENTS"
       name = "Add Comments"
