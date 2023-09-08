@@ -1,0 +1,12 @@
+jira.CustomFieldContext Sito_web__url__c_suuuu_Schema_di_configurazione_predefinito_per_Sito_web@uuuuumussssss {
+  name = "Schema di configurazione predefinito per Sito web"
+  description = "Schema di configurazione predefinito generato da JIRA"
+  isGlobalContext = true
+  defaultValue = {
+    type = "url"
+  }
+  _parent = [
+    jira.Field.instance.Sito_web__url__c@suuuu,
+  ]
+  _alias = "Sito web context in Schema di configurazione predefinito per Sito web"
+}

@@ -1,0 +1,22 @@
+jira.Filter "1__Creare_Offerta@fss" {
+  name = "1: Creare Offerta"
+  description = ""
+  owner = {
+    id = "62fc96fc5fc3a72bda94622f"
+    displayName = "Patrick Pasquillo"
+  }
+  jql = "${ jira.Field.instance.Project__project } in (${ jira.Project.instance.Progetto.key }, ${ jira.Project.instance.Regia.key }) AND ${ jira.Field.instance.Issue_Type__issuetype@suu } in (Formazione, \"Formazione (Progetti e supporto)\", \"Installazioni e Configurazioni (Progetti e supporto\", \"Installazioni e Configurazioni (Progetti e supporto)\") AND ${ jira.Field.instance.Status__status } in (Fatturazione)  AND (\"ID Offerta Regia [Short text]\" is EMPTY AND \"ID Offerta [Short text]\" is EMPTY) order by ${ jira.Field.instance.Created__datetime } DESC"
+  sharePermissions = [
+    {
+      type = "authenticated"
+    },
+  ]
+  editPermissions = [
+    {
+      type = "group"
+      group = {
+        name = jira.Group.instance.jira_software_users@b
+      }
+    },
+  ]
+}

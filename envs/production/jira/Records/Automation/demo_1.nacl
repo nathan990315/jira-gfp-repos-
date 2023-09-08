@@ -1,0 +1,228 @@
+jira.Automation demo_1@s {
+  name = "demo 1"
+  state = "ENABLED"
+  authorAccountId = {
+    id = "61447938ff23ba007191345f"
+    displayName = "Nathan Giovannini"
+  }
+  actor = {
+    type = "ACCOUNT_ID"
+    value = {
+      id = "557058:f58131cb-b67d-43c7-b30d-6b58d40bd077"
+      displayName = "Automation for Jira"
+    }
+  }
+  trigger = {
+    component = "TRIGGER"
+    schemaVersion = 2
+    type = "jira.issue.field.changed"
+    value = {
+      changeType = "VALUE_ADDED"
+      fields = [
+        {
+          value = "Triggers"
+          type = "fieldName"
+        },
+      ]
+      actions = [
+      ]
+    }
+    children = [
+    ]
+    conditions = [
+    ]
+  }
+  components = [
+    {
+      component = "CONDITION"
+      schemaVersion = 1
+      type = "jira.condition.container.block"
+      children = [
+        {
+          component = "CONDITION_BLOCK"
+          schemaVersion = 1
+          type = "jira.condition.if.block"
+          value = {
+            conditionMatchType = "ALL"
+          }
+          children = [
+            {
+              component = "ACTION"
+              schemaVersion = 10
+              type = "jira.issue.clone"
+              value = {
+                operations = [
+                  {
+                    field = {
+                      type = "ID"
+                      value = jira.Field.instance.Project__project
+                    }
+                    fieldType = "project"
+                    type = "SET"
+                    value = {
+                      type = "ID"
+                      value = "10020"
+                    }
+                  },
+                  {
+                    field = {
+                      type = "ID"
+                      value = jira.Field.instance.Issue_Type__issuetype@suu
+                    }
+                    fieldType = "issuetype"
+                    type = "SET"
+                    value = {
+                      type = "ID"
+                      value = "10049"
+                    }
+                  },
+                  {
+                    field = {
+                      type = "ID"
+                      value = jira.Field.instance.Summary__string
+                    }
+                    fieldType = "summary"
+                    type = "SET"
+                    rawValue = "{{issue.summary}}"
+                  },
+                  {
+                    field = {
+                      type = "NAME"
+                      value = "Tipo Opportunità"
+                    }
+                    fieldType = "com.atlassian.jira.plugin.system.customfieldtypes:select"
+                    type = "SET"
+                    value = {
+                      type = "NAME"
+                      value = "Altre Prestazioni SW / Formazione e Fuori Abo"
+                    }
+                  },
+                ]
+                sendNotifications = false
+              }
+              children = [
+              ]
+              conditions = [
+              ]
+            },
+          ]
+          conditions = [
+            {
+              component = "CONDITION"
+              schemaVersion = 3
+              type = "jira.issue.condition"
+              value = {
+                selectedField = {
+                  type = "NAME"
+                  value = "Triggers"
+                }
+                selectedFieldType = "com.atlassian.jira.plugin.system.customfieldtypes:select"
+                comparison = "EQUALS"
+                compareFieldValue = {
+                  type = "NAME"
+                  value = "Offerta Creata"
+                  multiValue = false
+                }
+              }
+              children = [
+              ]
+              conditions = [
+              ]
+            },
+          ]
+        },
+        {
+          component = "CONDITION_BLOCK"
+          schemaVersion = 1
+          type = "jira.condition.if.block"
+          value = {
+            conditionMatchType = "ALL"
+          }
+          children = [
+            {
+              component = "ACTION"
+              schemaVersion = 3
+              type = "jira.issue.outgoing.email"
+              value = {
+                fromName = ""
+                replyTo = ""
+                to = [
+                  {
+                    type = "FREE"
+                    value = "nathan.giovannini@gfpmediconsul.ch"
+                  },
+                ]
+                cc = [
+                ]
+                bcc = [
+                ]
+                subject = "It is ok"
+                body = "non validato "
+                mimeType = "text/html"
+                convertLineBreaks = true
+              }
+              children = [
+              ]
+              conditions = [
+              ]
+            },
+          ]
+          conditions = [
+            {
+              component = "CONDITION"
+              schemaVersion = 3
+              type = "jira.issue.condition"
+              value = {
+                selectedField = {
+                  type = "NAME"
+                  value = "Triggers"
+                }
+                selectedFieldType = "com.atlassian.jira.plugin.system.customfieldtypes:select"
+                comparison = "NOT_EQUAL"
+                compareFieldValue = {
+                  type = "NAME"
+                  value = "Offerta Creata"
+                  multiValue = false
+                }
+              }
+              children = [
+              ]
+              conditions = [
+              ]
+            },
+          ]
+        },
+      ]
+      conditions = [
+      ]
+    },
+  ]
+  canOtherRuleTrigger = false
+  notifyOnError = "FIRSTERROR"
+  projects = [
+    {
+      projectId = jira.Project.instance.missing_10018
+    },
+  ]
+  labels = [
+  ]
+  tags = [
+    {
+      tagType = "IS_RULE_UPDATED"
+      tagValue = "true"
+    },
+  ]
+  ruleHome = {
+    ruleLifeCycleHome = {
+      locationARI = "ari:cloud:jira:c59e4ada-1a3a-49e7-8ca1-cd9dcdb12f98:project/10018"
+    }
+    ruleBillingHome = {
+      locationARI = "ari:cloud:jira-software::site/c59e4ada-1a3a-49e7-8ca1-cd9dcdb12f98"
+    }
+  }
+  writeAccessType = "UNRESTRICTED"
+  collaborators = [
+  ]
+  billingType = "NORMAL"
+  _alias = "demo 1"
+}

@@ -1,0 +1,10 @@
+jira.FieldConfigurationScheme Schema_della_configurazione_di_campo_di_Jira_Service_Management_per_il_progetto_EH@s {
+  name = "Schema della configurazione di campo di Jira Service Management per il progetto EH"
+  description = "Questo schema della configurazione di campo di Jira Service Management è stato generato per il progetto EH"
+  items = [
+    {
+      issueTypeId = "default"
+      fieldConfigurationId = jira.FieldConfiguration.instance.Configurazione_del_campo_Jira_Service_Management_per_il_progetto_EH@s
+    },
+  ]
+}

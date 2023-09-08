@@ -1,0 +1,13 @@
+jira.ProjectComponent Hotline__s__Sito_web_pubblico@umuuss {
+  assigneeType = "UNASSIGNED"
+  name = "Sito web pubblico"
+  description = "Ticket correlati al sito web pubblico. Creato da Jira Service Management."
+  leadAccountId = {
+    id = "61447938ff23ba007191345f"
+    displayName = "Nathan Giovannini"
+  }
+  _parent = [
+    jira.Project.instance.Hotline_@s,
+  ]
+  _alias = "Hotline :Sito web pubblico"
+}

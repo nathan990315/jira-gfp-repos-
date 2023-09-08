@@ -1,0 +1,11 @@
+jira.Field Email_Participants__com_javahollic_jira_jemh_ui__emailParticipants__c@suuvvvbuuuu {
+  name = "Email Participants"
+  description = "Enterprise Mail Handler (JEMHC) for Jira Cloud: Issue field uses to store participants email addresses."
+  isLocked = true
+  searcherKey = "com.atlassian.jira.plugin.system.customfieldtypes:textsearcher"
+  type = "com.atlassian.plugins.atlassian-connect-plugin:com.javahollic.jira.jemh-ui__emailParticipants"
+  contexts = [
+    jira.CustomFieldContext.instance.Email_Participants__com_javahollic_jira_jemh_ui__emailParticipants__c_suuvvvbuuuu_Schema_di_configurazione_predefinito_per_Email_Participants@uuuuuuuuuuumussssss,
+  ]
+  _alias = "Email Participants"
+}

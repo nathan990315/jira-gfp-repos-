@@ -1,0 +1,17 @@
+jira.Dashboard Dashboard_Your_Tasks@s {
+  description = "Il tuo lavoro in GFP"
+  name = "Dashboard Your Tasks"
+  owner = {
+    id = "61447938ff23ba007191345f"
+    displayName = "Nathan Giovannini"
+  }
+  gadgets = [
+    jira.DashboardGadget.instance.Dashboard_Your_Tasks_s__Lavori_per_te_oggi__0_0@uumuussssuu,
+    jira.DashboardGadget.instance.Dashboard_Your_Tasks_s__Lavori_per_te_in_corso_0_1@uumuussssuu,
+    jira.DashboardGadget.instance.Dashboard_Your_Tasks_s__Lavori_per_te_da_iniziare_0_2@uumuussssuu,
+    jira.DashboardGadget.instance.Dashboard_Your_Tasks_s__Assegnati_da_me_a_altri_1_0@uumuussssuu,
+    jira.DashboardGadget.instance.Dashboard_Your_Tasks_s__Recently_Created_Chart_1_1@uumuussuu,
+    jira.DashboardGadget.instance.Dashboard_Your_Tasks_s__I_tuoi_task_piu_vecchi_non_risolti_1_2@uumuussssssuu,
+  ]
+  layout = "AB"
+}

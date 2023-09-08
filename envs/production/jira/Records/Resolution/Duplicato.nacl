@@ -1,0 +1,4 @@
+jira.Resolution Duplicato {
+  description = "Il problema è un duplicato di un ticket esistente."
+  name = "Duplicato"
+}

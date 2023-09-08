@@ -1,0 +1,23 @@
+jira.Filter Ticket_aperti_oggi_@s {
+  name = "Ticket aperti oggi "
+  description = ""
+  owner = {
+    id = "61447938ff23ba007191345f"
+    displayName = "Nathan Giovannini"
+  }
+  jql = "${ jira.Field.instance.Project__project } IN (\"${ jira.Project.instance.Progetto.key }\",\"Hotline \",\"Consulenza di vendita \",Regia) AND ${ jira.Field.instance.Created__datetime } >= -10h AND ${ jira.Field.instance.Assignee__user } = currentUser() ORDER BY ${ jira.Field.instance.Created__datetime } DESC"
+  sharePermissions = [
+    {
+      type = "authenticated"
+    },
+  ]
+  editPermissions = [
+    {
+      type = "user"
+      user = {
+        id = "633ea04797148a8301ff2018"
+        displayName = "Ioshua Muheim"
+      }
+    },
+  ]
+}

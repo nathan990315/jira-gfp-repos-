@@ -1,0 +1,25 @@
+jira.Filter "00__Cumulativi@fs" {
+  name = "00: Cumulativi"
+  description = ""
+  owner = {
+    id = "61447938ff23ba007191345f"
+    displayName = "Nathan Giovannini"
+  }
+  jql = "${ jira.Field.instance.Project__project } = \"Hotline \" and etichetta = \"Regia?\" and etichetta = \"CumulativoRegia\" and ${ jira.Field.instance.Project__project } = Regia and ${ jira.Field.instance.Status__status } = Offerta or ${ jira.Field.instance.Status__status } = fatturazione and NOT ${ jira.Field.instance.Project__project } = Progetto ORDER BY ${ jira.Field.instance.Company__read_only_string_issue_field__c@uubbbbuu.name }"
+  editPermissions = [
+    {
+      type = "user"
+      user = {
+        id = "60eea45b4257a90070b78edd"
+        displayName = "Salvatore Licari"
+      }
+    },
+    {
+      type = "user"
+      user = {
+        id = "60ebf58e081fcd00709ec7f8"
+        displayName = "Nasko Cepilov"
+      }
+    },
+  ]
+}

@@ -1,0 +1,44 @@
+jira.DashboardGadget My_Dashboard_s__CDV__In_Corso_2_0@umuufssuu {
+  uri = "rest/gadgets/1.0/g/com.atlassian.jira.gadgets:filter-results-gadget/gadgets/filter-results-gadget.xml"
+  color = "green"
+  position = {
+    row = 0
+    column = 2
+  }
+  title = "CDV: In Corso"
+  properties = [
+    {
+      key = "config"
+      values = [
+        {
+          key = "filterId"
+          value = jira.Filter.instance.CDV__In_corso@fss
+        },
+        {
+          key = "isConfigured"
+          value = "true"
+        },
+        {
+          key = "columnNames"
+          value = "issuekey|issuetype|summary|priority|customfield_10045|status"
+        },
+        {
+          key = "isPopup"
+          value = "false"
+        },
+        {
+          key = "num"
+          value = "10"
+        },
+        {
+          key = "refresh"
+          value = "15"
+        },
+      ]
+    },
+  ]
+  _parent = [
+    jira.Dashboard.instance.My_Dashboard@s,
+  ]
+  _alias = "CDV: In Corso"
+}

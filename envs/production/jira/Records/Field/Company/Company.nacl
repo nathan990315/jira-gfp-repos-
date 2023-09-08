@@ -1,0 +1,11 @@
+jira.Field Company__read_only_string_issue_field__c@uubbbbuu {
+  name = "Company"
+  description = "A Company from Atlas CRM"
+  isLocked = true
+  searcherKey = "com.atlassian.jira.plugin.system.customfieldtypes:readonlyissuefieldsearcher"
+  type = "read-only-string-issue-field"
+  contexts = [
+    jira.CustomFieldContext.instance.Company__read_only_string_issue_field__c_uubbbbuu_Schema_di_configurazione_predefinito_per_Company@uuuuuuuumusssss,
+  ]
+  _alias = "Company"
+}

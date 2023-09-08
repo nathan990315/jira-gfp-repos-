@@ -1,0 +1,11 @@
+jira.Field Tempo_di_risoluzione__sd_sla_field__c@ssuubbuu {
+  name = "Tempo di risoluzione"
+  description = "Questo campo personalizzato è stato creato da Jira Service Management."
+  isLocked = true
+  searcherKey = "com.atlassian.servicedesk:sd-sla-field-searcher"
+  type = "com.atlassian.servicedesk:sd-sla-field"
+  contexts = [
+    jira.CustomFieldContext.instance.Tempo_di_risoluzione__sd_sla_field__c_ssuubbuu_Schema_di_configurazione_predefinito_per_Tempo_di_risoluzione@uuuuuuuumusssssss,
+  ]
+  _alias = "Tempo di risoluzione"
+}

@@ -1,0 +1,11 @@
+jira.Field Soddisfazione__sd_request_feedback__c@uubbuu {
+  name = "Soddisfazione"
+  description = "Memorizza la richiesta di feedback nelle richieste del progetto di assistenza. Questo campo personalizzato viene creato in modo programmatico ed è richiesto dal progetto di assistenza."
+  isLocked = true
+  searcherKey = "com.atlassian.servicedesk:sd-request-feedback-searcher"
+  type = "com.atlassian.servicedesk:sd-request-feedback"
+  contexts = [
+    jira.CustomFieldContext.instance.Soddisfazione__sd_request_feedback__c_uubbuu_Schema_di_configurazione_predefinito_per_Soddisfazione@uuuuuumusssss,
+  ]
+  _alias = "Soddisfazione"
+}

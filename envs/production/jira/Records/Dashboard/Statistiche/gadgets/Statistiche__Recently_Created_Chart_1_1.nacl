@@ -1,0 +1,56 @@
+jira.DashboardGadget Statistiche__Recently_Created_Chart_1_1@uussuu {
+  uri = "rest/gadgets/1.0/g/com.atlassian.jira.gadgets:recently-created-chart-gadget/gadgets/recently-created-gadget.xml"
+  color = "cyan"
+  position = {
+    row = 1
+    column = 1
+  }
+  title = "Recently Created Chart"
+  properties = [
+    {
+      key = "config"
+      values = [
+        {
+          key = "isConfigured"
+          value = "true"
+        },
+        {
+          key = "isPopup"
+          value = "false"
+        },
+        {
+          key = "name"
+          value = "Software Medicali"
+        },
+        {
+          key = "refresh"
+          value = "15"
+        },
+        {
+          key = "periodName"
+          value = "weekly"
+        },
+        {
+          key = "projectOrFilterId"
+          value = "project-10000"
+        },
+        {
+          key = "daysprevious"
+          value = "120"
+        },
+        {
+          key = "id"
+          value = "10000"
+        },
+        {
+          key = "type"
+          value = "project"
+        },
+      ]
+    },
+  ]
+  _parent = [
+    jira.Dashboard.instance.Statistiche,
+  ]
+  _alias = "Recently Created Chart"
+}

@@ -1,0 +1,5 @@
+jira.Status in_attesa_del_supporto@s {
+  name = "In attesa del supporto"
+  statusCategory = jira.StatusCategory.instance.In_Progress@s
+  description = "Creato automaticamente da Jira Service Management durante l'importazione del flusso di lavoro"
+}

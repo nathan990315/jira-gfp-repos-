@@ -1,0 +1,11 @@
+jira.Field Account__io_tempo_jira__account__c@uuvvuuuu {
+  name = "Account"
+  description = "Tempo Account Custom Field"
+  isLocked = true
+  searcherKey = "com.atlassian.jira.plugin.system.customfieldtypes:selectissuefieldsearcher"
+  type = "com.atlassian.plugins.atlassian-connect-plugin:io.tempo.jira__account"
+  contexts = [
+    jira.CustomFieldContext.instance.Account__io_tempo_jira__account__c_uuvvuuuu_Schema_di_configurazione_predefinito_per_Account@uuuuuuuumusssss,
+  ]
+  _alias = "Account"
+}

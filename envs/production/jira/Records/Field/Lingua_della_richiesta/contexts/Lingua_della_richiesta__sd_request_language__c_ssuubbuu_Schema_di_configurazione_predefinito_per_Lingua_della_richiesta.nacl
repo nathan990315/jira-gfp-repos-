@@ -1,0 +1,9 @@
+jira.CustomFieldContext Lingua_della_richiesta__sd_request_language__c_ssuubbuu_Schema_di_configurazione_predefinito_per_Lingua_della_richiesta@uuuuuuuumusssssss {
+  name = "Schema di configurazione predefinito per Lingua della richiesta"
+  description = "Schema di configurazione predefinito generato da JIRA"
+  isGlobalContext = true
+  _parent = [
+    jira.Field.instance.Lingua_della_richiesta__sd_request_language__c@ssuubbuu,
+  ]
+  _alias = "Lingua della richiesta context in Schema di configurazione predefinito per Lingua della richiesta"
+}

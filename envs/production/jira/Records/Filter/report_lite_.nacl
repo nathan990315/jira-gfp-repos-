@@ -1,0 +1,18 @@
+jira.Filter report_lite_@s {
+  name = "report lite "
+  description = ""
+  owner = {
+    id = "61447938ff23ba007191345f"
+    displayName = "Nathan Giovannini"
+  }
+  jql = "${ jira.Field.instance.Project__project } = \"Hotline \" AND ${ jira.Field.instance.Assignee__user } IN (currentUser()) AND statusCategory in (\"To Do\", \"In Progress\") ORDER BY ${ jira.Field.instance.Created__datetime } DESC"
+  editPermissions = [
+    {
+      type = "user"
+      user = {
+        id = "633ea04797148a8301ff2018"
+        displayName = "Ioshua Muheim"
+      }
+    },
+  ]
+}

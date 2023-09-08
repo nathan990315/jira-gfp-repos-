@@ -1,0 +1,9 @@
+jira.CustomFieldContext Account__io_tempo_jira__account__c_uuvvuuuu_Schema_di_configurazione_predefinito_per_Account@uuuuuuuumusssss {
+  name = "Schema di configurazione predefinito per Account"
+  description = "Schema di configurazione predefinito generato da JIRA"
+  isGlobalContext = true
+  _parent = [
+    jira.Field.instance.Account__io_tempo_jira__account__c@uuvvuuuu,
+  ]
+  _alias = "Account context in Schema di configurazione predefinito per Account"
+}

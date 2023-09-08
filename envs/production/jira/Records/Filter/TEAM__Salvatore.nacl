@@ -1,0 +1,22 @@
+jira.Filter TEAM__Salvatore@fs {
+  name = "TEAM: Salvatore"
+  description = ""
+  owner = {
+    id = "62fc96fc5fc3a72bda94622f"
+    displayName = "Patrick Pasquillo"
+  }
+  jql = "${ jira.Field.instance.Assignee__user } in (60eea45b4257a90070b78edd) AND ${ jira.Field.instance.Project__project } in (${ jira.Project.instance.Hotline_@s.key }, ${ jira.Project.instance.Progetto.key }, ${ jira.Project.instance.Regia.key }) AND ${ jira.Field.instance.Issue_Type__issuetype@suu } in (\"Formazione (Progetti e supporto)\", ${ jira.IssueType.instance.Hotline.name }, \"${ jira.IssueType.instance.Hotline_Multi_cliente@s.name }\", \"Installazioni e Configurazioni (Progetti e supporto\", \"Installazioni e Configurazioni (Progetti e supporto)\", \"${ jira.IssueType.instance.Richiesta_inviata_tramite_e_mail@sssb.name }\", \"Vendite \", ${ jira.IssueType.instance.Sottotask.name }) AND ${ jira.Field.instance.Status__status } in (\"${ jira.Status.instance.da_iniziare@s.name }\", \"${ jira.Status.instance.in_corso@s.name }\", \"${ jira.Status.instance.in_sospeso@s.name }\", Pianificato, ${ jira.Status.instance.riaperto.name }, ${ jira.Status.instance.sospeso.name }) order by ${ jira.Field.instance.Created__datetime } DESC"
+  sharePermissions = [
+    {
+      type = "authenticated"
+    },
+  ]
+  editPermissions = [
+    {
+      type = "group"
+      group = {
+        name = jira.Group.instance.jira_software_users@b
+      }
+    },
+  ]
+}

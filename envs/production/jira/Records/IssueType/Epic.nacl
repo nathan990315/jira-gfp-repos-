@@ -1,0 +1,6 @@
+jira.IssueType Epic {
+  description = "A collection of related bugs, stories, and tasks."
+  name = "Epic"
+  untranslatedName = "Epic"
+  hierarchyLevel = 1
+}

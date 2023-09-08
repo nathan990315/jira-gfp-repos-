@@ -1,0 +1,9 @@
+jira.CustomFieldContext Email_Participants__com_javahollic_jira_jemh_ui__emailParticipants__c_suuvvvbuuuu_Schema_di_configurazione_predefinito_per_Email_Participants@uuuuuuuuuuumussssss {
+  name = "Schema di configurazione predefinito per Email Participants"
+  description = "Schema di configurazione predefinito generato da JIRA"
+  isGlobalContext = true
+  _parent = [
+    jira.Field.instance.Email_Participants__com_javahollic_jira_jemh_ui__emailParticipants__c@suuvvvbuuuu,
+  ]
+  _alias = "Email Participants context in Schema di configurazione predefinito per Email Participants"
+}

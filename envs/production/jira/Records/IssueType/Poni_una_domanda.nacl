@@ -1,0 +1,6 @@
+jira.IssueType Poni_una_domanda@s {
+  description = "Hai una domanda? Inviala qui."
+  name = "Poni una domanda"
+  untranslatedName = "Poni una domanda"
+  hierarchyLevel = 0
+}

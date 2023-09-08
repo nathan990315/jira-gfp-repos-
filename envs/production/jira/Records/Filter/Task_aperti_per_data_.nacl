@@ -1,0 +1,52 @@
+jira.Filter Task_aperti_per_data_@s {
+  name = "Task aperti per data "
+  description = ""
+  owner = {
+    id = "61447938ff23ba007191345f"
+    displayName = "Nathan Giovannini"
+  }
+  jql = "${ jira.Field.instance.Project__project } in (Regia, Progetto, \"Hotline \") AND ${ jira.Field.instance.Status__status } in (\"${ jira.Status.instance.da_iniziare@s.name }\", \"${ jira.Status.instance.da_iniziare@s.name }\", \"${ jira.Status.instance.in_corso@s.name }\", Offerta, ${ jira.Status.instance.sospeso.name }) AND ${ jira.Field.instance.Assignee__user } in (62fc96fc5fc3a72bda94622f, 60eea45b4257a90070b78edd, 60ebf58e081fcd00709ec7f8, 61447938ff23ba007191345f, 60ebf585413fc70069d10ab8, 60ebf586413fc70069d10abf) ORDER BY ${ jira.Field.instance.Priority__priority } DESC"
+  editPermissions = [
+    {
+      type = "user"
+      user = {
+        id = "633ea04797148a8301ff2018"
+        displayName = "Ioshua Muheim"
+      }
+    },
+  ]
+  columns = [
+    {
+      label = "Issue Type"
+      value = "issuetype"
+    },
+    {
+      label = "Key"
+      value = "issuekey"
+    },
+    {
+      label = "Created"
+      value = "created"
+    },
+    {
+      label = "Reporter"
+      value = "reporter"
+    },
+    {
+      label = "Summary"
+      value = "summary"
+    },
+    {
+      label = "Priority"
+      value = "priority"
+    },
+    {
+      label = "Status"
+      value = "status"
+    },
+    {
+      label = "Assignee"
+      value = "assignee"
+    },
+  ]
+}

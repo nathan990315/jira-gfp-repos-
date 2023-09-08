@@ -1,0 +1,10 @@
+jira.Field Cliente__textfield__c {
+  name = "Cliente"
+  description = ""
+  searcherKey = "com.atlassian.jira.plugin.system.customfieldtypes:textsearcher"
+  type = "com.atlassian.jira.plugin.system.customfieldtypes:textfield"
+  contexts = [
+    jira.CustomFieldContext.instance.Cliente__textfield__c_Cliente_@uuuuus,
+  ]
+  _alias = "Cliente"
+}

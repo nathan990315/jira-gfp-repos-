@@ -1,0 +1,85 @@
+jira.Filter Progetti_@s {
+  name = "Progetti "
+  description = ""
+  owner = {
+    id = "61447938ff23ba007191345f"
+    displayName = "Nathan Giovannini"
+  }
+  jql = "${ jira.Field.instance.Project__project } = Progetto AND ${ jira.Field.instance.Issue_Type__issuetype@suu } = \"Installazioni e Configurazioni (Progetti e supporto)\" ORDER BY ${ jira.Field.instance.Created__datetime } DESC"
+  sharePermissions = [
+    {
+      type = "authenticated"
+    },
+  ]
+  editPermissions = [
+    {
+      type = "user"
+      user = {
+        id = "633ea04797148a8301ff2018"
+        displayName = "Ioshua Muheim"
+      }
+    },
+  ]
+  columns = [
+    {
+      label = "Key"
+      value = "issuekey"
+    },
+    {
+      label = "Responsabile Vendita"
+      value = "customfield_10097"
+    },
+    {
+      label = "Company"
+      value = "customfield_10045"
+    },
+    {
+      label = "Contact"
+      value = "customfield_10046"
+    },
+    {
+      label = "Settore GFPM"
+      value = "customfield_10096"
+    },
+    {
+      label = "Tipologia Cliente"
+      value = "customfield_10098"
+    },
+    {
+      label = "Cliente Nuovo"
+      value = "customfield_10099"
+    },
+    {
+      label = "Opportunità nata da"
+      value = "customfield_10100"
+    },
+    {
+      label = "Summary"
+      value = "summary"
+    },
+    {
+      label = "Tipo Opportunità"
+      value = "customfield_10101"
+    },
+    {
+      label = "Start date"
+      value = "customfield_10015"
+    },
+    {
+      label = "Valore Offerta"
+      value = "customfield_10102"
+    },
+    {
+      label = "Due date"
+      value = "duedate"
+    },
+    {
+      label = "Description"
+      value = "description"
+    },
+    {
+      label = "Se perso motivo"
+      value = "customfield_10105"
+    },
+  ]
+}

@@ -1,0 +1,16 @@
+jira.CustomFieldContext Story_Points__float__c_suuuu_Schema_di_configurazione_predefinito_per_Story_Points@uuuuumussssss {
+  name = "Schema di configurazione predefinito per Story Points"
+  description = "Schema di configurazione predefinito generato da JIRA"
+  isGlobalContext = true
+  defaultValue = {
+    type = "float"
+  }
+  issueTypeIds = [
+    jira.IssueType.instance.Epic,
+    jira.IssueType.instance.Story,
+  ]
+  _parent = [
+    jira.Field.instance.Story_Points__float__c@suuuu,
+  ]
+  _alias = "Story Points context in Schema di configurazione predefinito per Story Points"
+}

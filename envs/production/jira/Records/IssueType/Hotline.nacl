@@ -1,0 +1,6 @@
+jira.IssueType Hotline {
+  description = ""
+  name = "Hotline"
+  untranslatedName = "Hotline"
+  hierarchyLevel = 0
+}

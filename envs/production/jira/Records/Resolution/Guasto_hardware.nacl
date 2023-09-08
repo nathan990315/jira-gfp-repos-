@@ -1,0 +1,4 @@
+jira.Resolution Guasto_hardware@s {
+  description = "Guasto infrastruttura hardware che impatta sul funzionamento di WinMed "
+  name = "Guasto hardware"
+}

@@ -1,0 +1,12 @@
+jira.ApplicationProperty jira_admin_announcement_banner_message@v {
+  id = "jira.admin.announcement.banner.message"
+  value = '''
+📣 ANNUNCIO IMPORTANTE 📣
+🛠 Si stanno verificando dei ritardi nell'elaborazione delle email entrata e in uscità. Mi scuso per il malfunzionamento. 
+Saluti: 
+Nathan
+'''
+  name = "jira.admin.announcement.banner.message"
+  type = "string"
+  defaultValue = ""
+}

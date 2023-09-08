@@ -1,0 +1,10 @@
+jira.Field Dimensione_azienda__select__c@suuuu {
+  name = "Dimensione azienda"
+  description = ""
+  searcherKey = "com.atlassian.jira.plugin.system.customfieldtypes:multiselectsearcher"
+  type = "com.atlassian.jira.plugin.system.customfieldtypes:select"
+  contexts = [
+    jira.CustomFieldContext.instance.Dimensione_azienda__select__c_suuuu_Schema_di_configurazione_predefinito_per_Dimensione_azienda@uuuuumussssss,
+  ]
+  _alias = "Dimensione azienda"
+}

@@ -1,0 +1,9 @@
+jira.CustomFieldContext Partecipanti_alla_richiesta__sd_request_participants__c_ssuubbuu_Schema_di_configurazione_predefinito_per_Partecipanti_alla_richiesta@uuuuuuuumusssssss {
+  name = "Schema di configurazione predefinito per Partecipanti alla richiesta"
+  description = "Schema di configurazione predefinito generato da JIRA"
+  isGlobalContext = true
+  _parent = [
+    jira.Field.instance.Partecipanti_alla_richiesta__sd_request_participants__c@ssuubbuu,
+  ]
+  _alias = "Partecipanti alla richiesta context in Schema di configurazione predefinito per Partecipanti alla richiesta"
+}

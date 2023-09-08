@@ -1,0 +1,82 @@
+jira.Filter Task_da_completare_Nathan_@s {
+  name = "Task da completare Nathan "
+  owner = {
+    id = "61447938ff23ba007191345f"
+    displayName = "Nathan Giovannini"
+  }
+  jql = "${ jira.Field.instance.Assignee__user } in (61447938ff23ba007191345f) AND ${ jira.Field.instance.Status__status } in (${ jira.Status.instance.apri.name }, \"${ jira.Status.instance.da_completare@s.name }\", \"${ jira.Status.instance.da_iniziare@s.name }\", \"${ jira.Status.instance.da_iniziare@s.name }\", \"${ jira.Status.instance.in_corso@s.name }\", \"${ jira.Status.instance.in_progress@s.name }\", \"${ jira.Status.instance.lavoro_in_corso@s.name }\", Offerta, Pianificato, ${ jira.Status.instance.riaperto.name }, \"${ jira.Status.instance.to_do@s.name }\") ORDER BY ${ jira.Field.instance.Created__datetime } DESC, ${ jira.Field.instance.Priority__priority } DESC"
+  columns = [
+    {
+      label = "Key"
+      value = "issuekey"
+    },
+    {
+      label = "Responsabile Vendita"
+      value = "customfield_10097"
+    },
+    {
+      label = "Company"
+      value = "customfield_10045"
+    },
+    {
+      label = "Contact"
+      value = "customfield_10046"
+    },
+    {
+      label = "Settore GFPM"
+      value = "customfield_10096"
+    },
+    {
+      label = "Tipologia Cliente"
+      value = "customfield_10098"
+    },
+    {
+      label = "Cliente Nuovo"
+      value = "customfield_10099"
+    },
+    {
+      label = "Opportunità nata da"
+      value = "customfield_10100"
+    },
+    {
+      label = "Summary"
+      value = "summary"
+    },
+    {
+      label = "Tipo Opportunità"
+      value = "customfield_10101"
+    },
+    {
+      label = "Start date"
+      value = "customfield_10015"
+    },
+    {
+      label = "Valore Offerta"
+      value = "customfield_10102"
+    },
+    {
+      label = "Due date"
+      value = "duedate"
+    },
+    {
+      label = "Description"
+      value = "description"
+    },
+    {
+      label = "Se perso motivo"
+      value = "customfield_10105"
+    },
+    {
+      label = "Updated"
+      value = "updated"
+    },
+    {
+      label = "Created"
+      value = "created"
+    },
+    {
+      label = "Time Spent"
+      value = "timespent"
+    },
+  ]
+}

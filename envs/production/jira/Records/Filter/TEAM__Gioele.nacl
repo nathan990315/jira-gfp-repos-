@@ -1,0 +1,22 @@
+jira.Filter TEAM__Gioele@fs {
+  name = "TEAM: Gioele"
+  description = ""
+  owner = {
+    id = "62fc96fc5fc3a72bda94622f"
+    displayName = "Patrick Pasquillo"
+  }
+  jql = "${ jira.Field.instance.Project__project } in (${ jira.Project.instance.Progetto.key }, ${ jira.Project.instance.Hotline_@s.key }, ${ jira.Project.instance.Regia.key }) AND ${ jira.Field.instance.Status__status } in (\"${ jira.Status.instance.in_sospeso@s.name }\", ${ jira.Status.instance.apri.name }, \"${ jira.Status.instance.lavoro_in_corso@s.name }\", ${ jira.Status.instance.riaperto.name }, Offerta, Pianificato, \"${ jira.Status.instance.da_iniziare@s.name }\", \"${ jira.Status.instance.in_corso@s.name }\", ${ jira.Status.instance.sospeso.name }) AND ${ jira.Field.instance.Assignee__user } in (634feb2a01c2ff842c164ac0) order by ${ jira.Field.instance.Created__datetime } DESC"
+  sharePermissions = [
+    {
+      type = "authenticated"
+    },
+  ]
+  editPermissions = [
+    {
+      type = "group"
+      group = {
+        name = jira.Group.instance.jira_software_users@b
+      }
+    },
+  ]
+}

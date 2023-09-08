@@ -1,0 +1,4 @@
+jira.Resolution Completato {
+  description = "Il lavoro per questo ticket è stato completato."
+  name = "Completato"
+}

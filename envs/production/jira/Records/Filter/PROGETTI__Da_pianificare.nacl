@@ -1,0 +1,88 @@
+jira.Filter PROGETTI__Da_pianificare@fss {
+  name = "PROGETTI: Da pianificare"
+  description = ""
+  owner = {
+    id = "62fc96fc5fc3a72bda94622f"
+    displayName = "Patrick Pasquillo"
+  }
+  jql = "${ jira.Field.instance.Project__project } = ${ jira.Project.instance.Progetto.key } AND ${ jira.Field.instance.Issue_Type__issuetype@suu } in (${ jira.IssueType.instance.Epic.name }, \"Formazione (Progetti e supporto)\", \"Installazioni e Configurazioni (Progetti e supporto\", ${ jira.IssueType.instance.Task.name }) AND ${ jira.Field.instance.Status__status } in (\"${ jira.Status.instance.in_sospeso@s.name }\", Pianificato) order by ${ jira.Field.instance.Created__datetime } DESC"
+  sharePermissions = [
+    {
+      type = "authenticated"
+    },
+  ]
+  editPermissions = [
+    {
+      type = "group"
+      group = {
+        name = jira.Group.instance.jira_software_users@b
+      }
+    },
+  ]
+  columns = [
+    {
+      label = "Issue Type"
+      value = "issuetype"
+    },
+    {
+      label = "Key"
+      value = "issuekey"
+    },
+    {
+      label = "Σ Time Spent"
+      value = "aggregatetimespent"
+    },
+    {
+      label = "Status"
+      value = "status"
+    },
+    {
+      label = "Priority"
+      value = "priority"
+    },
+    {
+      label = "Company"
+      value = "customfield_10045"
+    },
+    {
+      label = "Summary"
+      value = "summary"
+    },
+    {
+      label = "Assignee"
+      value = "assignee"
+    },
+    {
+      label = "Reporter"
+      value = "reporter"
+    },
+    {
+      label = "Created"
+      value = "created"
+    },
+    {
+      label = "Updated"
+      value = "updated"
+    },
+    {
+      label = "ID Offerta "
+      value = "customfield_10114"
+    },
+    {
+      label = "Stato fatturazione "
+      value = "customfield_10137"
+    },
+    {
+      label = "Licenze "
+      value = "customfield_10124"
+    },
+    {
+      label = "Ore lavoro"
+      value = "customfield_10125"
+    },
+    {
+      label = "Due date"
+      value = "duedate"
+    },
+  ]
+}

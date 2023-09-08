@@ -1,0 +1,32 @@
+jira.DashboardGadget Statistiche__Filter_Results_1_2@uusuu {
+  uri = "rest/gadgets/1.0/g/com.atlassian.jira.gadgets:filter-results-gadget/gadgets/filter-results-gadget.xml"
+  color = "green"
+  position = {
+    row = 2
+    column = 1
+  }
+  title = "Filter Results"
+  properties = [
+    {
+      key = "config"
+      values = [
+        {
+          key = "filterId"
+          value = jira.Filter.instance.Task_da_completare_di_tutti@s
+        },
+        {
+          key = "isConfigured"
+          value = "true"
+        },
+        {
+          key = "projectOrFilterId"
+          value = jira.Filter.instance.Task_da_completare_di_tutti@s
+        },
+      ]
+    },
+  ]
+  _parent = [
+    jira.Dashboard.instance.Statistiche,
+  ]
+  _alias = "Filter Results"
+}

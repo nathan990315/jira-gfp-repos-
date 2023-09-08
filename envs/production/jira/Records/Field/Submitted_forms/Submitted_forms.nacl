@@ -1,0 +1,11 @@
+jira.Field Submitted_forms__forms_submitted_field_cftype__c@suubbbuu {
+  name = "Submitted forms"
+  description = "The number of submitted forms on the issue"
+  isLocked = true
+  searcherKey = "com.atlassian.jira.plugin.system.customfieldtypes:exactnumber"
+  type = "com.atlassian.jira.plugins.proforma-managed-fields:forms-submitted-field-cftype"
+  contexts = [
+    jira.CustomFieldContext.instance.Submitted_forms__forms_submitted_field_cftype__c_suubbbuu_Schema_di_configurazione_predefinito_per_Submitted_forms@uuuuuuuumussssss,
+  ]
+  _alias = "Submitted forms"
+}

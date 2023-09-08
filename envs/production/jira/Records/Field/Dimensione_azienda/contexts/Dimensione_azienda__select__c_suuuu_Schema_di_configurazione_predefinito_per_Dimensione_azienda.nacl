@@ -1,0 +1,54 @@
+jira.CustomFieldContext Dimensione_azienda__select__c_suuuu_Schema_di_configurazione_predefinito_per_Dimensione_azienda@uuuuumussssss {
+  name = "Schema di configurazione predefinito per Dimensione azienda"
+  description = "Schema di configurazione predefinito generato da JIRA"
+  isGlobalContext = true
+  options = {
+    "1_10@b" = {
+      value = "1-10"
+      disabled = false
+      position = 0
+    }
+    "11_50@b" = {
+      value = "11-50"
+      disabled = false
+      position = 1
+    }
+    "51_200@b" = {
+      value = "51-200"
+      disabled = false
+      position = 2
+    }
+    "201_500@b" = {
+      value = "201-500"
+      disabled = false
+      position = 3
+    }
+    "501_1000@b" = {
+      value = "501-1000"
+      disabled = false
+      position = 4
+    }
+    "1001_5000@b" = {
+      value = "1001-5000"
+      disabled = false
+      position = 5
+    }
+    "5001_10000@b" = {
+      value = "5001-10000"
+      disabled = false
+      position = 6
+    }
+    "10000_@ze" = {
+      value = "10000+"
+      disabled = false
+      position = 7
+    }
+  }
+  defaultValue = {
+    type = "option.single"
+  }
+  _parent = [
+    jira.Field.instance.Dimensione_azienda__select__c@suuuu,
+  ]
+  _alias = "Dimensione azienda context in Schema di configurazione predefinito per Dimensione azienda"
+}

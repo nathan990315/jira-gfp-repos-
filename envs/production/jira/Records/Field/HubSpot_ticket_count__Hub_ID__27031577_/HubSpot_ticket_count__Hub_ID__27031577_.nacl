@@ -1,0 +1,10 @@
+jira.Field HubSpot_ticket_count__Hub_ID__27031577___float__c@sssjsfskuuuu {
+  name = "HubSpot ticket count (Hub ID: 27031577)"
+  description = "Number of HubSpot tickets attached to the issue. Portal ID is specified in parentheses."
+  searcherKey = "com.atlassian.jira.plugin.system.customfieldtypes:exactnumber"
+  type = "com.atlassian.jira.plugin.system.customfieldtypes:float"
+  contexts = [
+    jira.CustomFieldContext.instance.HubSpot_ticket_count__Hub_ID__27031577___float__c_sssjsfskuuuu_Schema_di_configurazione_predefinito_per_HubSpot_ticket_count__Hub_ID__27031577_@uuuuuuuuuuuumussssssssjsfsk,
+  ]
+  _alias = "HubSpot ticket count (Hub ID: 27031577)"
+}

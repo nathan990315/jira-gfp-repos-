@@ -1,0 +1,24 @@
+jira.DashboardGadget Progetti__Tempo_People_in_Version_1_3@uusssuu {
+  moduleKey = "com.atlassian.plugins.atlassian-connect-plugin:is.origo.jira.tempo-plugin__people-in-version-dashboard-item"
+  color = "blue"
+  position = {
+    row = 3
+    column = 1
+  }
+  title = "Tempo People in Version"
+  properties = [
+    {
+      key = "config"
+      values = [
+        {
+          key = "project"
+          value = "10031"
+        },
+      ]
+    },
+  ]
+  _parent = [
+    jira.Dashboard.instance.Progetti,
+  ]
+  _alias = "Tempo People in Version"
+}

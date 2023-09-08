@@ -1,0 +1,12 @@
+jira.CustomFieldContext Epic_Name__gh_epic_label__c_suubbuu_Schema_di_configurazione_predefinito_per_Epic_Name@uuuuuuumussssss {
+  name = "Schema di configurazione predefinito per Epic Name"
+  description = "Schema di configurazione predefinito generato da JIRA"
+  isGlobalContext = true
+  issueTypeIds = [
+    jira.IssueType.instance.Epic,
+  ]
+  _parent = [
+    jira.Field.instance.Epic_Name__gh_epic_label__c@suubbuu,
+  ]
+  _alias = "Epic Name context in Schema di configurazione predefinito per Epic Name"
+}

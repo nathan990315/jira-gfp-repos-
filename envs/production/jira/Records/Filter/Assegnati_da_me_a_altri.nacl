@@ -1,0 +1,22 @@
+jira.Filter Assegnati_da_me_a_altri@s {
+  name = "Assegnati da me a altri"
+  description = ""
+  owner = {
+    id = "61447938ff23ba007191345f"
+    displayName = "Nathan Giovannini"
+  }
+  jql = "${ jira.Field.instance.Status__status } in (\"${ jira.Status.instance.da_iniziare@s.name }\", Fatturazione, \"${ jira.Status.instance.in_corso@s.name }\", \"${ jira.Status.instance.in_progress@s.name }\", Offerta, ${ jira.Status.instance.sospeso.name }, \"${ jira.Status.instance.to_do@s.name }\") AND ${ jira.Field.instance.Assignee__user } != currentUser() AND ${ jira.Field.instance.Reporter__user } in (currentUser()) order by ${ jira.Field.instance.Created__datetime } DESC"
+  sharePermissions = [
+    {
+      type = "authenticated"
+    },
+  ]
+  editPermissions = [
+    {
+      type = "group"
+      group = {
+        name = jira.Group.instance.jira_software_users@b
+      }
+    },
+  ]
+}

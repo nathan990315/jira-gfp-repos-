@@ -1,0 +1,56 @@
+jira.DashboardGadget Default_dashboard_s__Jira_Issues_Calendar_1_0@umuussuu {
+  uri = "rest/gadgets/1.0/g/com.atlassian.jira.ext.calendar:issuescalendar-gadget/templates/plugins/jira/portlets/calendar/gadget/calendar-gadget.xml"
+  color = "blue"
+  position = {
+    row = 0
+    column = 1
+  }
+  title = "Jira Issues Calendar"
+  properties = [
+    {
+      key = "config"
+      values = [
+        {
+          key = "isConfigured"
+          value = "true"
+        },
+        {
+          key = "numOfIssueIcons"
+          value = "10"
+        },
+        {
+          key = "dateFieldName"
+          value = "customfield_10034"
+        },
+        {
+          key = "name"
+          value = "Software Medicali"
+        },
+        {
+          key = "refresh"
+          value = "15"
+        },
+        {
+          key = "projectOrFilterId"
+          value = "project-10000"
+        },
+        {
+          key = "id"
+          value = "10000"
+        },
+        {
+          key = "type"
+          value = "project"
+        },
+        {
+          key = "displayVersions"
+          value = "false"
+        },
+      ]
+    },
+  ]
+  _parent = [
+    jira.Dashboard.instance.Default_dashboard@s,
+  ]
+  _alias = "Jira Issues Calendar"
+}

@@ -1,0 +1,9 @@
+jira.CustomFieldContext Categoria__jwm_category__c_uubuu_Schema_di_configurazione_del_campo_Categoria_per_il_progetto__Regia_1@uuuuumussssssssfss {
+  name = "Schema di configurazione del campo Categoria per il progetto: Regia 1"
+  description = "Opzioni del campo Categoria"
+  isGlobalContext = false
+  _parent = [
+    jira.Field.instance.Categoria__jwm_category__c@uubuu,
+  ]
+  _alias = "Categoria context in Schema di configurazione del campo Categoria per il progetto: Regia 1"
+}

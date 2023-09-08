@@ -1,0 +1,8 @@
+jira.IssueTypeScheme HT__Schema_tipo_ticket_Kanban@fssss {
+  name = "HT: Schema tipo ticket Kanban"
+  issueTypeIds = [
+    jira.IssueType.instance.Task,
+    jira.IssueType.instance.Sottotask,
+    jira.IssueType.instance.Bug,
+  ]
+}

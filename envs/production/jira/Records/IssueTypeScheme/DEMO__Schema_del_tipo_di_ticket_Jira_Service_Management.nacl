@@ -1,0 +1,11 @@
+jira.IssueTypeScheme DEMO__Schema_del_tipo_di_ticket_Jira_Service_Management@fssssssss {
+  name = "DEMO: Schema del tipo di ticket Jira Service Management"
+  description = "Questo schema del tipo di ticket Jira Service Management è stato generato automaticamente"
+  issueTypeIds = [
+    jira.IssueType.instance.Supporto_IT@s,
+    jira.IssueType.instance.Task,
+    jira.IssueType.instance.Richiesta_di_Servizio@s,
+    jira.IssueType.instance.Sottotask,
+    jira.IssueType.instance.Richieste_di_assistenza_con_approvazioni@s,
+  ]
+}

@@ -1,0 +1,212 @@
+jira.Workflow GT__Flusso_di_lavoro_per_la_gestione_dei_task@fssssssss {
+  description = "Task Management workflow"
+  transitions = {
+    Create__From__none__Initial@fffsff = {
+      name = "Create"
+      description = ""
+      to = jira.Status.instance.to_do@s
+      type = "initial"
+      rules = {
+        validators = [
+          {
+            type = "PermissionValidator"
+            configuration = {
+              permissionKey = "CREATE_ISSUES"
+            }
+          },
+        ]
+        postFunctions = [
+          {
+            type = "FireIssueEventFunction"
+            configuration = {
+              event = {
+                id = jira.IssueEvent.instance.Issue_Created@s
+              }
+            }
+          },
+        ]
+      }
+      properties = [
+        {
+          key = "jira.i18n.submit"
+          value = "common.forms.create"
+        },
+        {
+          key = "jira.i18n.title"
+          value = "common.forms.create"
+        },
+        {
+          key = "jira.issue.editable"
+          value = "true"
+        },
+      ]
+      from = [
+        {
+          sourceAngle = 78.11134196037202
+          targetAngle = -70.01689347810002
+        },
+      ]
+    }
+    Done__From__To_Do__Directed@fffssff = {
+      name = "Done"
+      description = ""
+      from = [
+        {
+          id = jira.Status.instance.to_do@s
+          sourceAngle = 78.11134196037202
+          targetAngle = -70.01689347810002
+        },
+      ]
+      to = jira.Status.instance.completati
+      type = "directed"
+      rules = {
+        postFunctions = [
+          {
+            type = "FireIssueEventFunction"
+            configuration = {
+              event = {
+                id = jira.IssueEvent.instance.Generic_Event@s
+              }
+            }
+          },
+          {
+            type = "UpdateIssueFieldFunction"
+            configuration = {
+              fieldId = jira.Field.instance.Resolution__resolution
+              fieldValue = jira.Resolution.instance.missing_10000
+            }
+          },
+        ]
+        conditions = {
+          operator = "AND"
+          conditions = [
+            {
+              type = "PermissionCondition"
+              configuration = {
+                permissionKey = "RESOLVE_ISSUES"
+              }
+            },
+            {
+              type = "PermissionCondition"
+              configuration = {
+                permissionKey = "RESOLVE_ISSUES"
+              }
+            },
+          ]
+        }
+      }
+      properties = [
+        {
+          key = "jira.i18n.submit"
+          value = "jira.issuetracking.simple.workflow.action.done.name"
+        },
+        {
+          key = "jira.i18n.title"
+          value = "jira.issuetracking.simple.workflow.action.done.name"
+        },
+        {
+          key = "jira.issue.editable"
+          value = "true"
+        },
+      ]
+    }
+    Reopen__From__Done__Directed@fffsff = {
+      name = "Reopen"
+      description = ""
+      from = [
+        {
+          id = jira.Status.instance.completati
+          sourceAngle = -70.01689347810002
+          targetAngle = 78.11134196037202
+        },
+      ]
+      to = jira.Status.instance.to_do@s
+      type = "directed"
+      rules = {
+        postFunctions = [
+          {
+            type = "FireIssueEventFunction"
+            configuration = {
+              event = {
+                id = jira.IssueEvent.instance.Generic_Event@s
+              }
+            }
+          },
+          {
+            type = "UpdateIssueFieldFunction"
+            configuration = {
+              fieldId = jira.Field.instance.Resolution__resolution
+              fieldValue = ""
+            }
+          },
+        ]
+        conditions = {
+          operator = "AND"
+          conditions = [
+            {
+              type = "PermissionCondition"
+              configuration = {
+                permissionKey = "RESOLVE_ISSUES"
+              }
+            },
+            {
+              type = "PermissionCondition"
+              configuration = {
+                permissionKey = "RESOLVE_ISSUES"
+              }
+            },
+          ]
+        }
+      }
+      properties = [
+        {
+          key = "jira.i18n.submit"
+          value = "jira.issuetracking.simple.workflow.action.reopen.name"
+        },
+        {
+          key = "jira.i18n.title"
+          value = "jira.issuetracking.simple.workflow.action.reopen.name"
+        },
+        {
+          key = "jira.issue.editable"
+          value = "true"
+        },
+      ]
+    }
+  }
+  statuses = [
+    {
+      id = jira.Status.instance.completati
+      name = "Done"
+      properties = [
+        {
+          key = "jira.issue.editable"
+          value = "true"
+        },
+      ]
+      location = {
+        x = 1518
+        y = 354
+      }
+    },
+    {
+      id = jira.Status.instance.to_do@s
+      name = "To Do"
+      properties = [
+        {
+          key = "jira.issue.editable"
+          value = "true"
+        },
+      ]
+      location = {
+        x = 1512
+        y = 80
+      }
+    },
+  ]
+  name = "GT: Flusso di lavoro per la gestione dei task"
+  diagramInitialEntry = {
+    x = 1512
+    y = 0
+  }
+}

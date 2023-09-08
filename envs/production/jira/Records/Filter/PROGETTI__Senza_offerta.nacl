@@ -1,0 +1,76 @@
+jira.Filter PROGETTI__Senza_offerta@fss {
+  name = "PROGETTI: Senza offerta"
+  description = ""
+  owner = {
+    id = "62fc96fc5fc3a72bda94622f"
+    displayName = "Patrick Pasquillo"
+  }
+  jql = "${ jira.Field.instance.Project__project } = ${ jira.Project.instance.Progetto.key } AND ${ jira.Field.instance.Status__status } = Fatturazione AND \"ID Offerta [Short text]\" is EMPTY AND \"ID Offerta[Short text]\" is EMPTY order by ${ jira.Field.instance.Created__datetime } DESC"
+  sharePermissions = [
+    {
+      type = "authenticated"
+    },
+  ]
+  editPermissions = [
+    {
+      type = "group"
+      group = {
+        name = jira.Group.instance.jira_software_users@b
+      }
+    },
+  ]
+  columns = [
+    {
+      label = "Issue Type"
+      value = "issuetype"
+    },
+    {
+      label = "Key"
+      value = "issuekey"
+    },
+    {
+      label = "Σ Time Spent"
+      value = "aggregatetimespent"
+    },
+    {
+      label = "Status"
+      value = "status"
+    },
+    {
+      label = "Priority"
+      value = "priority"
+    },
+    {
+      label = "Company"
+      value = "customfield_10045"
+    },
+    {
+      label = "Summary"
+      value = "summary"
+    },
+    {
+      label = "Assignee"
+      value = "assignee"
+    },
+    {
+      label = "Reporter"
+      value = "reporter"
+    },
+    {
+      label = "Created"
+      value = "created"
+    },
+    {
+      label = "Updated"
+      value = "updated"
+    },
+    {
+      label = "ID Offerta "
+      value = "customfield_10114"
+    },
+    {
+      label = "Stato fatturazione "
+      value = "customfield_10137"
+    },
+  ]
+}

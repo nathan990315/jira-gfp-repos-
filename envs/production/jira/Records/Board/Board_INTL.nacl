@@ -1,0 +1,33 @@
+jira.Board Board_INTL@s {
+  name = "Board INTL"
+  type = "simple"
+  admins = {
+    users = [
+      {
+        id = "61447938ff23ba007191345f"
+        displayName = "Nathan Giovannini"
+      },
+    ]
+  }
+  location = {
+    projectId = jira.Project.instance.Attivit__Interne@_00224s
+  }
+  filterId = jira.Filter.instance.missing_10038
+  columnConfig = {
+    columns = [
+      {
+        name = "Dataset INTL"
+        statuses = [
+          jira.Status.instance.missing_10019,
+        ]
+      },
+      {
+        name = "Done"
+        statuses = [
+          jira.Status.instance.missing_10021,
+        ]
+      },
+    ]
+    constraintType = "none"
+  }
+}

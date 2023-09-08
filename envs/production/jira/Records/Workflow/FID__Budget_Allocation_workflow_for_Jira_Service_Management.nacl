@@ -1,0 +1,300 @@
+jira.Workflow FID__Budget_Allocation_workflow_for_Jira_Service_Management@fsssssss {
+  description = "This Jira Service Management Service budget allocation workflow was generated for Project FID"
+  transitions = {
+    Crea__From__none__Initial@fffsff = {
+      name = "Crea"
+      description = ""
+      to = jira.Status.instance.da_completare@s
+      type = "initial"
+      rules = {
+        validators = [
+          {
+            type = "PermissionValidator"
+            configuration = {
+              permissionKey = "CREATE_ISSUES"
+            }
+          },
+        ]
+        postFunctions = [
+          {
+            type = "FireIssueEventFunction"
+            configuration = {
+              event = {
+                id = jira.IssueEvent.instance.Issue_Created@s
+              }
+            }
+          },
+        ]
+      }
+      properties = [
+        {
+          key = "jira.issue.editable"
+          value = "true"
+        },
+      ]
+      from = [
+        {
+          sourceAngle = 78.11134196037203
+          targetAngle = 173.8817434172112
+        },
+      ]
+    }
+    In_attesa_di_approvazione__From__In_corso_In_sospeso__Directed@sssfffsszdsff = {
+      name = "In attesa di approvazione"
+      description = ""
+      from = [
+        {
+          id = jira.Status.instance.in_corso@s
+          sourceAngle = 3.457613863747836
+          targetAngle = -70.01689347810002
+        },
+        {
+          id = jira.Status.instance.in_sospeso@s
+          sourceAngle = 4.310963035357294
+          targetAngle = 78.11134196037203
+        },
+      ]
+      to = jira.Status.instance.in_revisione@s
+      type = "directed"
+      rules = {
+        postFunctions = [
+          {
+            type = "FireIssueEventFunction"
+            configuration = {
+              event = {
+                id = jira.IssueEvent.instance.Generic_Event@s
+              }
+            }
+          },
+        ]
+      }
+      properties = [
+        {
+          key = "jira.issue.editable"
+          value = "true"
+        },
+      ]
+    }
+    In_corso__From__Da_completare_In_revisione_In_sospeso__Directed@sfffsszdszdsff = {
+      name = "In corso"
+      description = ""
+      from = [
+        {
+          id = jira.Status.instance.da_completare@s
+          sourceAngle = -70.01689347810002
+          targetAngle = 176.06853895443763
+        },
+        {
+          id = jira.Status.instance.in_sospeso@s
+          sourceAngle = -70.01689347810002
+          targetAngle = 78.11134196037203
+        },
+        {
+          id = jira.Status.instance.in_revisione@s
+          sourceAngle = -70.01689347810002
+          targetAngle = 3.457613863747836
+        },
+      ]
+      to = jira.Status.instance.in_corso@s
+      type = "directed"
+      rules = {
+        postFunctions = [
+          {
+            type = "FireIssueEventFunction"
+            configuration = {
+              event = {
+                id = jira.IssueEvent.instance.Generic_Event@s
+              }
+            }
+          },
+        ]
+      }
+      properties = [
+        {
+          key = "jira.issue.editable"
+          value = "true"
+        },
+      ]
+    }
+    Dettagli_richiesti__From__Da_completare_In_corso_In_revisione__Directed@sfffsszdszdsff = {
+      name = "Dettagli richiesti"
+      description = ""
+      from = [
+        {
+          id = jira.Status.instance.da_completare@s
+          sourceAngle = 78.11134196037203
+          targetAngle = 174.9274005836694
+        },
+        {
+          id = jira.Status.instance.in_corso@s
+          sourceAngle = 78.11134196037203
+          targetAngle = -70.01689347810002
+        },
+        {
+          id = jira.Status.instance.in_revisione@s
+          sourceAngle = 78.11134196037203
+          targetAngle = 4.310963035357294
+        },
+      ]
+      to = jira.Status.instance.in_sospeso@s
+      type = "directed"
+      rules = {
+        postFunctions = [
+          {
+            type = "FireIssueEventFunction"
+            configuration = {
+              event = {
+                id = jira.IssueEvent.instance.Generic_Event@s
+              }
+            }
+          },
+        ]
+      }
+      properties = [
+        {
+          key = "jira.issue.editable"
+          value = "true"
+        },
+      ]
+    }
+    Contrassegna_come_completato__From__In_revisione__Directed@ssfffssff = {
+      name = "Contrassegna come completato"
+      description = ""
+      from = [
+        {
+          id = jira.Status.instance.in_revisione@s
+          sourceAngle = 4.033461405163728
+          targetAngle = 173.64064487114604
+        },
+      ]
+      to = jira.Status.instance.completato
+      type = "directed"
+      screen = {
+        id = jira.Screen.instance.VEN__Schermata_Modifica_visualizza_ticket_per_pipeline_di_vendita@fssdsssss
+      }
+      rules = {
+        postFunctions = [
+          {
+            type = "FireIssueEventFunction"
+            configuration = {
+              event = {
+                id = jira.IssueEvent.instance.Generic_Event@s
+              }
+            }
+          },
+        ]
+      }
+      properties = [
+        {
+          key = "jira.issue.editable"
+          value = "true"
+        },
+      ]
+    }
+  }
+  statuses = [
+    {
+      id = jira.Status.instance.completato
+      name = "Completato"
+      properties = [
+        {
+          key = "jira.issue.editable"
+          value = "true"
+        },
+      ]
+      location = {
+        x = 914.593578338623
+        y = 173.30197418212893
+      }
+    },
+    {
+      id = jira.Status.instance.da_completare@s
+      name = "Da completare"
+      properties = [
+        {
+          key = "jira.issue.editable"
+          value = "true"
+        },
+      ]
+      location = {
+        x = 403.1343822479248
+        y = 177.30197418212893
+      }
+    },
+    {
+      id = jira.Status.instance.in_corso@s
+      name = "In corso"
+      properties = [
+        {
+          key = "jira.issue.editable"
+          value = "true"
+        },
+      ]
+      location = {
+        x = 552.257303237915
+        y = 86.30450103759767
+      }
+    },
+    {
+      id = jira.Status.instance.in_revisione@s
+      name = "In revisione"
+      properties = [
+        {
+          key = "approval.active"
+          value = "true"
+        },
+        {
+          key = "approval.condition.type"
+          value = "number"
+        },
+        {
+          key = "approval.condition.value"
+          value = "1"
+        },
+        {
+          key = "approval.exclude"
+          value = "assignee,reporter"
+        },
+        {
+          key = "approval.field.id"
+          value = "customfield_10003"
+        },
+        {
+          key = "approval.transition.approved"
+          value = "61"
+        },
+        {
+          key = "approval.transition.rejected"
+          value = "41"
+        },
+        {
+          key = "jira.issue.editable"
+          value = "true"
+        },
+      ]
+      location = {
+        x = 736.7405529022217
+        y = 173.30197418212893
+      }
+    },
+    {
+      id = jira.Status.instance.in_sospeso@s
+      name = "In sospeso"
+      properties = [
+        {
+          key = "jira.issue.editable"
+          value = "true"
+        },
+      ]
+      location = {
+        x = 565.4096431732178
+        y = 264.29954193115236
+      }
+    },
+  ]
+  name = "FID: Budget Allocation workflow for Jira Service Management"
+  diagramInitialEntry = {
+    x = 315.49273681640625
+    y = 156.39958343505862
+  }
+}

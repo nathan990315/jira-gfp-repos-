@@ -1,0 +1,14 @@
+jira.IssueTypeScreenScheme HT__Schema_schermata_tipo_ticket_Kanban@fsssss {
+  name = "HT: Schema schermata tipo ticket Kanban"
+  description = ""
+  issueTypeMappings = [
+    {
+      issueTypeId = jira.IssueType.instance.Bug
+      screenSchemeId = jira.ScreenScheme.instance.HT__Schema_schermata_bug_Kanban@fssss
+    },
+    {
+      issueTypeId = "default"
+      screenSchemeId = jira.ScreenScheme.instance.HT__Schema_schermata_predefinita_Kanban@fssss
+    },
+  ]
+}

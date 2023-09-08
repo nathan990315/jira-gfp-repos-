@@ -1,0 +1,4 @@
+jira.Resolution Errore_software_esterno@s {
+  description = "Il problema dipende da un software esterno a WinMed "
+  name = "Errore software esterno"
+}

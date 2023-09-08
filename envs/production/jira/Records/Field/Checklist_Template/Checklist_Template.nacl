@@ -1,0 +1,11 @@
+jira.Field Checklist_Template__com_gebsun_plugins_jira_issuechecklist__issue_checklist_templates__c@suuvvvvuubbuu {
+  name = "Checklist Template"
+  description = "Pick a checklist template to add when issue is created or transitioned (it will replace the default checklist)"
+  isLocked = true
+  searcherKey = "com.atlassian.jira.plugin.system.customfieldtypes:selectissuefieldsearcher"
+  type = "com.atlassian.plugins.atlassian-connect-plugin:com.gebsun.plugins.jira.issuechecklist__issue-checklist-templates"
+  contexts = [
+    jira.CustomFieldContext.instance.Checklist_Template__com_gebsun_plugins_jira_issuechecklist__issue_checklist_templates__c_suuvvvvuubbuu_Schema_di_configurazione_predefinito_per_Checklist_Template@uuuuuuuuuuuuumussssss,
+  ]
+  _alias = "Checklist Template"
+}

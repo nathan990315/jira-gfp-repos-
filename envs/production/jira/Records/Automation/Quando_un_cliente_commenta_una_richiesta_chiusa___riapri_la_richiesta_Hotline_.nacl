@@ -1,0 +1,128 @@
+jira.Automation Quando_un_cliente_commenta_una_richiesta_chiusa___riapri_la_richiesta_Hotline_@sssssss_08594sssus {
+  name = "Quando un cliente commenta una richiesta chiusa → riapri la richiesta"
+  state = "ENABLED"
+  authorAccountId = {
+    id = "61447938ff23ba007191345f"
+    displayName = "Nathan Giovannini"
+  }
+  actor = {
+    type = "ACCOUNT_ID"
+    value = {
+      id = "557058:f58131cb-b67d-43c7-b30d-6b58d40bd077"
+      displayName = "Automation for Jira"
+    }
+  }
+  trigger = {
+    component = "TRIGGER"
+    schemaVersion = 1
+    type = "jira.issue.event.trigger:commented"
+    value = {
+      eventKey = "jira:issue_updated"
+      issueEvent = "issue_commented"
+      eventTypes = [
+      ]
+    }
+    children = [
+    ]
+    conditions = [
+    ]
+  }
+  components = [
+    {
+      component = "CONDITION"
+      schemaVersion = 4
+      type = "jira.user.condition"
+      value = {
+        conditions = [
+          {
+            field = "initiator"
+            check = "USER_IS"
+            criteria = [
+              {
+                type = "SMART"
+                value = "{{issue.reporter}}"
+              },
+            ]
+          },
+        ]
+        operator = "AND"
+      }
+      children = [
+      ]
+      conditions = [
+      ]
+    },
+    {
+      component = "CONDITION"
+      schemaVersion = -1
+      type = "jira.jql.condition"
+      children = [
+      ]
+      conditions = [
+      ]
+      rawValue = "statusCategory = done"
+    },
+    {
+      component = "ACTION"
+      schemaVersion = 10
+      type = "jira.issue.transition"
+      value = {
+        operations = [
+        ]
+        sendNotifications = true
+        destinationStatus = {
+          type = "ID"
+          value = jira.Status.instance.riaperto
+        }
+      }
+      children = [
+      ]
+      conditions = [
+      ]
+    },
+  ]
+  canOtherRuleTrigger = false
+  notifyOnError = "FIRSTERROR"
+  projects = [
+    {
+      projectId = jira.Project.instance.Hotline_@s
+    },
+  ]
+  labels = [
+  ]
+  tags = [
+    {
+      tagType = "BILLABLE"
+      tagValue = "true"
+    },
+    {
+      tagType = "CREATION_TYPE"
+      tagValue = "USER"
+    },
+    {
+      tagType = "IS_RULE_UPDATED"
+      tagValue = "true"
+    },
+    {
+      tagType = "SAMPLE_RULE"
+      tagValue = "service_desk"
+    },
+    {
+      tagType = "TEMPLATE_ID"
+      tagValue = "itsm_template_3"
+    },
+  ]
+  ruleHome = {
+    ruleLifeCycleHome = {
+      locationARI = "ari:cloud:jira:c59e4ada-1a3a-49e7-8ca1-cd9dcdb12f98:project/10028"
+    }
+    ruleBillingHome = {
+      locationARI = "ari:cloud:jira-servicedesk::site/c59e4ada-1a3a-49e7-8ca1-cd9dcdb12f98"
+    }
+  }
+  writeAccessType = "UNRESTRICTED"
+  collaborators = [
+  ]
+  billingType = "NORMAL"
+  _alias = "Quando un cliente commenta una richiesta chiusa → riapri la richiesta"
+}

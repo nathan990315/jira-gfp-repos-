@@ -1,0 +1,11 @@
+jira.Field Tempo_di_presa_in_carico__sd_sla_field__c@ssssuubbuu {
+  name = "Tempo di presa in carico"
+  description = "Questo campo personalizzato è stato creato da Jira Service Management."
+  isLocked = true
+  searcherKey = "com.atlassian.servicedesk:sd-sla-field-searcher"
+  type = "com.atlassian.servicedesk:sd-sla-field"
+  contexts = [
+    jira.CustomFieldContext.instance.Tempo_di_presa_in_carico__sd_sla_field__c_ssssuubbuu_Schema_di_configurazione_predefinito_per_Tempo_di_presa_in_carico@uuuuuuuuuumusssssssss,
+  ]
+  _alias = "Tempo di presa in carico"
+}

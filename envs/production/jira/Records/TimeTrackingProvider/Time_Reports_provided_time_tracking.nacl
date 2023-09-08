@@ -1,0 +1,5 @@
+jira.TimeTrackingProvider Time_Reports_provided_time_tracking@s {
+  key = "timereports__timereports-time-tracking-provider"
+  name = "Time Reports provided time tracking"
+  url = "https://gfpmediconsul.atlassian.net/plugins/servlet/ac/timereports/timereports-time-tracking-config"
+}

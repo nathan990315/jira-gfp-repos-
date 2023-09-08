@@ -1,0 +1,8 @@
+jira.IssueTypeScheme GT__Schema_del_tipo_di_ticket_per_la_gestione_dei_task@fssssssssss {
+  name = "GT: Schema del tipo di ticket per la gestione dei task"
+  defaultIssueTypeId = jira.IssueType.instance.Task
+  issueTypeIds = [
+    jira.IssueType.instance.Task,
+    jira.IssueType.instance.Sottotask,
+  ]
+}

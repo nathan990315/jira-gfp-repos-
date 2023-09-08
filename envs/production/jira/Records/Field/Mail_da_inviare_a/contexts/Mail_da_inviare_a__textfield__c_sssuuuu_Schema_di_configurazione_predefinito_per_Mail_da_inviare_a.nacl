@@ -1,0 +1,12 @@
+jira.CustomFieldContext Mail_da_inviare_a__textfield__c_sssuuuu_Schema_di_configurazione_predefinito_per_Mail_da_inviare_a@uuuuuuumussssssss {
+  name = "Schema di configurazione predefinito per Mail da inviare a"
+  description = "Schema di configurazione predefinito generato da JIRA"
+  isGlobalContext = true
+  defaultValue = {
+    type = "textfield"
+  }
+  _parent = [
+    jira.Field.instance.Mail_da_inviare_a__textfield__c@sssuuuu,
+  ]
+  _alias = "Mail da inviare a context in Schema di configurazione predefinito per Mail da inviare a"
+}

@@ -1,0 +1,6 @@
+jira.Field Location__location__c {
+  name = "Location"
+  description = "Aggiungere i campi UUID e Posizione a un progetto abiliterà JIRA Mobile Connect per quel progetto."
+  type = "com.atlassian.jconnect.jconnect-plugin:location"
+  _alias = "Location"
+}

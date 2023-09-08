@@ -1,0 +1,12 @@
+jira.CustomFieldContext Checklist_Content_YAML__textarea__c_ssuuuu_Schema_di_configurazione_predefinito_per_Checklist_Content_YAML@uuuuuumusssssss {
+  name = "Schema di configurazione predefinito per Checklist Content YAML"
+  description = "Schema di configurazione predefinito generato da JIRA"
+  isGlobalContext = true
+  defaultValue = {
+    type = "textarea"
+  }
+  _parent = [
+    jira.Field.instance.Checklist_Content_YAML__textarea__c@ssuuuu,
+  ]
+  _alias = "Checklist Content YAML context in Schema di configurazione predefinito per Checklist Content YAML"
+}

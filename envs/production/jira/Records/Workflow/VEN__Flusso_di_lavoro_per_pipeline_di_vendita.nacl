@@ -1,0 +1,441 @@
+jira.Workflow VEN__Flusso_di_lavoro_per_pipeline_di_vendita@fsssssss {
+  description = "sales-pipeline-workflow"
+  transitions = {
+    Create__From__none__Initial@fffsff = {
+      name = "Create"
+      description = ""
+      to = jira.Status.instance.new
+      type = "initial"
+      rules = {
+        validators = [
+          {
+            type = "PermissionValidator"
+            configuration = {
+              permissionKey = "CREATE_ISSUES"
+            }
+          },
+        ]
+        postFunctions = [
+          {
+            type = "FireIssueEventFunction"
+            configuration = {
+              event = {
+                id = jira.IssueEvent.instance.Issue_Created@s
+              }
+            }
+          },
+        ]
+      }
+      properties = [
+        {
+          key = "jira.i18n.submit"
+          value = "common.forms.create"
+        },
+        {
+          key = "jira.i18n.title"
+          value = "common.forms.create"
+        },
+        {
+          key = "jira.issue.editable"
+          value = "true"
+        },
+      ]
+      from = [
+        {
+          sourceAngle = 78.11134196037203
+          targetAngle = -70.01689347810002
+        },
+      ]
+    }
+    Negotiation__From__any_status__Global@fffssff = {
+      name = "Negotiation"
+      description = ""
+      to = jira.Status.instance.negotiation
+      type = "global"
+      rules = {
+        postFunctions = [
+          {
+            type = "FireIssueEventFunction"
+            configuration = {
+              event = {
+                id = jira.IssueEvent.instance.Generic_Event@s
+              }
+            }
+          },
+        ]
+      }
+      properties = [
+        {
+          key = "jira.issue.editable"
+          value = "true"
+        },
+      ]
+    }
+    Closed_won__From__any_status__Global@sfffssff = {
+      name = "Closed won"
+      description = ""
+      to = jira.Status.instance.closed_won@s
+      type = "global"
+      rules = {
+        postFunctions = [
+          {
+            type = "FireIssueEventFunction"
+            configuration = {
+              event = {
+                id = jira.IssueEvent.instance.Generic_Event@s
+              }
+            }
+          },
+        ]
+      }
+      properties = [
+        {
+          key = "jira.issue.editable"
+          value = "true"
+        },
+      ]
+    }
+    Closed_Lost__From__any_status__Global@sfffssff = {
+      name = "Closed Lost"
+      description = ""
+      to = jira.Status.instance.closed_lost@s
+      type = "global"
+      rules = {
+        postFunctions = [
+          {
+            type = "FireIssueEventFunction"
+            configuration = {
+              event = {
+                id = jira.IssueEvent.instance.Generic_Event@s
+              }
+            }
+          },
+        ]
+      }
+      properties = [
+        {
+          key = "jira.issue.editable"
+          value = "true"
+        },
+      ]
+    }
+    New__From__any_status__Global@fffssff = {
+      name = "New"
+      description = ""
+      to = jira.Status.instance.new
+      type = "global"
+      rules = {
+        postFunctions = [
+          {
+            type = "FireIssueEventFunction"
+            configuration = {
+              event = {
+                id = jira.IssueEvent.instance.Generic_Event@s
+              }
+            }
+          },
+        ]
+      }
+      properties = [
+        {
+          key = "jira.issue.editable"
+          value = "true"
+        },
+      ]
+    }
+    Follow_up__From__any_status__Global@bfffssff = {
+      name = "Follow-up"
+      description = ""
+      to = jira.Status.instance.follow_up@b
+      type = "global"
+      rules = {
+        postFunctions = [
+          {
+            type = "FireIssueEventFunction"
+            configuration = {
+              event = {
+                id = jira.IssueEvent.instance.Generic_Event@s
+              }
+            }
+          },
+        ]
+      }
+      properties = [
+        {
+          key = "jira.issue.editable"
+          value = "true"
+        },
+      ]
+    }
+    Contract_sent__From__any_status__Global@sfffssff = {
+      name = "Contract sent"
+      description = ""
+      to = jira.Status.instance.contract_sent@s
+      type = "global"
+      rules = {
+        postFunctions = [
+          {
+            type = "FireIssueEventFunction"
+            configuration = {
+              event = {
+                id = jira.IssueEvent.instance.Generic_Event@s
+              }
+            }
+          },
+        ]
+      }
+      properties = [
+        {
+          key = "jira.issue.editable"
+          value = "true"
+        },
+      ]
+    }
+    Move_to_follow_up__From__New__Directed@sssfffsff = {
+      name = "Move to follow up"
+      description = ""
+      from = [
+        {
+          id = jira.Status.instance.new
+          sourceAngle = 78.11134196037203
+          targetAngle = 175.69975970285617
+        },
+      ]
+      to = jira.Status.instance.follow_up@b
+      type = "directed"
+      rules = {
+        postFunctions = [
+          {
+            type = "FireIssueEventFunction"
+            configuration = {
+              event = {
+                id = jira.IssueEvent.instance.Generic_Event@s
+              }
+            }
+          },
+        ]
+      }
+      properties = [
+        {
+          key = "jira.issue.editable"
+          value = "true"
+        },
+      ]
+    }
+    Send_contract__From__Follow_up__Directed@sfffsbff = {
+      name = "Send contract"
+      description = ""
+      from = [
+        {
+          id = jira.Status.instance.follow_up@b
+          sourceAngle = 3.7397889923192293
+          targetAngle = 176.5861916675362
+        },
+      ]
+      to = jira.Status.instance.contract_sent@s
+      type = "directed"
+      rules = {
+        postFunctions = [
+          {
+            type = "FireIssueEventFunction"
+            configuration = {
+              event = {
+                id = jira.IssueEvent.instance.Generic_Event@s
+              }
+            }
+          },
+        ]
+      }
+      properties = [
+        {
+          key = "jira.issue.editable"
+          value = "true"
+        },
+      ]
+    }
+    Move_to_negotiation__From__Contract_sent__Directed@ssfffssff = {
+      name = "Move to negotiation"
+      description = ""
+      from = [
+        {
+          id = jira.Status.instance.contract_sent@s
+          sourceAngle = 3.0506622798465286
+          targetAngle = -160.228767025623
+        },
+      ]
+      to = jira.Status.instance.negotiation
+      type = "directed"
+      rules = {
+        postFunctions = [
+          {
+            type = "FireIssueEventFunction"
+            configuration = {
+              event = {
+                id = jira.IssueEvent.instance.Generic_Event@s
+              }
+            }
+          },
+        ]
+      }
+      properties = [
+        {
+          key = "jira.issue.editable"
+          value = "true"
+        },
+      ]
+    }
+    Negotiation_won__From__Negotiation__Directed@sfffsff = {
+      name = "Negotiation won"
+      description = ""
+      from = [
+        {
+          id = jira.Status.instance.negotiation
+          sourceAngle = -15.905445562676025
+          targetAngle = 176.0473835820105
+        },
+      ]
+      to = jira.Status.instance.closed_won@s
+      type = "directed"
+      rules = {
+        postFunctions = [
+          {
+            type = "FireIssueEventFunction"
+            configuration = {
+              event = {
+                id = jira.IssueEvent.instance.Generic_Event@s
+              }
+            }
+          },
+        ]
+      }
+      properties = [
+        {
+          key = "jira.issue.editable"
+          value = "true"
+        },
+      ]
+    }
+    Negotiation_lost__From__Negotiation__Directed@sfffsff = {
+      name = "Negotiation lost"
+      description = ""
+      from = [
+        {
+          id = jira.Status.instance.negotiation
+          sourceAngle = 26.20659896098475
+          targetAngle = 148.77805272153938
+        },
+      ]
+      to = jira.Status.instance.closed_lost@s
+      type = "directed"
+      rules = {
+        postFunctions = [
+          {
+            type = "FireIssueEventFunction"
+            configuration = {
+              event = {
+                id = jira.IssueEvent.instance.Generic_Event@s
+              }
+            }
+          },
+        ]
+      }
+      properties = [
+        {
+          key = "jira.issue.editable"
+          value = "true"
+        },
+      ]
+    }
+  }
+  statuses = [
+    {
+      id = jira.Status.instance.closed_lost@s
+      name = "Closed Lost"
+      properties = [
+        {
+          key = "jira.issue.editable"
+          value = "true"
+        },
+      ]
+      location = {
+        x = 1884.8125
+        y = 252.9
+      }
+    },
+    {
+      id = jira.Status.instance.closed_won@s
+      name = "Closed won"
+      properties = [
+        {
+          key = "jira.issue.editable"
+          value = "true"
+        },
+      ]
+      location = {
+        x = 1884.8125
+        y = 110
+      }
+    },
+    {
+      id = jira.Status.instance.contract_sent@s
+      name = "Contract sent"
+      properties = [
+        {
+          key = "jira.issue.editable"
+          value = "true"
+        },
+      ]
+      location = {
+        x = 1415.78125
+        y = 170.9
+      }
+    },
+    {
+      id = jira.Status.instance.follow_up@b
+      name = "Follow-up"
+      properties = [
+        {
+          key = "jira.issue.editable"
+          value = "true"
+        },
+      ]
+      location = {
+        x = 1280.5390625
+        y = 80
+      }
+    },
+    {
+      id = jira.Status.instance.negotiation
+      name = "Negotiation"
+      properties = [
+        {
+          key = "jira.issue.editable"
+          value = "true"
+        },
+      ]
+      location = {
+        x = 1654.9140625
+        y = 170.9
+      }
+    },
+    {
+      id = jira.Status.instance.new
+      name = "New"
+      properties = [
+        {
+          key = "jira.issue.editable"
+          value = "true"
+        },
+      ]
+      location = {
+        x = 1206.8671875
+        y = 10.900000000000006
+      }
+    },
+  ]
+  name = "VEN: Flusso di lavoro per pipeline di vendita"
+  diagramInitialEntry = {
+    x = 1135.703125
+    y = -77
+  }
+}

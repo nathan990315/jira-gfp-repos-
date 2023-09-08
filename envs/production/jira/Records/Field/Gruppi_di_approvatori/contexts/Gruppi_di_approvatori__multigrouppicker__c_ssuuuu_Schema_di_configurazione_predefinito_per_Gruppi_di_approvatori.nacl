@@ -1,0 +1,12 @@
+jira.CustomFieldContext Gruppi_di_approvatori__multigrouppicker__c_ssuuuu_Schema_di_configurazione_predefinito_per_Gruppi_di_approvatori@uuuuuumusssssss {
+  name = "Schema di configurazione predefinito per Gruppi di approvatori"
+  description = "Schema di configurazione predefinito generato da JIRA"
+  isGlobalContext = true
+  defaultValue = {
+    type = "grouppicker.multiple"
+  }
+  _parent = [
+    jira.Field.instance.Gruppi_di_approvatori__multigrouppicker__c@ssuuuu,
+  ]
+  _alias = "Gruppi di approvatori context in Schema di configurazione predefinito per Gruppi di approvatori"
+}

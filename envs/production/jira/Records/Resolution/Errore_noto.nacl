@@ -1,0 +1,4 @@
+jira.Resolution Errore_noto@s {
+  description = "Il problema ha una causa radice documentata e una soluzione alternativa."
+  name = "Errore noto"
+}

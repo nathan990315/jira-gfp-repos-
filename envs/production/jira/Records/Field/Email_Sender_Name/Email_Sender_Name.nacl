@@ -1,0 +1,11 @@
+jira.Field Email_Sender_Name__com_javahollic_jira_jemh_ui__emailSenderName__c@ssuuvvvbuuuu {
+  name = "Email Sender Name"
+  description = "Enterprise Mail Handler (JEMHC) for Jira Cloud: Issue field used to store sender's personal name."
+  isLocked = true
+  searcherKey = "com.atlassian.jira.plugin.system.customfieldtypes:textsearcher"
+  type = "com.atlassian.plugins.atlassian-connect-plugin:com.javahollic.jira.jemh-ui__emailSenderName"
+  contexts = [
+    jira.CustomFieldContext.instance.Email_Sender_Name__com_javahollic_jira_jemh_ui__emailSenderName__c_ssuuvvvbuuuu_Schema_di_configurazione_predefinito_per_Email_Sender_Name@uuuuuuuuuuuumusssssss,
+  ]
+  _alias = "Email Sender Name"
+}

@@ -1,0 +1,47 @@
+jira.Filter Task_con_Fattura_Creata_e_in_Sospeso@s {
+  name = "Task con Fattura Creata e in Sospeso"
+  description = ""
+  owner = {
+    id = "61447938ff23ba007191345f"
+    displayName = "Nathan Giovannini"
+  }
+  jql = "${ jira.Field.instance.Project__project } = 10000 AND ${ jira.Field.instance.Issue_Type__issuetype@suu } = ${ jira.IssueType.instance.Task.name } AND ${ jira.Field.instance.Status__status } in (\"${ jira.Status.instance.da_completare@s.name }\", Fatturazione, \"${ jira.Status.instance.in_corso@s.name }\") AND \"Stato Fatturazione[Dropdown]\" = \"Fattura creata e in sospeso\" ORDER BY ${ jira.Field.instance.Created__datetime } DESC"
+  columns = [
+    {
+      label = "Issue Type"
+      value = "issuetype"
+    },
+    {
+      label = "Key"
+      value = "issuekey"
+    },
+    {
+      label = "Created"
+      value = "created"
+    },
+    {
+      label = "Reporter"
+      value = "reporter"
+    },
+    {
+      label = "Summary"
+      value = "summary"
+    },
+    {
+      label = "Priority"
+      value = "priority"
+    },
+    {
+      label = "Status"
+      value = "status"
+    },
+    {
+      label = "Assignee"
+      value = "assignee"
+    },
+    {
+      label = "Due date"
+      value = "duedate"
+    },
+  ]
+}

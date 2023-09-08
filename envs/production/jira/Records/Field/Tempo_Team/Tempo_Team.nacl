@@ -1,0 +1,11 @@
+jira.Field Tempo_Team__io_tempo_jira__team__c@suuvvuuuu {
+  name = "Tempo Team"
+  description = "Tempo Team Custom Field"
+  isLocked = true
+  searcherKey = "com.atlassian.jira.plugin.system.customfieldtypes:selectissuefieldsearcher"
+  type = "com.atlassian.plugins.atlassian-connect-plugin:io.tempo.jira__team"
+  contexts = [
+    jira.CustomFieldContext.instance.Tempo_Team__io_tempo_jira__team__c_suuvvuuuu_Schema_di_configurazione_predefinito_per_Team@uuuuuuuuumusssss,
+  ]
+  _alias = "Tempo Team"
+}

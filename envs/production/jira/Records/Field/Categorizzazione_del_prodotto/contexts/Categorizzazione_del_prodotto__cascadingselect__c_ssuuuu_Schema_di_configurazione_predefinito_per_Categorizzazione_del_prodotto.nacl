@@ -1,0 +1,86 @@
+jira.CustomFieldContext Categorizzazione_del_prodotto__cascadingselect__c_ssuuuu_Schema_di_configurazione_predefinito_per_Categorizzazione_del_prodotto@uuuuuumusssssss {
+  name = "Schema di configurazione predefinito per Categorizzazione del prodotto"
+  description = "Schema di configurazione predefinito generato da JIRA"
+  isGlobalContext = true
+  options = {
+    Hardware = {
+      value = "Hardware"
+      disabled = false
+      cascadingOptions = {
+        CPD = {
+          value = "CPD"
+          disabled = false
+          position = 0
+        }
+        Periferica = {
+          value = "Periferica"
+          disabled = false
+          position = 1
+        }
+        Potenza = {
+          value = "Potenza"
+          disabled = false
+          position = 2
+        }
+        Componente = {
+          value = "Componente"
+          disabled = false
+          position = 3
+        }
+        Apparecchiature_di_processo@s = {
+          value = "Apparecchiature di processo"
+          disabled = false
+          position = 4
+        }
+        Virtuale = {
+          value = "Virtuale"
+          disabled = false
+          position = 5
+        }
+        Disco = {
+          value = "Disco"
+          disabled = false
+          position = 6
+        }
+        Nastro = {
+          value = "Nastro"
+          disabled = false
+          position = 7
+        }
+      }
+      position = 0
+    }
+    Software = {
+      value = "Software"
+      disabled = false
+      position = 1
+    }
+    Comunicazione = {
+      value = "Comunicazione"
+      disabled = false
+      position = 2
+    }
+    Servizio = {
+      value = "Servizio"
+      disabled = false
+      position = 3
+    }
+    Persone = {
+      value = "Persone"
+      disabled = false
+      position = 4
+    }
+    Documento = {
+      value = "Documento"
+      disabled = false
+      position = 5
+    }
+  }
+  defaultValue = {
+    type = "option.cascading"
+  }
+  _parent = [
+    jira.Field.instance.Categorizzazione_del_prodotto__cascadingselect__c@ssuuuu,
+  ]
+  _alias = "Categorizzazione del prodotto context in Schema di configurazione predefinito per Categorizzazione del prodotto"
+}

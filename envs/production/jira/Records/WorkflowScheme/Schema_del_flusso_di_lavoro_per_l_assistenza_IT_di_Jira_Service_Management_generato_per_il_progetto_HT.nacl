@@ -1,0 +1,15 @@
+jira.WorkflowScheme Schema_del_flusso_di_lavoro_per_l_assistenza_IT_di_Jira_Service_Management_generato_per_il_progetto_HT@sssssstssssssssss {
+  name = "Schema del flusso di lavoro per l'assistenza IT di Jira Service Management generato per il progetto HT"
+  description = "Questo schema di flusso di lavoro per l'assistenza IT di Jira Service Management è stato generato per il progetto HT"
+  defaultWorkflow = jira.Workflow.instance.jira
+  items = [
+    {
+      workflow = jira.Workflow.instance.HT__flusso_di_lavoro_predefinito_di_Jira_Service_Management@fssssssss
+      issueType = jira.IssueType.instance.Task
+    },
+    {
+      workflow = jira.Workflow.instance.HT__flusso_di_lavoro_predefinito_di_Jira_Service_Management@fssssssss
+      issueType = jira.IssueType.instance.Sottotask
+    },
+  ]
+}

@@ -1,0 +1,11 @@
+jira.Field Servizi_coinvolti__service_entity_field_cftype__c@suubbbuu {
+  name = "Servizi coinvolti"
+  description = "Collega i servizi dal registro dei servizi a un ticket."
+  isLocked = true
+  searcherKey = "com.atlassian.jira.plugins.service-entity:service-entity-field-searcher"
+  type = "com.atlassian.jira.plugins.service-entity:service-entity-field-cftype"
+  contexts = [
+    jira.CustomFieldContext.instance.Servizi_coinvolti__service_entity_field_cftype__c_suubbbuu_Schema_di_configurazione_predefinito_per_Servizi_coinvolti@uuuuuuuumussssss,
+  ]
+  _alias = "Servizi coinvolti"
+}

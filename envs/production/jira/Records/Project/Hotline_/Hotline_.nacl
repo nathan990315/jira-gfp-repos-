@@ -1,0 +1,21 @@
+jira.Project Hotline_@s {
+  key = "HE"
+  description = ""
+  name = "Hotline "
+  projectTypeKey = "service_desk"
+  components = [
+    jira.ProjectComponent.instance.Hotline__s__Intranet@umuu,
+    jira.ProjectComponent.instance.Hotline__s__JIRA@umuu,
+    jira.ProjectComponent.instance.Hotline__s__Sito_web_pubblico@umuuss,
+  ]
+  workflowScheme = jira.WorkflowScheme.instance.Schema_del_flusso_di_lavoro_per_l_assistenza_IT_di_Jira_Service_Management_generato_per_il_progetto_HE@sssssstssssssssss
+  permissionScheme = jira.PermissionScheme.instance.Schema_di_autorizzazione_di_Jira_Service_Management_per_il_progetto_HE@s
+  notificationScheme = jira.NotificationScheme.instance.Default_Notification_Scheme@s
+  issueTypeScreenScheme = jira.IssueTypeScreenScheme.instance.HE__Schema_della_schermata_del_tipo_di_ticket_Jira_Service_Management@fssssssssss
+  issueTypeScheme = jira.IssueTypeScheme.instance.HE__Schema_del_tipo_di_ticket_Jira_Service_Management@fssssssss
+  fieldConfigurationScheme = jira.FieldConfigurationScheme.instance.Schema_della_configurazione_di_campo_di_Jira_Service_Management_per_il_progetto_HE@s
+  leadAccountId = {
+    id = "61447938ff23ba007191345f"
+    displayName = "Nathan Giovannini"
+  }
+}

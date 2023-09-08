@@ -1,0 +1,22 @@
+jira.Filter ROUTINE__Cumulativo_Regia@fss {
+  name = "ROUTINE: Cumulativo Regia"
+  description = ""
+  owner = {
+    id = "62fc96fc5fc3a72bda94622f"
+    displayName = "Patrick Pasquillo"
+  }
+  jql = "${ jira.Field.instance.Project__project } in (\"Hotline \") AND ${ jira.Field.instance.Status__status } in (${ jira.Status.instance.completati.name }, ${ jira.Status.instance.completato.name }, ${ jira.Status.instance.done.name }, Fatturazione) AND ${ jira.Field.instance.Labels__array } = CumulativoRegia ORDER BY cf[${ jira.Field.instance.Company__read_only_string_issue_field__c@uubbbbuu }] ASC, ${ jira.Field.instance.Created__datetime } DESC"
+  sharePermissions = [
+    {
+      type = "authenticated"
+    },
+  ]
+  editPermissions = [
+    {
+      type = "group"
+      group = {
+        name = jira.Group.instance.jira_software_users@b
+      }
+    },
+  ]
+}

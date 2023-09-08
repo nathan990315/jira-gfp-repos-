@@ -1,0 +1,21 @@
+jira.Screen JIRA_Service_Desk_Resolve_Issue_Screen___17@ssssssbs {
+  name = "JIRA Service Desk Resolve Issue Screen - 17"
+  description = "Allows to set resolution and linked issues"
+  tabs = {
+    Field_Tab@s = {
+      name = "Field Tab"
+      fields = [
+        jira.Field.instance.Resolution__resolution,
+        jira.Field.instance.Linked_Issues__array@suu,
+      ]
+      position = 0
+    }
+    HubSpot = {
+      name = "HubSpot"
+      fields = [
+        jira.Field.instance.HubSpot_ticket_count__Hub_ID__27031577___float__c@sssjsfskuuuu,
+      ]
+      position = 1
+    }
+  }
+}

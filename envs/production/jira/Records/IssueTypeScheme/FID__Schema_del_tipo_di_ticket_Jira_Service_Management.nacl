@@ -1,0 +1,12 @@
+jira.IssueTypeScheme FID__Schema_del_tipo_di_ticket_Jira_Service_Management@fssssssss {
+  name = "FID: Schema del tipo di ticket Jira Service Management"
+  description = "Questo schema del tipo di ticket Jira Service Management è stato generato automaticamente"
+  issueTypeIds = [
+    jira.IssueType.instance.Task,
+    jira.IssueType.instance.Sottotask,
+    jira.IssueType.instance.Richiedi_una_revisione_delle_policy@s,
+    jira.IssueType.instance.Richiedi_uno_stanziamento_del_budget@s,
+    jira.IssueType.instance.Richiesta_inviata_tramite_e_mail@sssb,
+    jira.IssueType.instance.Domande_per_i_team_finanziari@s,
+  ]
+}

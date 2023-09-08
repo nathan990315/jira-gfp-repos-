@@ -1,0 +1,11 @@
+jira.Field Data_soddisfazione__sd_request_feedback_date__c@suubbbuu {
+  name = "Data soddisfazione"
+  description = "Memorizza la data della richiesta di commenti nelle richieste del progetto di assistenza. Questo campo personalizzato viene creato in modo programmatico ed è richiesto dal progetto di assistenza."
+  isLocked = true
+  searcherKey = "com.atlassian.servicedesk:sd-request-feedback-date-searcher"
+  type = "com.atlassian.servicedesk:sd-request-feedback-date"
+  contexts = [
+    jira.CustomFieldContext.instance.Data_soddisfazione__sd_request_feedback_date__c_suubbbuu_Schema_di_configurazione_predefinito_per_Data_soddisfazione@uuuuuuuumussssss,
+  ]
+  _alias = "Data soddisfazione"
+}

@@ -1,0 +1,107 @@
+jira.Automation risposta_automatica__Hotline_@ssus {
+  name = "risposta automatica "
+  state = "ENABLED"
+  description = ""
+  authorAccountId = {
+    id = "61447938ff23ba007191345f"
+    displayName = "Nathan Giovannini"
+  }
+  actor = {
+    type = "ACCOUNT_ID"
+    value = {
+      id = "557058:f58131cb-b67d-43c7-b30d-6b58d40bd077"
+      displayName = "Automation for Jira"
+    }
+  }
+  trigger = {
+    component = "TRIGGER"
+    schemaVersion = 1
+    type = "jira.issue.event.trigger:created"
+    value = {
+      eventKey = "jira:issue_created"
+      issueEvent = "issue_created"
+    }
+    children = [
+    ]
+    conditions = [
+    ]
+  }
+  components = [
+    {
+      component = "CONDITION"
+      schemaVersion = 3
+      type = "jira.issue.condition"
+      value = {
+        selectedField = {
+          type = "ID"
+          value = jira.Field.instance.Issue_Type__issuetype@suu
+        }
+        selectedFieldType = "issuetype"
+        comparison = "EQUALS"
+        compareFieldValue = {
+          type = "ID"
+          value = jira.IssueType.instance.Richiesta_inviata_tramite_e_mail@sssb
+          multiValue = false
+        }
+      }
+      children = [
+      ]
+      conditions = [
+      ]
+    },
+    {
+      component = "ACTION"
+      schemaVersion = 1
+      type = "jira.issue.comment"
+      value = {
+        comment = '''
+Spettabile studio medico,
+
+
+le comunico che abbiamo preso in carico la sua richiesta, le daremo riscontro quanto prima.
+
+Ricordiamo che il numero del ticket aperto è indicato nell'oggetto della presente mail. Si prega di non rimuoverlo.
+Per qualunque necessità o dubbio, il numero del ticket è l'identificativo di riconoscimento della vostra segnalazione.
+Cordiali saluti.
+
+Grazie
+'''
+        publicComment = true
+        sendNotifications = true
+        addCommentOnce = true
+      }
+      children = [
+      ]
+      conditions = [
+      ]
+    },
+  ]
+  canOtherRuleTrigger = false
+  notifyOnError = "FIRSTERROR"
+  projects = [
+    {
+      projectId = jira.Project.instance.Hotline_@s
+    },
+  ]
+  labels = [
+  ]
+  tags = [
+    {
+      tagType = "IS_RULE_UPDATED"
+      tagValue = "true"
+    },
+  ]
+  ruleHome = {
+    ruleLifeCycleHome = {
+      locationARI = "ari:cloud:jira:c59e4ada-1a3a-49e7-8ca1-cd9dcdb12f98:project/10028"
+    }
+    ruleBillingHome = {
+      locationARI = "ari:cloud:jira-servicedesk::site/c59e4ada-1a3a-49e7-8ca1-cd9dcdb12f98"
+    }
+  }
+  writeAccessType = "UNRESTRICTED"
+  collaborators = [
+  ]
+  billingType = "NORMAL"
+  _alias = "risposta automatica "
+}

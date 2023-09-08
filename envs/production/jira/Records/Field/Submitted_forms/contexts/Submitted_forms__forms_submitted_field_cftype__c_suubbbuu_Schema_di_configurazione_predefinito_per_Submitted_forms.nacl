@@ -1,0 +1,9 @@
+jira.CustomFieldContext Submitted_forms__forms_submitted_field_cftype__c_suubbbuu_Schema_di_configurazione_predefinito_per_Submitted_forms@uuuuuuuumussssss {
+  name = "Schema di configurazione predefinito per Submitted forms"
+  description = "Schema di configurazione predefinito generato da JIRA"
+  isGlobalContext = true
+  _parent = [
+    jira.Field.instance.Submitted_forms__forms_submitted_field_cftype__c@suubbbuu,
+  ]
+  _alias = "Submitted forms context in Schema di configurazione predefinito per Submitted forms"
+}

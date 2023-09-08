@@ -1,0 +1,675 @@
+jira.Workflow GDC__flusso_di_lavoro_di_evasione_delle_richieste_di_assistenza_per_Jira_Service_Management@fsssssssssssss {
+  description = "Questo flusso di lavoro di evasione delle richieste di assistenza di Jira Service Management è stato generato per il progetto GDC"
+  transitions = {
+    Crea_ticket__From__none__Initial@sfffsff = {
+      name = "Crea ticket"
+      description = ""
+      to = jira.Status.instance.in_attesa_del_supporto@s
+      type = "initial"
+      rules = {
+        validators = [
+          {
+            type = "PermissionValidator"
+            configuration = {
+              permissionKey = "CREATE_ISSUES"
+            }
+          },
+        ]
+        postFunctions = [
+          {
+            type = "FireIssueEventFunction"
+            configuration = {
+              event = {
+                id = jira.IssueEvent.instance.Issue_Created@s
+              }
+            }
+          },
+          {
+            type = "UpdateIssueStatusFunction"
+          },
+        ]
+      }
+      properties = [
+        {
+          key = "jira.i18n.title"
+          value = "common.forms.create"
+        },
+        {
+          key = "jira.issue.editable"
+          value = "true"
+        },
+        {
+          key = "opsbar-sequence"
+          value = "0"
+        },
+      ]
+      from = [
+        {
+          sourceAngle = 78.11134196037203
+          targetAngle = -70.01689347810002
+        },
+      ]
+    }
+    Risolvi_il_ticket__From__In_attesa_del_cliente_In_attesa_del_supporto_In_corso_In_sospeso__Directed@ssfffsssszdssszdszdsff = {
+      name = "Risolvi il ticket"
+      description = ""
+      from = [
+        {
+          id = jira.Status.instance.in_attesa_del_supporto@s
+          sourceAngle = -11.573670140269954
+          targetAngle = -70.01689347810002
+        },
+        {
+          id = jira.Status.instance.in_attesa_del_cliente@s
+          sourceAngle = 2.347775348979277
+          targetAngle = -70.01689347810002
+        },
+        {
+          id = jira.Status.instance.in_sospeso@s
+          sourceAngle = 4.311595447066515
+          targetAngle = -70.01689347810002
+        },
+        {
+          id = jira.Status.instance.in_corso@s
+          sourceAngle = 26.07344000904233
+          targetAngle = 175.41180155330412
+        },
+      ]
+      to = jira.Status.instance.risolti
+      type = "directed"
+      screen = {
+        id = jira.Screen.instance.JIRA_Service_Desk_Resolve_Issue_Screen___8@ssssssbs
+      }
+      rules = {
+        postFunctions = [
+          {
+            type = "FireIssueEventFunction"
+            configuration = {
+              event = {
+                id = jira.IssueEvent.instance.Generic_Event@s
+              }
+            }
+          },
+        ]
+      }
+      properties = [
+        {
+          key = "jira.i18n.submit"
+          value = "sd.workflow.itsupport.v2.transition.resolve.this.issue.submit"
+        },
+        {
+          key = "jira.i18n.title"
+          value = "sd.workflow.itsupport.v2.transition.resolve.this.issue.title"
+        },
+        {
+          key = "jira.issue.editable"
+          value = "true"
+        },
+        {
+          key = "sd.tour.resolve.step"
+          value = "true"
+        },
+        {
+          key = "servicedesk.customer.transition.active"
+          value = "true"
+        },
+        {
+          key = "servicedesk.customer.transition.resolution"
+          value = "10000"
+        },
+      ]
+    }
+    Rispondi_per_il_supporto__From__In_attesa_del_cliente__Directed@sssfffssssff = {
+      name = "Rispondi per il supporto"
+      description = ""
+      from = [
+        {
+          id = jira.Status.instance.in_attesa_del_cliente@s
+          sourceAngle = 177.44278107666426
+          targetAngle = 2.4688237007158302
+        },
+      ]
+      to = jira.Status.instance.in_attesa_del_supporto@s
+      type = "directed"
+      rules = {
+        postFunctions = [
+          {
+            type = "FireIssueEventFunction"
+            configuration = {
+              event = {
+                id = jira.IssueEvent.instance.Generic_Event@s
+              }
+            }
+          },
+        ]
+      }
+      properties = [
+        {
+          key = "jira.i18n.submit"
+          value = "sd.workflow.itsupport.v2.transition.respond.to.support.submit"
+        },
+        {
+          key = "jira.i18n.title"
+          value = "sd.workflow.itsupport.v2.transition.respond.to.support.title"
+        },
+        {
+          key = "jira.issue.editable"
+          value = "true"
+        },
+      ]
+    }
+    Rispondi_al_cliente__From__In_attesa_del_supporto_In_sospeso__Directed@ssfffsssszdsff = {
+      name = "Rispondi al cliente"
+      description = ""
+      from = [
+        {
+          id = jira.Status.instance.in_attesa_del_supporto@s
+          sourceAngle = 2.4688237007158302
+          targetAngle = 177.44278107666426
+        },
+        {
+          id = jira.Status.instance.in_sospeso@s
+          sourceAngle = -70.01689347810002
+          targetAngle = 78.11134196037203
+        },
+      ]
+      to = jira.Status.instance.in_attesa_del_cliente@s
+      type = "directed"
+      screen = {
+        id = jira.Screen.instance.Workflow_Screen___9@ssbs
+      }
+      rules = {
+        postFunctions = [
+          {
+            type = "FireIssueEventFunction"
+            configuration = {
+              event = {
+                id = jira.IssueEvent.instance.Generic_Event@s
+              }
+            }
+          },
+        ]
+      }
+      properties = [
+        {
+          key = "jira.i18n.submit"
+          value = "sd.workflow.itsupport.v2.transition.respond.to.customer.submit"
+        },
+        {
+          key = "jira.i18n.title"
+          value = "sd.workflow.itsupport.v2.transition.respond.to.customer.title"
+        },
+        {
+          key = "jira.issue.editable"
+          value = "true"
+        },
+        {
+          key = "opsbar-sequence"
+          value = "5"
+        },
+      ]
+    }
+    In_sospeso__From__In_attesa_del_supporto_In_corso__Directed@sfffsssszdsff = {
+      name = "In sospeso"
+      description = ""
+      from = [
+        {
+          id = jira.Status.instance.in_attesa_del_supporto@s
+          sourceAngle = 78.11134196037203
+          targetAngle = -154.88887877551932
+        },
+        {
+          id = jira.Status.instance.in_corso@s
+        },
+      ]
+      to = jira.Status.instance.in_sospeso@s
+      type = "directed"
+      screen = {
+        id = jira.Screen.instance.JIRA_Service_Desk_Pending_Reason_screen___8@ssssssbs
+      }
+      rules = {
+        postFunctions = [
+          {
+            type = "FireIssueEventFunction"
+            configuration = {
+              event = {
+                id = jira.IssueEvent.instance.Generic_Event@s
+              }
+            }
+          },
+        ]
+      }
+      properties = [
+        {
+          key = "jira.i18n.title"
+          value = "sd.workflow.pending"
+        },
+        {
+          key = "jira.issue.editable"
+          value = "true"
+        },
+      ]
+    }
+    In_corso__From__In_attesa_del_supporto_In_sospeso_Riassegnato__Directed@sfffsssszdszdff = {
+      name = "In corso"
+      description = ""
+      from = [
+        {
+          id = jira.Status.instance.in_attesa_del_supporto@s
+          sourceAngle = 78.11134196037203
+          targetAngle = -160.3634696591808
+        },
+        {
+          id = jira.Status.instance.in_sospeso@s
+          sourceAngle = 174.92652558324858
+          targetAngle = 3.458020947901192
+        },
+        {
+          id = jira.Status.instance.riassegnato
+          sourceAngle = 78.11134196037203
+          targetAngle = 3.458020947901192
+        },
+      ]
+      to = jira.Status.instance.in_corso@s
+      type = "directed"
+      screen = {
+        id = jira.Screen.instance.Workflow_Screen___9@ssbs
+      }
+      rules = {
+        postFunctions = [
+          {
+            type = "FireIssueEventFunction"
+            configuration = {
+              event = {
+                id = jira.IssueEvent.instance.Generic_Event@s
+              }
+            }
+          },
+        ]
+      }
+      properties = [
+        {
+          key = "jira.i18n.title"
+          value = "sd.workflow.in.progress"
+        },
+        {
+          key = "jira.issue.editable"
+          value = "true"
+        },
+        {
+          key = "opsbar-sequence"
+          value = "10"
+        },
+      ]
+    }
+    Annulla_richiesta__From__In_attesa_del_cliente_In_attesa_del_supporto_In_corso_In_sospeso__Directed@sfffsssszdssszdszdsff = {
+      name = "Annulla richiesta"
+      description = ""
+      from = [
+        {
+          id = jira.Status.instance.in_attesa_del_supporto@s
+          sourceAngle = 177.29852571380187
+          targetAngle = -70.01689347810002
+        },
+        {
+          id = jira.Status.instance.in_attesa_del_cliente@s
+          sourceAngle = -70.01689347810002
+          targetAngle = -70.01689347810002
+        },
+        {
+          id = jira.Status.instance.in_sospeso@s
+          sourceAngle = 78.11134196037203
+          targetAngle = -70.01689347810002
+        },
+        {
+          id = jira.Status.instance.in_corso@s
+          sourceAngle = 176.06801282611218
+          targetAngle = -70.01689347810002
+        },
+      ]
+      to = jira.Status.instance.annullato
+      type = "directed"
+      screen = {
+        id = jira.Screen.instance.JIRA_Service_Desk_Resolve_Issue_Screen___8@ssssssbs
+      }
+      rules = {
+        postFunctions = [
+          {
+            type = "FireIssueEventFunction"
+            configuration = {
+              event = {
+                id = jira.IssueEvent.instance.Generic_Event@s
+              }
+            }
+          },
+        ]
+      }
+      properties = [
+        {
+          key = "jira.i18n.title"
+          value = "sd.workflow.cancel.request"
+        },
+        {
+          key = "jira.issue.editable"
+          value = "true"
+        },
+        {
+          key = "servicedesk.customer.transition.active"
+          value = "true"
+        },
+        {
+          key = "servicedesk.customer.transition.resolution"
+          value = "10001"
+        },
+      ]
+    }
+    Riassegna_il_ticket__From__In_attesa_del_cliente__Directed@ssfffssssff = {
+      name = "Riassegna il ticket"
+      description = ""
+      from = [
+        {
+          id = jira.Status.instance.in_attesa_del_cliente@s
+          sourceAngle = 177.44278107666426
+          targetAngle = -70.01689347810002
+        },
+      ]
+      to = jira.Status.instance.riassegnato
+      type = "directed"
+      screen = {
+        id = jira.Screen.instance.Workflow_Screen___9@ssbs
+      }
+      rules = {
+        postFunctions = [
+          {
+            type = "FireIssueEventFunction"
+            configuration = {
+              event = {
+                id = jira.IssueEvent.instance.Generic_Event@s
+              }
+            }
+          },
+        ]
+      }
+      properties = [
+        {
+          key = "jira.i18n.title"
+          value = "sd.workflow.escalate.this.issue"
+        },
+        {
+          key = "jira.issue.editable"
+          value = "true"
+        },
+        {
+          key = "servicedesk.customer.transition.active"
+          value = "false"
+        },
+        {
+          key = "servicedesk.customer.transition.resolution"
+          value = ""
+        },
+      ]
+    }
+    Riassegna__From__In_attesa_del_supporto__Directed@fffssssff = {
+      name = "Riassegna"
+      description = ""
+      from = [
+        {
+          id = jira.Status.instance.in_attesa_del_supporto@s
+          sourceAngle = 2.4688237007158302
+          targetAngle = -70.01689347810002
+        },
+      ]
+      to = jira.Status.instance.riassegnato
+      type = "directed"
+      screen = {
+        id = jira.Screen.instance.Workflow_Screen___9@ssbs
+      }
+      rules = {
+        postFunctions = [
+          {
+            type = "FireIssueEventFunction"
+            configuration = {
+              event = {
+                id = jira.IssueEvent.instance.Generic_Event@s
+              }
+            }
+          },
+        ]
+      }
+      properties = [
+        {
+          key = "jira.i18n.title"
+          value = "sd.workflow.escalate"
+        },
+        {
+          key = "jira.issue.editable"
+          value = "true"
+        },
+        {
+          key = "servicedesk.customer.transition.active"
+          value = "true"
+        },
+        {
+          key = "servicedesk.customer.transition.resolution"
+          value = ""
+        },
+      ]
+    }
+    Torna_al_lavoro_in_corso__From__Risolti__Directed@ssssfffsff = {
+      name = "Torna al lavoro in corso"
+      description = ""
+      from = [
+        {
+          id = jira.Status.instance.risolti
+          sourceAngle = 175.41180155330412
+          targetAngle = 26.07344000904233
+        },
+      ]
+      to = jira.Status.instance.in_corso@s
+      type = "directed"
+      screen = {
+        id = jira.Screen.instance.Workflow_Screen___9@ssbs
+      }
+      rules = {
+        postFunctions = [
+          {
+            type = "FireIssueEventFunction"
+            configuration = {
+              event = {
+                id = jira.IssueEvent.instance.Generic_Event@s
+              }
+            }
+          },
+          {
+            type = "UpdateIssueFieldFunction"
+            configuration = {
+              fieldId = jira.Field.instance.Resolution__resolution
+              fieldValue = ""
+            }
+          },
+        ]
+      }
+      properties = [
+        {
+          key = "jira.i18n.title"
+          value = "sd.workflow.back.to.in.progress"
+        },
+        {
+          key = "jira.issue.editable"
+          value = "true"
+        },
+        {
+          key = "sd.resolution.clear"
+          value = ""
+        },
+      ]
+    }
+    Chiudi__From__Annullato_Risolti__Directed@fffszdff = {
+      name = "Chiudi"
+      description = ""
+      from = [
+        {
+          id = jira.Status.instance.risolti
+          sourceAngle = 78.11134196037203
+          targetAngle = 4.492144589704093
+        },
+        {
+          id = jira.Status.instance.annullato
+          sourceAngle = 78.11134196037203
+          targetAngle = 174.67487281477946
+        },
+      ]
+      to = jira.Status.instance.chiuso
+      type = "directed"
+      rules = {
+        postFunctions = [
+          {
+            type = "FireIssueEventFunction"
+            configuration = {
+              event = {
+                id = jira.IssueEvent.instance.Generic_Event@s
+              }
+            }
+          },
+        ]
+      }
+      properties = [
+        {
+          key = "jira.i18n.title"
+          value = "sd.workflow.close"
+        },
+        {
+          key = "jira.issue.editable"
+          value = "true"
+        },
+      ]
+    }
+  }
+  statuses = [
+    {
+      id = jira.Status.instance.annullato
+      name = "Annullato"
+      properties = [
+        {
+          key = "jira.issue.editable"
+          value = "true"
+        },
+      ]
+      location = {
+        x = -627.9495742304027
+        y = 70.7687490463257
+      }
+    },
+    {
+      id = jira.Status.instance.chiuso
+      name = "Chiuso"
+      properties = [
+        {
+          key = "jira.issue.editable"
+          value = "true"
+        },
+      ]
+      location = {
+        x = -366.7578125
+        y = 131.37498761713505
+      }
+    },
+    {
+      id = jira.Status.instance.in_attesa_del_cliente@s
+      name = "In attesa del cliente"
+      properties = [
+        {
+          key = "jira.issue.editable"
+          value = "true"
+        },
+        {
+          key = "sd.step.key"
+          value = "sdWFCustomer"
+        },
+      ]
+      location = {
+        x = -270.265625
+        y = -198.1484375
+      }
+    },
+    {
+      id = jira.Status.instance.in_attesa_del_supporto@s
+      name = "In attesa del supporto"
+      properties = [
+        {
+          key = "jira.issue.editable"
+          value = "true"
+        },
+        {
+          key = "sd.step.key"
+          value = "sdWFSupport"
+        },
+      ]
+      location = {
+        x = -544.3046875
+        y = -198.1484375
+      }
+    },
+    {
+      id = jira.Status.instance.in_corso@s
+      name = "In corso"
+      properties = [
+        {
+          key = "jira.issue.editable"
+          value = "true"
+        },
+      ]
+      location = {
+        x = -540.7265625
+        y = -49.231250953674305
+      }
+    },
+    {
+      id = jira.Status.instance.in_sospeso@s
+      name = "In sospeso"
+      properties = [
+        {
+          key = "jira.issue.editable"
+          value = "true"
+        },
+      ]
+      location = {
+        x = -225.7578125
+        y = -49.231250953674305
+      }
+    },
+    {
+      id = jira.Status.instance.riassegnato
+      name = "Riassegnato"
+      properties = [
+        {
+          key = "jira.issue.editable"
+          value = "true"
+        },
+      ]
+      location = {
+        x = -372.03124952316284
+        y = -152.12187099456787
+      }
+    },
+    {
+      id = jira.Status.instance.risolti
+      name = "Risolti"
+      properties = [
+        {
+          key = "jira.issue.editable"
+          value = "true"
+        },
+      ]
+      location = {
+        x = -110.34374952316284
+        y = 67.37498761713505
+      }
+    },
+  ]
+  name = "GDC: flusso di lavoro di evasione delle richieste di assistenza per Jira Service Management"
+  diagramInitialEntry = {
+    x = -470.53125
+    y = -290
+  }
+}

@@ -1,0 +1,48 @@
+jira.Board Board_CDV@s {
+  name = "Board CDV"
+  type = "simple"
+  admins = {
+    users = [
+      {
+        id = "61447938ff23ba007191345f"
+        displayName = "Nathan Giovannini"
+      },
+    ]
+  }
+  location = {
+    projectId = jira.Project.instance.Consulenza_di_vendita_@s
+  }
+  filterId = jira.Filter.instance.missing_10029
+  columnConfig = {
+    columns = [
+      {
+        name = "Da iniziare"
+        statuses = [
+          jira.Status.instance.missing_10016,
+        ]
+      },
+      {
+        name = "In corso"
+        statuses = [
+          jira.Status.instance.missing_10017,
+        ]
+      },
+      {
+        name = "Sospeso"
+        statuses = [
+          jira.Status.instance.missing_10079,
+        ]
+      },
+      {
+        name = "Completato"
+        statuses = [
+          jira.Status.instance.missing_10018,
+        ]
+      },
+    ]
+    constraintType = "none"
+  }
+  estimation = {
+    field = jira.Field.instance.Story_point_estimate__jsw_story_points__c@ssuubbuu
+  }
+}

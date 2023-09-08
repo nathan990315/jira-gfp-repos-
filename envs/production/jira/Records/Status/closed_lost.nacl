@@ -1,0 +1,5 @@
+jira.Status closed_lost@s {
+  name = "Closed Lost"
+  statusCategory = jira.StatusCategory.instance.Done
+  description = ""
+}

@@ -1,0 +1,22 @@
+jira.Filter CDV__Da_Inviare@fss {
+  name = "CDV: Da Inviare"
+  description = ""
+  owner = {
+    id = "62fc96fc5fc3a72bda94622f"
+    displayName = "Patrick Pasquillo"
+  }
+  jql = "${ jira.Field.instance.Project__project } = ${ jira.Project.instance.Progetto.key } AND ${ jira.Field.instance.Issue_Type__issuetype@suu } = \"Vendite \" AND ${ jira.Field.instance.Status__status } = \"DA PIANIFICARE\" order by ${ jira.Field.instance.Created__datetime } DESC"
+  sharePermissions = [
+    {
+      type = "authenticated"
+    },
+  ]
+  editPermissions = [
+    {
+      type = "group"
+      group = {
+        name = jira.Group.instance.jira_software_users@b
+      }
+    },
+  ]
+}

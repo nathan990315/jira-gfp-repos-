@@ -1,0 +1,10 @@
+jira.IssueTypeScreenScheme GT__Schema_della_schermata_del_tipo_di_ticket_per_la_gestione_dei_task@fssssssssssss {
+  name = "GT: Schema della schermata del tipo di ticket per la gestione dei task"
+  description = ""
+  issueTypeMappings = [
+    {
+      issueTypeId = "default"
+      screenSchemeId = jira.ScreenScheme.instance.GT__Schema_della_schermata_per_la_gestione_dei_task@fssssssss
+    },
+  ]
+}

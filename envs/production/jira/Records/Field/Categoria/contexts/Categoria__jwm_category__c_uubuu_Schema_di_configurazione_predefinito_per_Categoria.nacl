@@ -1,0 +1,9 @@
+jira.CustomFieldContext Categoria__jwm_category__c_uubuu_Schema_di_configurazione_predefinito_per_Categoria@uuuuumusssss {
+  name = "Schema di configurazione predefinito per Categoria"
+  description = "Schema di configurazione predefinito generato da JIRA"
+  isGlobalContext = true
+  _parent = [
+    jira.Field.instance.Categoria__jwm_category__c@uubuu,
+  ]
+  _alias = "Categoria context in Schema di configurazione predefinito per Categoria"
+}

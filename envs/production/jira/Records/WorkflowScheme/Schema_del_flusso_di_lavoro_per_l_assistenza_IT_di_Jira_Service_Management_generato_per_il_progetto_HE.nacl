@@ -1,0 +1,39 @@
+jira.WorkflowScheme Schema_del_flusso_di_lavoro_per_l_assistenza_IT_di_Jira_Service_Management_generato_per_il_progetto_HE@sssssstssssssssss {
+  name = "Schema del flusso di lavoro per l'assistenza IT di Jira Service Management generato per il progetto HE"
+  description = "Questo schema di flusso di lavoro per l'assistenza IT di Jira Service Management è stato generato per il progetto HE"
+  defaultWorkflow = jira.Workflow.instance.jira
+  items = [
+    {
+      workflow = jira.Workflow.instance.HE__flusso_di_lavoro_predefinito_di_Jira_Service_Management@fssssssss
+      issueType = jira.IssueType.instance.Task
+    },
+    {
+      workflow = jira.Workflow.instance.HE__flusso_di_lavoro_predefinito_di_Jira_Service_Management@fssssssss
+      issueType = jira.IssueType.instance.Sottotask
+    },
+    {
+      workflow = jira.Workflow.instance.HE__flusso_di_lavoro_ESM_predefinito_per_Jira_Service_Management@fsssssssss
+      issueType = jira.IssueType.instance.Invia_una_richiesta_o_un_imprevisto@s
+    },
+    {
+      workflow = jira.Workflow.instance.HE__flusso_di_lavoro_ESM_semplice_per_Jira_Service_Management@fsssssssss
+      issueType = jira.IssueType.instance.Poni_una_domanda@s
+    },
+    {
+      workflow = jira.Workflow.instance.HE__flusso_di_lavoro_ESM_semplice_per_Jira_Service_Management@fsssssssss
+      issueType = jira.IssueType.instance.Richiesta_inviata_tramite_e_mail@sssb
+    },
+    {
+      workflow = jira.Workflow.instance.HE__flusso_di_lavoro_di_evasione_delle_richieste_di_assistenza_per_Jira_Service_Management@fsssssssssssss
+      issueType = jira.IssueType.instance.Richiesta_di_assistenza_di__sistema_@sssshi
+    },
+    {
+      workflow = jira.Workflow.instance.HE__flusso_di_lavoro_ESM_semplice_per_Jira_Service_Management@fsssssssss
+      issueType = jira.IssueType.instance.Hotline
+    },
+    {
+      workflow = jira.Workflow.instance.HE__flusso_di_lavoro_ESM_semplice_per_Jira_Service_Management@fsssssssss
+      issueType = jira.IssueType.instance.Hotline_Multi_cliente@s
+    },
+  ]
+}

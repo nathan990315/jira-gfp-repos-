@@ -1,0 +1,152 @@
+jira.Automation Controllo_fatturazione_inviata_Progetto@ssu {
+  name = "Controllo fatturazione inviata"
+  state = "ENABLED"
+  description = ""
+  authorAccountId = {
+    id = "634feb2a01c2ff842c164ac0"
+    displayName = "Gioele Roffi"
+  }
+  actor = {
+    type = "ACCOUNT_ID"
+    value = {
+      id = "557058:f58131cb-b67d-43c7-b30d-6b58d40bd077"
+      displayName = "Automation for Jira"
+    }
+  }
+  trigger = {
+    component = "TRIGGER"
+    schemaVersion = 1
+    type = "jira.issue.event.trigger:transitioned"
+    value = {
+      eventKey = "jira:issue_updated"
+      issueEvent = "issue_generic"
+      fromStatus = [
+        {
+          type = "NAME"
+          value = "Fatturazione"
+        },
+      ]
+      toStatus = [
+        {
+          type = "NAME"
+          value = jira.Status.instance.completato.name
+        },
+      ]
+    }
+    children = [
+    ]
+    conditions = [
+    ]
+  }
+  components = [
+    {
+      component = "CONDITION"
+      schemaVersion = 3
+      type = "jira.issue.condition"
+      value = {
+        selectedField = {
+          type = "ID"
+          value = jira.Field.instance.Issue_Type__issuetype@suu
+        }
+        selectedFieldType = "issuetype"
+        comparison = "NOT_ONE_OF"
+        compareFieldValue = {
+          type = "ID"
+          multiValue = true
+          values = [
+            "10103",
+            "10077",
+          ]
+        }
+      }
+      children = [
+      ]
+      conditions = [
+      ]
+    },
+    {
+      component = "CONDITION"
+      schemaVersion = 3
+      type = "jira.issue.condition"
+      value = {
+        selectedField = {
+          type = "NAME"
+          value = "Stato fatturazione "
+        }
+        selectedFieldType = "com.atlassian.jira.plugin.system.customfieldtypes:multicheckboxes"
+        comparison = "CONTAINS_NONE"
+        compareFieldValue = {
+          type = "NAME"
+          multiValue = true
+          values = [
+            "Fattura annullata",
+            "Fattura inviata ",
+          ]
+        }
+      }
+      children = [
+      ]
+      conditions = [
+      ]
+    },
+    {
+      component = "ACTION"
+      schemaVersion = 2
+      type = "jira.issue.add.watcher"
+      value = {
+        watchers = [
+          {
+            type = "ID"
+            value = "60eea45b4257a90070b78edd"
+          },
+        ]
+        removeWatchers = [
+        ]
+        removeAll = false
+      }
+      children = [
+      ]
+      conditions = [
+      ]
+    },
+    {
+      component = "ACTION"
+      schemaVersion = 1
+      type = "jira.issue.comment"
+      value = {
+        comment = "Stato fatturazione non aggiornato"
+        publicComment = false
+        sendNotifications = true
+        addCommentOnce = true
+      }
+      children = [
+      ]
+      conditions = [
+      ]
+    },
+  ]
+  canOtherRuleTrigger = false
+  notifyOnError = "FIRSTERROR"
+  projects = [
+    {
+      projectId = jira.Project.instance.Progetto
+    },
+  ]
+  labels = [
+  ]
+  tags = [
+  ]
+  ruleHome = {
+    ruleLifeCycleHome = {
+      locationARI = "ari:cloud:jira:c59e4ada-1a3a-49e7-8ca1-cd9dcdb12f98:project/10031"
+    }
+    ruleBillingHome = {
+      locationARI = "ari:cloud:jira-software::site/c59e4ada-1a3a-49e7-8ca1-cd9dcdb12f98"
+    }
+  }
+  writeAccessType = "UNRESTRICTED"
+  collaborators = [
+  ]
+  billingType = "NORMAL"
+  _alias = "Controllo fatturazione inviata"
+}

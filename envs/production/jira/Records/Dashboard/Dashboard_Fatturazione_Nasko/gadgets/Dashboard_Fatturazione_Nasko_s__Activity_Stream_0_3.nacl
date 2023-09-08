@@ -1,0 +1,68 @@
+jira.DashboardGadget Dashboard_Fatturazione_Nasko_s__Activity_Stream_0_3@uumuusuu {
+  uri = "rest/gadgets/1.0/g/com.atlassian.streams.streams-jira-plugin:activitystream-gadget/gadgets/activitystream-gadget.xml"
+  color = "blue"
+  position = {
+    row = 3
+    column = 0
+  }
+  title = "Activity Stream"
+  properties = [
+    {
+      key = "config"
+      values = [
+        {
+          key = "isConfigured"
+          value = "true"
+        },
+        {
+          key = "keys"
+          value = ""
+        },
+        {
+          key = "refresh"
+          value = "15"
+        },
+        {
+          key = "isReallyConfigured"
+          value = "true"
+        },
+        {
+          key = "rules"
+          value = "%7B%22providers%22%3A%5B%5D%7D"
+        },
+        {
+          key = "title"
+          value = "Flusso%20delle%20attivita'"
+        },
+        {
+          key = "itemKeys"
+          value = ""
+        },
+        {
+          key = "titleRequired"
+          value = "true"
+        },
+        {
+          key = "numofentries"
+          value = "4"
+        },
+        {
+          key = "maxProviderLabelCharacters"
+          value = "50"
+        },
+        {
+          key = "renderingContext"
+          value = ""
+        },
+        {
+          key = "username"
+          value = ""
+        },
+      ]
+    },
+  ]
+  _parent = [
+    jira.Dashboard.instance.Dashboard_Fatturazione_Nasko@s,
+  ]
+  _alias = "Activity Stream"
+}

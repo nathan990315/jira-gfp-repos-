@@ -1,0 +1,13 @@
+jira.DashboardGadget Dashboard_Nathan_s__JEMHCloud_System_Status_Summary_1_0@umuusssuu {
+  moduleKey = "com.atlassian.plugins.atlassian-connect-plugin:com.javahollic.jira.jemh-ui__systemStatusSummaryDashboard"
+  color = "blue"
+  position = {
+    row = 0
+    column = 1
+  }
+  title = "JEMHCloud System Status Summary"
+  _parent = [
+    jira.Dashboard.instance.Dashboard_Nathan@s,
+  ]
+  _alias = "JEMHCloud System Status Summary"
+}

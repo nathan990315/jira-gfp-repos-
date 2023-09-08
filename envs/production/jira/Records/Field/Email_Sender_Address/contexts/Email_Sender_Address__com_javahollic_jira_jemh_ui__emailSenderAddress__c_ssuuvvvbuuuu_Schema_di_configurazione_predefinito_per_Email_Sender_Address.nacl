@@ -1,0 +1,9 @@
+jira.CustomFieldContext Email_Sender_Address__com_javahollic_jira_jemh_ui__emailSenderAddress__c_ssuuvvvbuuuu_Schema_di_configurazione_predefinito_per_Email_Sender_Address@uuuuuuuuuuuumusssssss {
+  name = "Schema di configurazione predefinito per Email Sender Address"
+  description = "Schema di configurazione predefinito generato da JIRA"
+  isGlobalContext = true
+  _parent = [
+    jira.Field.instance.Email_Sender_Address__com_javahollic_jira_jemh_ui__emailSenderAddress__c@ssuuvvvbuuuu,
+  ]
+  _alias = "Email Sender Address context in Schema di configurazione predefinito per Email Sender Address"
+}

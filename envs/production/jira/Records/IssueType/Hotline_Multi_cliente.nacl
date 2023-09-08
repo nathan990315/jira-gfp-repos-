@@ -1,0 +1,6 @@
+jira.IssueType Hotline_Multi_cliente@s {
+  description = ""
+  name = "Hotline Multi cliente"
+  untranslatedName = "Hotline Multi cliente"
+  hierarchyLevel = 0
+}

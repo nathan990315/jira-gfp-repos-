@@ -1,0 +1,45 @@
+jira.Screen JIRA_Service_Desk_Resolve_Issue_Screen@s {
+  name = "JIRA Service Desk Resolve Issue Screen"
+  description = "Allows to set resolution and linked issues"
+  tabs = {
+    Field_Tab@s = {
+      name = "Field Tab"
+      fields = [
+        jira.Field.instance.Resolution__resolution,
+        jira.Field.instance.Linked_Issues__array@suu,
+        jira.Field.instance.Stato_abbonamento__textfield__c@suuuu,
+        jira.Field.instance.Company__read_only_string_issue_field__c@uubbbbuu,
+        jira.Field.instance.Cliente__textfield__c,
+      ]
+      position = 0
+    }
+    HubSpot = {
+      name = "HubSpot"
+      fields = [
+        jira.Field.instance.HubSpot_ticket_count__Hub_ID__27031577___float__c@sssjsfskuuuu,
+      ]
+      position = 1
+    }
+  }
+}
+jira.Screen Jira_Service_Desk_Resolve_Issue_Screen@s {
+  name = "Jira Service Desk Resolve Issue Screen"
+  description = "Allows to set resolution"
+  tabs = {
+    Field_Tab@s = {
+      name = "Field Tab"
+      fields = [
+        jira.Field.instance.Resolution__resolution,
+        jira.Field.instance.Cliente__textfield__c,
+      ]
+      position = 0
+    }
+    HubSpot = {
+      name = "HubSpot"
+      fields = [
+        jira.Field.instance.HubSpot_ticket_count__Hub_ID__27031577___float__c@sssjsfskuuuu,
+      ]
+      position = 1
+    }
+  }
+}

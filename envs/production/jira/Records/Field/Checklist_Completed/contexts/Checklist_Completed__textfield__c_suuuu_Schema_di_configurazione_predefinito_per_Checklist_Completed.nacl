@@ -1,0 +1,12 @@
+jira.CustomFieldContext Checklist_Completed__textfield__c_suuuu_Schema_di_configurazione_predefinito_per_Checklist_Completed@uuuuumussssss {
+  name = "Schema di configurazione predefinito per Checklist Completed"
+  description = "Schema di configurazione predefinito generato da JIRA"
+  isGlobalContext = true
+  defaultValue = {
+    type = "textfield"
+  }
+  _parent = [
+    jira.Field.instance.Checklist_Completed__textfield__c@suuuu,
+  ]
+  _alias = "Checklist Completed context in Schema di configurazione predefinito per Checklist Completed"
+}
